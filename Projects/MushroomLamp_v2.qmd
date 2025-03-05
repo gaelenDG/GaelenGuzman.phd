@@ -1,0 +1,6 @@
+---
+title: Mushroom Lamp v2
+subtitle: Revisiting the concept!
+author: Gaelen Guzman
+---
+

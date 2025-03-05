@@ -1,0 +1,40 @@
+---
+title: "Gaelen Guzman"
+about:
+  template: trestles
+  image: assets/images/Portrait.png
+  id: hero-heading
+  links:
+    - icon: GitHub
+      text: "Github"
+      href: https://github.com/gaelenDG
+    - icon: linkedin
+      text: "LinkedIn"
+      href: https://www.linkedin.com/in/gaelen-guzman-26495590/
+    - text: "Scholar"
+      href: https://scholar.google.com/citations?user=0kyi4GIAAAAJ&hl=en 
+    - icon: envelope
+      text: "Email"
+      href: mailto:gaelenguzman@gmail.com
+toc: false
+anchor-sections: false
+---
+
+:::{#hero-heading}
+## Hello!
+
+I am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology -- focusing on the manners in which host lipids influence the progression of *Mycobacterium tuberculosis* infection. I'm interested in a career in scientific communication and data science: I want to promote public health and Open Science by building a stronger bridge between scientists and the public. 
+
+I'm a new father, so I don't exactly have a lot of free time -- but when I do, I enjoy hobby electrical engineering projects (see some of my projects above!), rock climbing, cycling, and enjoying those Pacific Northwest outdoors.
+
+Please reach out to chat!
+:::
+
+<hr>
+<br>
+
+## Experience
+
+## Education
+
+## Research
