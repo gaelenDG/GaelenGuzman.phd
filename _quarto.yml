@@ -9,7 +9,7 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 website:
-  title: "Gaelen Guzman | About Me"
+  title: "Gaelen Guzman"
   repo-url: https://github.com/gaelenDG/GaelenGuzman.github.io
   repo-actions: [source, issue]
   # favicon: assets/images/icon.svg
@@ -23,7 +23,7 @@ website:
       - text: "Contact"
         href: contact.html
     left: 
-      - text: "Research Projects"
+      - text: "<i class='fa-solid fa-flask-vial'></i> Research Projects"
         menu:
           - text: "The Lipid Interactome"
             href: https://www.lipidinteractome.org
@@ -31,7 +31,7 @@ website:
           - text: "Dissertation"
             href: https://guzmangadissertation.netlify.app
             target: "_blank"
-      - text: "Hobby EE Projects"
+      - text: "<i class='fa-solid fa-microchip'></i> Hobby EE Projects"
         menu:
           - text: "Mushroom Lamp"
             href: HobbyEEProjects/MushroomLamp_v1.html
@@ -43,13 +43,10 @@ website:
             href: HobbyEEProjects/MagneticStirbarLamp.html
   sidebar: true 
   page-navigation: true
-  # footer:
-  #   left:
-  #     - text: "© 2025 Gaelen Guzman"
-  #   right:
-  #     - text: "Built with Quarto"
-  #     - text: "Source"
-  #       href: https://github.com/gaelenDG/GaelenGuzman.github.io
+  page-footer:
+    center:
+      - text: "© 2025 Gaelen Guzman | Built with Quarto"
+      
 
 format:
   html:
@@ -59,7 +56,10 @@ format:
       desc-position: bottom
       loop: true
     mainfont: Charter
-    theme: [Flatly, assets/css/theme_customizations.scss]
+    theme: [Flatly, assets/custom_theme.scss]
     css: assets/css/styles.css
     toc: true
     sidebar: true
+    include-in-header: 
+      - text: |
+          <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>

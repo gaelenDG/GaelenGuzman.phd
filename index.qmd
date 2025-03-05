@@ -1,17 +1,17 @@
 ---
-title: "Gaelen Guzman"
+title: "Gaelen Guzman, PhD"
 about:
   template: trestles
   image: assets/images/Portrait.png
   id: hero-heading
   links:
-    - icon: GitHub
+    - icon: github
       text: "Github"
       href: https://github.com/gaelenDG
     - icon: linkedin
       text: "LinkedIn"
       href: https://www.linkedin.com/in/gaelen-guzman-26495590/
-    - text: "Scholar"
+    - text: "<i class='fa-solid fa-graduation-cap'></i> Scholar"
       href: https://scholar.google.com/citations?user=0kyi4GIAAAAJ&hl=en 
     - icon: envelope
       text: "Email"
@@ -37,8 +37,18 @@ Please reach out, I'd love to chat!
 <hr>
 <br>
 
-## Experience
+## <i class='fa-regular fa-briefcase'></i> Experience
 
-## Education
+|  |  |  | 
+|:-----|:------------|-------:|
+| [May 2024 - Present]{.small-text} | Postdoctoral Researcher \@ [Tafesse Lab, OHSU](https://www.tafesselab.com){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Portland, OR]{.small-text} |
+| [Mar 2014 - June 2017]{.small-text} | Research Associate II \@ [Proteomics Platform, Broad Institute](https://www.broadinstitute.org/proteomics){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Cambridge, MA]{.small-text} |
 
-## Research
+
+
+## <i class="fa-regular fa-book-open"></i> Education
+
+|  |  |  | 
+|:---|:-------------------------|-----:|
+| [2017 - 2024]{.small-text} | PhD, Microbiology and Immunology from Oregon Health & Science University | [<i class="fa-regular fa-location-dot"></i> Portland, OR]{.small-text} |
+| [2010 - 2014]{.small-text} | BS, Molecular Biology from Massachusetts Institute of Technology | [<i class="fa-regular fa-location-dot"></i> Cambridge, MA]{.small-text} |
