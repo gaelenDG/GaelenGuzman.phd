@@ -9,7 +9,7 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 website:
-  title: "GaelenGuzman.github.io"
+  title: "Gaelen Guzman | About Me"
   repo-url: https://github.com/gaelenDG/GaelenGuzman.github.io
   repo-actions: [source, issue]
   # favicon: assets/images/icon.svg
@@ -17,11 +17,20 @@ website:
     pinned: true
     # logo: assets/images/logo.png
     right:
-      - text: "About" 
-        href: about.html
+      - text: "Resume"
+        href: assets/cv/GaelenGuzman_Resume.pdf
+        target: "_blank"
       - text: "Contact"
         href: contact.html
     left: 
+      - text: "Research Projects"
+        menu:
+          - text: "The Lipid Interactome"
+            href: https://www.lipidinteractome.org
+            target: "_blank"
+          - text: "Dissertation"
+            href: https://guzmangadissertation.netlify.app
+            target: "_blank"
       - text: "Hobby EE Projects"
         menu:
           - text: "Mushroom Lamp"
