@@ -13,6 +13,8 @@ about:
       href: https://www.linkedin.com/in/gaelen-guzman-26495590/
     - text: "<i class='fa-solid fa-graduation-cap'></i> Scholar"
       href: https://scholar.google.com/citations?user=0kyi4GIAAAAJ&hl=en 
+    - text: "<i class='fa-regular fa-id-badge'></i> ORCID"
+      href: https://orcid.org/my-orcid?orcid=0000-0002-7696-6034
     - icon: envelope
       text: "Email"
       href: mailto:gaelenguzman@gmail.com
