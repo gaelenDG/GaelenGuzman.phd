@@ -1,0 +1,6 @@
+---
+title: Light-up Baby Book
+subtitle: Still a work-in-progress
+author: Gaelen Guzman
+---
+

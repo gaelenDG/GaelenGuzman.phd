@@ -1,5 +1,0 @@
----
-title: Magnetic Stirbar Lamp
-subtitle: Still a work-in-progress
-author: Gaelen Guzman
----

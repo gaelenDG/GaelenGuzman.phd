@@ -2,6 +2,7 @@ project:
   type: website
   render:
     - "*.qmd"
+    - "HobbyEEProjects/*.qmd"
 format-links: true
 prefer-html: true
 license: "CC by"
@@ -33,14 +34,14 @@ website:
             target: "_blank"
       - text: "<i class='fa-solid fa-microchip'></i> Hobby EE Projects"
         menu:
-          - text: "Mushroom Lamp"
-            href: HobbyEEProjects/MushroomLamp_v1.html
-          - text: "Light-up Baby Book"
-            href: HobbyEEProjects/LightUpBabyBook.html
-          - text: "Mushroom Lamp v2"
-            href: HobbyEEProjects/MushroomLamp_v2.html
-          - text: "Magnetic Stirbar Lamp"
-            href: HobbyEEProjects/MagneticStirbarLamp.html
+          - href: HobbyEEProjects/MushroomLamp_v1.qmd
+            text: "Mushroom Lamp"
+          - href: HobbyEEProjects/LightUpBabyBook.qmd
+            text: "Light-up Baby Book"
+          - href: HobbyEEProjects/MushroomLamp_v2.qmd
+            text: "Mushroom Lamp v2"
+          - href: HobbyEEProjects/MagneticStirbarLamp.qmd
+            text: "Magnetic Stirbar Lamp"
   sidebar: true 
   page-navigation: true
   page-footer:
