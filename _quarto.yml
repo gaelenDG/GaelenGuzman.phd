@@ -21,15 +21,13 @@ website:
       - text: "Resume"
         href: assets/cv/GaelenGuzman_Resume.pdf
         target: "_blank"
-      - text: "Contact"
-        href: contact.html
     left: 
       - text: "<i class='fa-solid fa-flask-vial'></i> Research Projects"
         menu:
           - text: "The Lipid Interactome"
             href: https://www.lipidinteractome.org
             target: "_blank"
-          - text: "Dissertation"
+          - text: "TB & The Sphinx (My dissertation)"
             href: https://guzmangadissertation.netlify.app
             target: "_blank"
       - text: "<i class='fa-solid fa-microchip'></i> Hobby EE Projects"
