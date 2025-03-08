@@ -3,3 +3,61 @@ title: Mushroom Lamp v1
 subtitle: Dipping my toes into hobby electronics
 author: Gaelen Guzman
 ---
+
+![Someday I'll take a better final photo of this lamp...](/assets/images/MushroomLamp_v1/Final.png)
+
+## Overview
+
+This little nightlight looks like a small grove of mushrooms growing out of a log -- during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.
+
+I was inspired by this [DIY Perks video](https://www.youtube.com/watch?v=D5LjGFkpApw){target="_blank"} on using silicone caulk to craft mushrooms with embedded LEDs -- but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!
+
+While the physical structure of the lamp is complete, I'm still working on incorporating an MQTT connection to HomeAssistant -- that way I can cycle through different light patterns!
+
+## Materials & Components
+
+* A piece of bark (found in my back yard)
+* Silicone caulk sealant
+* Silicone dye
+* Standard LEDs  (1x red, 1x green, 1x blue - and a bonus white flickering one taken from an LED candle)
+* An ESP32c3 supermini microcontroller
+* NPN2222a transistors (to convert the 3.3 V GPIO output to 5 V)
+* A light-dependent resistor (LDR)
+* A 10 k&ohm; pull-up resistor for the LDR
+* 470 &ohm; resistors (for the LEDs)
+
+## Assembly
+
+It's quite silly how challenging I made this for myself.
+
+First, I soldered the LEDs to power lines -- I decided to directly integrate the current limiting resistor into the stalk of the mushroom so I wouldn't be tempted to test the mushrooms without a resistor (a stupid mistake that killed my first test mushroom!). 
+
+I then crafted the mushroom stalks using the silicone caulk: I squirted a line of some caulk out onto some plastic film, added a small amount of dye to make nice colors, and squashed the LEDs into the line. By folding the plastic wrap over and kneading carefully, I got the wires embedded in the center of the caulk and a mostly round cross-section.
+
+For the mushroom caps, I squeezed out more caulk and dye to match the LED colors and left them to dry between layers of plastic wrap. I used the tops of bottles and curved things to help them set in the right shape. Once everything dried, I used a big glob of caulk to glue the tops to the bottoms.
+
+I then dr
+
+## Code
+
+This was my first coding adventure with C++ -- I'll shamefully admit that I asked ChatGPT a lot of questions in order to get me started here, but after a while I started to realize it wasn't that much more helpful than Googling my question and finding StackOverflow threads. 
+
+Prior to this little project, I haven't done basically anything with hardware, and it took a lot of learning to understand how to use non-blocking timing patterns to make sure that the lights don't interfere with each other -- and so that the lamp is constantly probing the surrounding light levels.
+
+In short, the loop function starts by checking the ambient light -- if it's too light out, the lamp goes into a light sleep mode and checks again a few times each second. If the ambient light is dim enough, it triggers a step in the pattern light function.
+
+On boot, each LED is assigned the minimum brightness value, an empty timer, and a random time interval. Using the random time interval, each LED is then assigned a calculated timespan for updating its brightness level. Each time the pattern loop begins, it goes through each LED and assesses whether an appropriate amount of time has passed to either increase or decrease the brightness ([total interval] / [num steps between min and max brightness]) -- and if an appropriate amount of time has passed, the LED steps up until it hits the max brightness and then goes down until the minimum brightness. At the minimum brightness, the LED is assigned a new time interval.
+
+The goal was to make the mushrooms look like they're breathing, and I like to think it's pretty good!
+
+The LED inside the cabin flickers to make it seem like a little inhabitant is sitting by the fire. This isn't directly controlled by the ESP32 -- I just stole the LED from an electric candle, so it has a semi-random flickering pattern built into its PCB. The unfortunate side-effect of this is that I cannot control the brightness myself to adjust its pattern, but that's ok!
+
+## Future Improvements
+
+1. I truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily...
+
+2. This is an easy fix I just haven't done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the "off" threshold being brightness than the "on" threshold -- that way it turns on in relatively dim light and turns off only when it's substantially brighter. I'll go back and fix this sometime!
+
+3. A slightly more complicated coding fix would be to alter the brightness stepping function so that it better matches the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) -- but the eye perceives differences in brightness non-linearly. Someday I'll go back and rewrite this so it's more like the sine curve that we perceive.
+
+4. I'm still working on the MQTT/HomeAssistant connection for this lamp -- it's kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I'll update here when I've successfully incorporated different patterns.

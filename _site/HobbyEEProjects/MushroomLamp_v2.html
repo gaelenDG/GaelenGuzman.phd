@@ -153,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#materialscomponents" id="toc-materialscomponents" class="nav-link" data-scroll-target="#materialscomponents">Materials/Components</a></li>
+  <li><a href="#materials-components" id="toc-materials-components" class="nav-link" data-scroll-target="#materials-components">Materials &amp; Components</a></li>
   <li><a href="#assembly" id="toc-assembly" class="nav-link" data-scroll-target="#assembly">Assembly</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements">Future improvements</a></li>
@@ -161,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MushroomLamp_v2.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -203,22 +203,30 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-<section id="materialscomponents" class="level2">
-<h2 class="anchored" data-anchor-id="materialscomponents">Materials/Components</h2>
+<section id="materials-components" class="level2">
+<h2 class="anchored" data-anchor-id="materials-components">Materials &amp; Components</h2>
 <ul>
 <li>A piece of bark (found in my back yard)</li>
-<li>Silicone sealant</li>
+<li>Silicone caulk sealant</li>
+<li>Silicone dye</li>
 <li>Adafruit NeoPixels (RGBW makes for a cleaner white)</li>
 <li>An ESP32c3 supermini microcontroller</li>
-<li>A level shifter and 470 Ω resistors (for the NeoPixel data line)</li>
+<li>A level shifter and 470 Ω resistors (for the NeoPixel data lines)</li>
 <li>A button (scavenged from a broken clock and selected for its very satisfying <em>thunk</em>)</li>
 <li>A 10 kΩ pull-up resistor for the button</li>
 </ul>
 </section>
-<section id="assembly" class="level2">
+<section id="assembly" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="assembly">Assembly</h2>
 <p><em>Still working on this page</em></p>
-<p><img src="../assets/images/MushroomLamp_v2/CenterShroom_testing.png" class="img-fluid" data-group="MushroomLamp_v2"> <img src="../assets/images/MushroomLamp_v2/WiringUnderneath.png" class="img-fluid" data-group="MushroomLamp_v2"> <img src="../assets/images/MushroomLamp_v2/SideShrooms_testing.png" class="img-fluid" data-group="MushroomLamp_v2"> <video src="../assets/images/MushroomLamp_v2/Pattern_testing.mp4" class="img-fluid" data-group="MushroomLamp_v2" controls=""><a href="../assets/images/MushroomLamp_v2/Pattern_testing.mp4">Video</a></video></p>
+<div class="gallery page-columns page-full">
+<div class="column-body">
+<p><a href="../assets/images/MushroomLamp_v2/CenterShroom_testing.png" class="lightbox" data-gallery="MushroomLamp_v2"><img src="../assets/images/MushroomLamp_v2/CenterShroom_testing.png" class="img-fluid" style="width:100.0%"></a></p>
+<p><a href="../assets/images/MushroomLamp_v2/WiringUnderneath.png" class="lightbox" data-gallery="MushroomLamp_v2"><img src="../assets/images/MushroomLamp_v2/WiringUnderneath.png" class="img-fluid"></a></p>
+<p><a href="../assets/images/MushroomLamp_v2/SideShrooms_testing.png" class="lightbox" data-gallery="MushroomLamp_v2"><img src="../assets/images/MushroomLamp_v2/SideShrooms_testing.png" class="img-fluid"></a></p>
+</div>
+</div>
+<p><a href="../assets/images/MushroomLamp_v2/Pattern_testing.mp4" class="lightbox" data-gallery="MushroomLamp_v2"><video src="../assets/images/MushroomLamp_v2/Pattern_testing.mp4" class="img-fluid" controls=""></video></a><a href="../assets/images/MushroomLamp_v2/Pattern_testing.mp4">Video</a></p>
 </section>
 <section id="code" class="level2">
 <h2 class="anchored" data-anchor-id="code">Code</h2>
@@ -231,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="future-improvements">Future improvements</h2>
 <p>I’d plan out my wiring a little more carefully… I didn’t strictly <em>need</em> to separate the NeoPixels into three chains, but it made sense at the time.</p>
 <p>I’d also improve how I attached the top of the central giant mushroom to the bottom – I didn’t leave myself enough material to comfortably trim at the end, and the back is quite messy!</p>
-<p>In theory, this lamp has the capacity for bluetooth and wifi connection – it would be cool to set it up with HomeAssistant so it can be controlled remotely! The GPIO pins of the ESP32 are also easily accessed, and it wouldn’t be difficult to add a light sensor or a microphone to make the lamp more responsive to the environment.</p>
+<p>In theory, this lamp has the capacity for bluetooth and wifi connection – it would be cool to set it up with HomeAssistant so it can be controlled remotely. The GPIO pins of the ESP32 are also easily accessed, and it wouldn’t be difficult to add a light sensor or a microphone to make the lamp more responsive to the environment.</p>
 
 
 <div class="hidden" aria-hidden="true">
@@ -645,7 +653,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"fade","closeEffect":"fade","descPosition":"bottom","loop":true});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","selector":".lightbox","openEffect":"fade","loop":true,"descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -18,13 +18,14 @@ The whole project was donated to Becca's classroom for interactive learning abou
 
 ![Final product!](/assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4){group="MushroomLamp_v2"}
 
-## Materials/Components
+## Materials & Components
 
-*  A piece of bark (found in my back yard)
-*  Silicone sealant
-*  Adafruit NeoPixels (RGBW makes for a cleaner white)
-*  An ESP32c3 supermini microcontroller
-* A level shifter and 470 &ohm; resistors (for the NeoPixel data line)
+* A piece of bark (found in my back yard)
+* Silicone caulk sealant
+* Silicone dye
+* Adafruit NeoPixels (RGBW makes for a cleaner white)
+* An ESP32c3 supermini microcontroller
+* A level shifter and 470 &ohm; resistors (for the NeoPixel data lines)
 * A button (scavenged from a broken clock and selected for its very satisfying *thunk*)
 * A 10 k&ohm; pull-up resistor for the button
 
@@ -32,9 +33,19 @@ The whole project was donated to Becca's classroom for interactive learning abou
 
 *Still working on this page* 
 
-![](/assets/images/MushroomLamp_v2/CenterShroom_testing.png){group="MushroomLamp_v2"}
+::: gallery
+::: column-body
+
+![](/assets/images/MushroomLamp_v2/CenterShroom_testing.png){width="100%" group="MushroomLamp_v2"}
+
 ![](/assets/images/MushroomLamp_v2/WiringUnderneath.png){group="MushroomLamp_v2"}
+
 ![](/assets/images/MushroomLamp_v2/SideShrooms_testing.png){group="MushroomLamp_v2"}
+
+
+:::
+:::
+
 ![](/assets/images/MushroomLamp_v2/Pattern_testing.mp4){group="MushroomLamp_v2"}
 
 ## Code
@@ -49,8 +60,8 @@ This was the first project which I broke the config, helper functions, pattern f
 
 ## Future improvements
 
-I'd plan out my wiring a little more carefully... I didn't strictly *need* to separate the NeoPixels into three chains, but it made sense at the time. 
+I'd plan out my wiring a little more carefully... I didn't strictly *need* to separate the NeoPixels into three chains, but it made sense at the time.
 
 I'd also improve how I attached the top of the central giant mushroom to the bottom -- I didn't leave myself enough material to comfortably trim at the end, and the back is quite messy!
 
-In theory, this lamp has the capacity for bluetooth and wifi connection -- it would be cool to set it up with HomeAssistant so it can be controlled remotely! The GPIO pins of the ESP32 are also easily accessed, and it wouldn't be difficult to add a light sensor or a microphone to make the lamp more responsive to the environment.
+In theory, this lamp has the capacity for bluetooth and wifi connection -- it would be cool to set it up with HomeAssistant so it can be controlled remotely. The GPIO pins of the ESP32 are also easily accessed, and it wouldn't be difficult to add a light sensor or a microphone to make the lamp more responsive to the environment.

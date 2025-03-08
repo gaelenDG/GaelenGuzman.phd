@@ -39,6 +39,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -145,7 +148,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#materials-components" id="toc-materials-components" class="nav-link" data-scroll-target="#materials-components">Materials &amp; Components</a></li>
+  <li><a href="#assembly" id="toc-assembly" class="nav-link" data-scroll-target="#assembly">Assembly</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements">Future Improvements</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MushroomLamp_v1.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -176,8 +189,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/images/MushroomLamp_v1/Final.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Someday I’ll take a better final photo of this lamp…"><img src="../assets/images/MushroomLamp_v1/Final.png" class="img-fluid figure-img" alt="Someday I’ll take a better final photo of this lamp…"></a></p>
+<figcaption>Someday I’ll take a better final photo of this lamp…</figcaption>
+</figure>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.</p>
+<p>I was inspired by this <a href="https://www.youtube.com/watch?v=D5LjGFkpApw" target="_blank">DIY Perks video</a> on using silicone caulk to craft mushrooms with embedded LEDs – but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!</p>
+<p>While the physical structure of the lamp is complete, I’m still working on incorporating an MQTT connection to HomeAssistant – that way I can cycle through different light patterns!</p>
+</section>
+<section id="materials-components" class="level2">
+<h2 class="anchored" data-anchor-id="materials-components">Materials &amp; Components</h2>
+<ul>
+<li>A piece of bark (found in my back yard)</li>
+<li>Silicone caulk sealant</li>
+<li>Silicone dye</li>
+<li>Standard LEDs (1x red, 1x green, 1x blue - and a bonus white flickering one taken from an LED candle)</li>
+<li>An ESP32c3 supermini microcontroller</li>
+<li>NPN2222a transistors (to convert the 3.3 V GPIO output to 5 V)</li>
+<li>A light-dependent resistor (LDR)</li>
+<li>A 10 kΩ pull-up resistor for the LDR</li>
+<li>470 Ω resistors (for the LEDs)</li>
+</ul>
+</section>
+<section id="assembly" class="level2">
+<h2 class="anchored" data-anchor-id="assembly">Assembly</h2>
+<p>It’s quite silly how challenging I made this for myself.</p>
+<p>First, I soldered the LEDs to power lines – I decided to directly integrate the current limiting resistor into the stalk of the mushroom so I wouldn’t be tempted to test the mushrooms without a resistor (a stupid mistake that killed my first test mushroom!).</p>
+<p>I then crafted the mushroom stalks using the silicone caulk: I squirted a line of some caulk out onto some plastic film, added a small amount of dye to make nice colors, and squashed the LEDs into the line. By folding the plastic wrap over and kneading carefully, I got the wires embedded in the center of the caulk and a mostly round cross-section.</p>
+<p>For the mushroom caps, I squeezed out more caulk and dye to match the LED colors and left them to dry between layers of plastic wrap. I used the tops of bottles and curved things to help them set in the right shape. Once everything dried, I used a big glob of caulk to glue the tops to the bottoms.</p>
+<p>I then dr</p>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<p>This was my first coding adventure with C++ – I’ll shamefully admit that I asked ChatGPT a lot of questions in order to get me started here, but after a while I started to realize it wasn’t that much more helpful than Googling my question and finding StackOverflow threads.</p>
+<p>Prior to this little project, I haven’t done basically anything with hardware, and it took a lot of learning to understand how to use non-blocking timing patterns to make sure that the lights don’t interfere with each other – and so that the lamp is constantly probing the surrounding light levels.</p>
+<p>In short, the loop function starts by checking the ambient light – if it’s too light out, the lamp goes into a light sleep mode and checks again a few times each second. If the ambient light is dim enough, it triggers a step in the pattern light function.</p>
+<p>On boot, each LED is assigned the minimum brightness value, an empty timer, and a random time interval. Using the random time interval, each LED is then assigned a calculated timespan for updating its brightness level. Each time the pattern loop begins, it goes through each LED and assesses whether an appropriate amount of time has passed to either increase or decrease the brightness ([total interval] / [num steps between min and max brightness]) – and if an appropriate amount of time has passed, the LED steps up until it hits the max brightness and then goes down until the minimum brightness. At the minimum brightness, the LED is assigned a new time interval.</p>
+<p>The goal was to make the mushrooms look like they’re breathing, and I like to think it’s pretty good!</p>
+<p>The LED inside the cabin flickers to make it seem like a little inhabitant is sitting by the fire. This isn’t directly controlled by the ESP32 – I just stole the LED from an electric candle, so it has a semi-random flickering pattern built into its PCB. The unfortunate side-effect of this is that I cannot control the brightness myself to adjust its pattern, but that’s ok!</p>
+</section>
+<section id="future-improvements" class="level2">
+<h2 class="anchored" data-anchor-id="future-improvements">Future Improvements</h2>
+<ol type="1">
+<li><p>I truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…</p></li>
+<li><p>This is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!</p></li>
+<li><p>A slightly more complicated coding fix would be to alter the brightness stepping function so that it better matches the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we perceive.</p></li>
+<li><p>I’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns.</p></li>
+</ol>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Someday I’ll take a better final photo of this lamp…</span>
+</div>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -579,12 +647,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2025 Gaelen Guzman | Built with Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MushroomLamp_v1.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MushroomLamp_v1.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"fade","loop":true,"selector":".lightbox","openEffect":"fade"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
