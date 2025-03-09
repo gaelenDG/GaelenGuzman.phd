@@ -30,7 +30,7 @@ website:
           - text: "TB & The Sphinx (My dissertation)"
             href: https://guzmangadissertation.netlify.app
             target: "_blank"
-      - text: "<i class='fa-solid fa-microchip'></i> Hobby EE Projects"
+      - text: "<i class='fa-solid fa-microchip'></i> Hobby Electronics Projects"
         menu:
           - href: HobbyEEProjects/MushroomLamp_v1.qmd
             text: "Mushroom Lamp"
@@ -40,6 +40,8 @@ website:
             text: "Mushroom Lamp v2"
           - href: HobbyEEProjects/MagneticStirbarLamp.qmd
             text: "Magnetic Stirbar Lamp"
+          - href: HobbyEEProjects/SunnysidePresentations/Electricity1_presentation.html
+            text: "Sunnyside Intro to Electronics #1"
   sidebar: true 
   page-navigation: true
   page-footer:
