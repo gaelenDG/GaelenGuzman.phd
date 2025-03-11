@@ -128,10 +128,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../HobbyEEProjects/MagneticStirbarLamp.html">
  <span class="dropdown-text">Magnetic Stirbar Lamp</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../HobbyEEProjects/SunnysideElectricityPresentations/Electricity1_presentation.html">
- <span class="dropdown-text">Sunnyside Intro to Electronics #1</span></a>
-  </li>  
     </ul>
   </li>
 </ul>
@@ -193,16 +189,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="border">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../assets/images/MushroomLamp_v1/Final.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Someday I’ll take a better final photo of this lamp…"><img src="../assets/images/MushroomLamp_v1/Final.png" class="img-fluid figure-img" alt="Someday I’ll take a better final photo of this lamp…"></a></p>
+<p><a href="../assets/images/MushroomLamp_v1/Final.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="MushroomLamp_v1" title="Someday I’ll take a better final photo of this lamp…"><img src="../assets/images/MushroomLamp_v1/Final.png" class="img-fluid figure-img" alt="Someday I’ll take a better final photo of this lamp…"></a></p>
 <figcaption>Someday I’ll take a better final photo of this lamp…</figcaption>
 </figure>
 </div>
+</div>
+<p><br></p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.</p>
-<p>I was inspired by this <a href="https://www.youtube.com/watch?v=D5LjGFkpApw" target="_blank">DIY Perks video</a> on using silicone caulk to craft mushrooms with embedded LEDs – but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!</p>
+<p>I was inspired by this <a href="https://www.youtube.com/watch?v=D5LjGFkpApw" target="_blank">video by DIY Perks</a> on using silicone caulk to craft mushrooms with embedded LEDs – but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!</p>
 <p>While the physical structure of the lamp is complete, I’m still working on incorporating an MQTT connection to HomeAssistant – that way I can cycle through different light patterns!</p>
 </section>
 <section id="materials-components" class="level2">
@@ -221,11 +220,47 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="assembly" class="level2">
 <h2 class="anchored" data-anchor-id="assembly">Assembly</h2>
-<p>It’s quite silly how challenging I made this for myself.</p>
-<p>First, I soldered the LEDs to power lines – I decided to directly integrate the current limiting resistor into the stalk of the mushroom so I wouldn’t be tempted to test the mushrooms without a resistor (a stupid mistake that killed my first test mushroom!).</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/images/MushroomLamp_v1/Concept.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="MushroomLamp_v1" title="Testing the concept of the lamp, with really basic control via the ESP32."><img src="../assets/images/MushroomLamp_v1/Concept.png" class="img-fluid figure-img" alt="Testing the concept of the lamp, with really basic control via the ESP32."></a></p>
+<figcaption>Testing the concept of the lamp, with really basic control via the ESP32.</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
+<p>Next, I soldered the LEDs to power lines – I decided to directly integrate the current limiting resistor into the stalk of the mushroom so I wouldn’t be tempted to test the mushrooms without a resistor (a stupid mistake that killed my first test mushroom!).</p>
 <p>I then crafted the mushroom stalks using the silicone caulk: I squirted a line of some caulk out onto some plastic film, added a small amount of dye to make nice colors, and squashed the LEDs into the line. By folding the plastic wrap over and kneading carefully, I got the wires embedded in the center of the caulk and a mostly round cross-section.</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/images/MushroomLamp_v1/SiliconeMolding.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="MushroomLamp_v1" title="Drying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off."><img src="../assets/images/MushroomLamp_v1/SiliconeMolding.png" class="img-fluid figure-img" alt="Drying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off."></a></p>
+<figcaption>Drying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off.</figcaption>
+</figure>
+</div>
+</div>
+<p><br></p>
 <p>For the mushroom caps, I squeezed out more caulk and dye to match the LED colors and left them to dry between layers of plastic wrap. I used the tops of bottles and curved things to help them set in the right shape. Once everything dried, I used a big glob of caulk to glue the tops to the bottoms.</p>
-<p>I then dr</p>
+<p>I then drilled 10 mm holes into my log in what I thought would appear to be a natural arrangement and fed the trailing LED leads through and then used more caulk to glue them in place. I also drilled and glued in place the light-dependent resistor near the back of the bark and the bare flickering LED right in the center. I left the underside of the amanita off for the time being – my vision was to make it big enough to cover the board underneath, so it needed to be glued in place as a final step.</p>
+<p>Next I started work on soldering the PCB. The main components here are the ESP32-C3 itself, one NPN2222a transistor for each LED (discussed a little more below), a pull-up resistor for the LDR, and trailing wires to power each LED pointing up away from the board so that they’d be long enough to solder to the trailing wires of the glued-in LEDs (This turned out to be a huge pain).</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/images/MushroomLamp_v1/PCBassembly.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="MushroomLamp_v1" title="Forgive my terrible soldering, I was still learning and didn’t yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top…"><img src="../assets/images/MushroomLamp_v1/PCBassembly.png" class="img-fluid figure-img" alt="Forgive my terrible soldering, I was still learning and didn’t yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top…"></a></p>
+<figcaption>Forgive my terrible soldering, I was still learning and didn’t yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top…</figcaption>
+</figure>
+</div>
+</div>
+<p>The NPN2222a transistors were my rudimentary attempt at performing level shifting. The GPIO data out voltage is 3.3 V – and in my testing, it made the LEDs just not quite as bright as I wanted them, even after messing around with different resistor levels. I decided to bump them up to 5 V by connecting the Vcc lead to the emitter pin of the transistor, and the GPIO data line connected to the base. This allowed the ESP32 to regulate the apparent brightness of the LED via PWM and increased the maximum brightness with the higher Vcc. A few days after I soldered all my transistors in place, I learned about the 74AHCT125 Level Shifter, which performs the same action with four input/output pin pairs and only one Vcc in and ground connection each; I felt a little bit like a fool for having wasted so much space on a big bulky PCB that could have been so much smaller – but that’s learning!</p>
+<p>Soldering the LEDs to their lead wires was a huge pain. In retrospect, I should have set it up with two-pronged plugs to make them just slot into place. Instead, I had to painstakingly squeeze the hot soldering iron between the PCB and the bark, being careful to not melt anything. It was a many-hours-long struggle and resulted in a huge mess of connections which are super prone to shorting out with small jostles… This was definitely the worst way I could have done it! Big notes to my future self with this!</p>
+<p>And finally, I assembled a little log cabin using some sticks and more caulk. My vision didn’t really come to reality – this thing doesn’t look all that good and I still haven’t actually glued it in place because I keep telling myself I’ll make a new one… I should probably just glue it down and call it done though.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/images/MushroomLamp_v1/Final.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="MushroomLamp_v1" title="The final product!"><img src="../assets/images/MushroomLamp_v1/Final.png" class="img-fluid figure-img" alt="The final product!"></a></p>
+<figcaption>The final product!</figcaption>
+</figure>
+</div>
+<p>I glued the board in place, covered it with the bottom portion of the amanita – and just like that, the physical components of the lamp were done! I next got started making a real light pattern.</p>
 </section>
 <section id="code" class="level2">
 <h2 class="anchored" data-anchor-id="code">Code</h2>
@@ -241,13 +276,17 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>I truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…</p></li>
 <li><p>This is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!</p></li>
-<li><p>A slightly more complicated coding fix would be to alter the brightness stepping function so that it better matches the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we perceive.</p></li>
-<li><p>I’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns.</p></li>
+<li><p>A slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.</p></li>
+<li><p>I’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard.</p></li>
 </ol>
 
 
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">Someday I’ll take a better final photo of this lamp…</span>
+<span class="glightbox-desc lightbox-desc-2">Testing the concept of the lamp, with really basic control via the ESP32.</span>
+<span class="glightbox-desc lightbox-desc-3">Drying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off.</span>
+<span class="glightbox-desc lightbox-desc-4">Forgive my terrible soldering, I was still learning and didn’t yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top…</span>
+<span class="glightbox-desc lightbox-desc-5">The final product!</span>
 </div>
 </section>
 
@@ -657,7 +696,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":true,"openEffect":"fade","closeEffect":"fade"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"fade","loop":true,"selector":".lightbox","openEffect":"fade"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

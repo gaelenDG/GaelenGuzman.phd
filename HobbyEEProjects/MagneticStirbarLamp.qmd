@@ -3,3 +3,15 @@ title: Magnetic Stirbar Lamp
 subtitle: Still a work-in-progress
 author: Gaelen Guzman
 ---
+
+:::{.border}
+![](/assets/images/MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
+:::
+
+:::{.border}
+![](/assets/images/MagneticStirbarLamp/Lights.jpeg){group="MagneticStirbarLamp"}
+:::
+
+:::{.border}
+![](/assets/images/MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
+:::

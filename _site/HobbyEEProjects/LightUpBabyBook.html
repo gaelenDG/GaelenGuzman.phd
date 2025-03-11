@@ -39,6 +39,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -125,10 +128,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../HobbyEEProjects/MagneticStirbarLamp.html">
  <span class="dropdown-text">Magnetic Stirbar Lamp</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../HobbyEEProjects/SunnysideElectricityPresentations/Electricity1_presentation.html">
- <span class="dropdown-text">Sunnyside Intro to Electronics #1</span></a>
-  </li>  
     </ul>
   </li>
 </ul>
@@ -180,6 +179,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="border">
+<p><a href="../assets/images/LightUpBabyBook/PatternTesting.mp4" class="lightbox" data-gallery="LightUpBabyBook"><video src="../assets/images/LightUpBabyBook/PatternTesting.mp4" class="img-fluid" controls=""></video></a><a href="../assets/images/LightUpBabyBook/PatternTesting.mp4">Video</a></p>
+</div>
+<div class="border">
+<p><a href="../assets/images/LightUpBabyBook/FrontCover_neopixels.png" class="lightbox" data-gallery="LightUpBabyBook"><img src="../assets/images/LightUpBabyBook/FrontCover_neopixels.png" class="img-fluid"></a></p>
+</div>
+<div class="border">
+<p><a href="../assets/images/LightUpBabyBook/LDRarray_front.png" class="lightbox" data-gallery="LightUpBabyBook"><img src="../assets/images/LightUpBabyBook/LDRarray_front.png" class="img-fluid"></a></p>
+</div>
+<div class="border">
+<p><a href="../assets/images/LightUpBabyBook/LDRarray.png" class="lightbox" data-gallery="LightUpBabyBook"><img src="../assets/images/LightUpBabyBook/LDRarray.png" class="img-fluid"></a></p>
+</div>
 
 
 
@@ -589,6 +600,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"fade","descPosition":"bottom","openEffect":"fade","loop":true});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

@@ -40,8 +40,8 @@ website:
             text: "Mushroom Lamp v2"
           - href: HobbyEEProjects/MagneticStirbarLamp.qmd
             text: "Magnetic Stirbar Lamp"
-          - href: HobbyEEProjects/SunnysideElectricityPresentations/Electricity1_presentation.qmd
-            text: "Sunnyside Intro to Electronics #1"
+          # - href: HobbyEEProjects/SunnysideElectricityPresentations/Electricity1_presentation.qmd
+          #   text: "Sunnyside Intro to Electronics #1"
   sidebar: true 
   page-navigation: true
   page-footer:

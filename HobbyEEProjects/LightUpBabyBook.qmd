@@ -4,3 +4,19 @@ subtitle: Still a work-in-progress
 author: Gaelen Guzman
 ---
 
+:::{.border}
+![](/assets/images/LightUpBabyBook/PatternTesting.mp4){group="LightUpBabyBook"}
+:::
+
+:::{.border}
+![](/assets/images/LightUpBabyBook/FrontCover_neopixels.png){group="LightUpBabyBook"}
+:::
+
+:::{.border}
+![](/assets/images/LightUpBabyBook/LDRarray_front.png){group="LightUpBabyBook"}
+:::
+
+:::{.border}
+![](/assets/images/LightUpBabyBook/LDRarray.png){group="LightUpBabyBook"}
+:::
+
