@@ -5,13 +5,13 @@ author: Gaelen Guzman
 ---
 
 :::{.border}
-![](/assets/images/MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
+![Testing the use of the potentiometer to control the motor speed via PWM.](/assets/images/MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
 :::
 
 :::{.border}
-![](/assets/images/MagneticStirbarLamp/Lights.jpeg){group="MagneticStirbarLamp"}
+![A NeoPixel chain to play with light patterns.](/assets/images/MagneticStirbarLamp/Lights.jpeg){group="MagneticStirbarLamp"}
 :::
 
 :::{.border}
-![](/assets/images/MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
+![Testing the capacitive touch sensor and light patterns with a testing board.](/assets/images/MagneticStirbarLamp/Lights_testing.mp4){group="MagneticStirbarLamp"}
 :::
