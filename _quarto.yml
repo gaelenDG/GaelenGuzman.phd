@@ -18,7 +18,7 @@ website:
   title: "Gaelen Guzman"
   repo-url: https://github.com/gaelenDG/GaelenGuzman.github.io
   repo-actions: [source, issue]
-  favicon: assets/images/glasses-solid.svg
+  favicon: assets/images/glasses-solid.png
   navbar:
     pinned: true
     logo: assets/images/glasses-solid.png
