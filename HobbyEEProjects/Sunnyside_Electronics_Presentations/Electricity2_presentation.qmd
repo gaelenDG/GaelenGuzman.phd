@@ -3,7 +3,7 @@ title: Resistor Flex part 2
 subtitle: How to use computers to build devices!
 author: Gaelen Guzman
 date: 2025-03-25
-image: Pictures/Presentation2_featured.png
+image: Pictures/Presentation2_featured.gif
 
 format:
   revealjs:
@@ -46,6 +46,8 @@ format:
 
 
 # You can use a computer to control a circuit
+
+![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/icegif-4382.gif){fig-align="center"}
 
 ## Example 1: A blinking LED
 

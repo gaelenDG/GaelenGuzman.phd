@@ -18,7 +18,7 @@ I embedded a series of AdaFruit NeoPixels in a series of "mushrooms" consisting 
 
 The whole project was donated to Becca's classroom for interactive learning about hobby electronics.
 
-![Final product!](/assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4){group="MushroomLamp_v2"}
+![Final product!](MushroomLamp_v2/ButtonDebound_testing.mp4){group="MushroomLamp_v2"}
 
 ## Materials & Components
 
@@ -38,16 +38,16 @@ The whole project was donated to Becca's classroom for interactive learning abou
 ::: gallery
 ::: column-body
 
-![](/assets/images/MushroomLamp_v2/CenterShroom_testing.png){width="100%" group="MushroomLamp_v2"}
+![](MushroomLamp_v2/CenterShroom_testing.png){width="100%" group="MushroomLamp_v2"}
 
-![](/assets/images/MushroomLamp_v2/WiringUnderneath.png){group="MushroomLamp_v2"}
+![](MushroomLamp_v2/WiringUnderneath.png){group="MushroomLamp_v2"}
 
-![](/assets/images/MushroomLamp_v2/SideShrooms_testing.png){group="MushroomLamp_v2"}
+![](MushroomLamp_v2/SideShrooms_testing.png){group="MushroomLamp_v2"}
 
 :::
 :::
 
-![](/assets/images/MushroomLamp_v2/Pattern_testing.mp4){group="MushroomLamp_v2"}
+![](MushroomLamp_v2/Pattern_testing.mp4){group="MushroomLamp_v2"}
 
 ## Code
 
