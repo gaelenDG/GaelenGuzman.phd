@@ -1,8 +1,9 @@
 ---
-title: Electricity part 2
-subtitle: Probably more electrical engineering than you asked for ¯\\_(ツ)_/¯
+title: Resistor Flex part 2
+subtitle: How to use computers to build devices!
 author: Gaelen Guzman
-date: 2/27/25
+date: 2025-03-25
+image: Pictures/Presentation2_featured.png
 
 format:
   revealjs:
@@ -42,7 +43,6 @@ format:
 :::
 
 ## Resistors
-
 
 
 # You can use a computer to control a circuit
@@ -180,15 +180,15 @@ void loop() {
 :::
 
 ::: {.fragment .fade-in-then-out fragment-index="2"}
-![](/Pictures/Silicone_pic.png)
+![](Pictures/Silicone_pic.png)
 :::
 
 ::: {.fragment .fade-in-then-out fragment-index="3"}
-![](/Pictures/NeoPixel_pic.png)
+![](Pictures/NeoPixel_pic.png)
 :::
 
 ::: {.fragment .fade-in-then-out fragment-index="4"}
-![](/Pictures/ESP32_pic.png)
+![](Pictures/ESP32_pic.png)
 :::
 
 :::{.fragment .fade-in fragment-index="5"}

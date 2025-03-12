@@ -2,7 +2,8 @@
 title: Resistor Flex
 subtitle: Control the Flow Like a Pro ¯\\_(ツ)_/¯
 author: Gaelen Guzman
-date: 2/27/25
+date: 2025-03-18
+image: /HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/Presentation1_featured.gif
 
 format:
   revealjs:
@@ -18,6 +19,16 @@ format:
 ---
 
 # What is electricity??
+
+:::::{columns}
+
+::::{.column width="50%"}
+![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/LightningBolt.gif)
+::::
+
+::::{.column width="50%"}
+::::
+:::::
 
 ## Electricity is made of moving charged particles
 

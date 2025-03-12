@@ -72,49 +72,49 @@
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-is-an-electric-circuit",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-is-an-electric-circuit",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "What is an electric circuit?",
     "text": "What is an electric circuit?\n\n\nVoltage\nCurrent\nResistance"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#lights",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#lights",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "Lights!",
     "text": "Lights!\n\n\nIncandescent\nLED"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#resistors",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#resistors",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "Resistors",
     "text": "Resistors"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-1-a-blinking-led",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-1-a-blinking-led",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "Example 1: A blinking LED",
     "text": "Example 1: A blinking LED\n\n// Tell the computer where the LED is\n#define LED_PIN 4 // The LED is on pin \"5\"\n\n// the setup function runs once when you press reset or power the board\nvoid setup() {\n  // initialize digital pin LED_BUILTIN as an output.\n  pinMode(LED_PIN, OUTPUT);\n\n}\n\n// the loop function runs over and over again forever\nvoid loop() {\n  digitalWrite(LED_PIN, HIGH);  // turn the LED on (voltage HIGH)\n  delay(1000);                      // wait for 1 second\n  digitalWrite(LED_PIN, LOW);   // turn the LED off (voltage LOW)\n  delay(1000); \n                       // wait for 1 second\n}"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-2-use-a-button-to-control-an-led",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-2-use-a-button-to-control-an-led",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "Example 2: Use a button to control an LED",
     "text": "Example 2: Use a button to control an LED\n\n// Tell the computer where the button and the LED are.\n#define BUTTON_PIN 0  // The button is on pin \"0\"\n#define LED_PIN 4     // The LED is on pin \"5\"\n\n// Setup runs when the computer turns on\nvoid setup() {\n\n  // Tell the computer what to do with the button and LED\n  pinMode(BUTTON_PIN, INPUT);  // Button with pull-up\n  pinMode(LED_PIN, OUTPUT);    // LED for feedback\n\n  digitalWrite(LED_PIN, LOW);  // Start with LED off\n\n}\n\n// the loop function runs over and over again forever\nvoid loop() {\n\n  // If the Button is pressed, turn LED on\n  if (digitalRead(BUTTON_PIN) == HIGH) {  \n    digitalWrite(LED_PIN, HIGH);   // Turn LED on\n  }\n  // If the Button is NOT pressed, turn LED off\n  if (digitalRead(BUTTON_PIN) == LOW) {\n    digitalWrite(LED_PIN, LOW);     // Turn LED off\n  }\n\n}"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-3-use-a-potentiometer-to-control-an-leds-brightness",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-3-use-a-potentiometer-to-control-an-leds-brightness",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "Example 3: Use a potentiometer to control an LED’s brightness",
     "text": "Example 3: Use a potentiometer to control an LED’s brightness\n\n#include &lt;Arduino.h&gt;\n\n// Tell the computer where the potentiometer and LED are\n#define Potentiometer_Pin 3 // The potentiometer is on pin \"3\"\n#define LED_PIN 4 // The LED is on pin \"5\"\n\n// Some information to help the computer make the LED's brightness adjustable \nconst int LEDC_CHANNEL = 0;     // Use PWM channel 0\nconst int LEDC_TIMER_BIT = 8;   // 8-bit resolution (0-255)\nconst int LEDC_BASE_FREQ = 5000; // 5 kHz frequency\n\n// Run the startup instructions for the computer\nvoid setup() {\n\n  // Tell the computer what to do with the LED\n  ledcSetup(LEDC_CHANNEL, LEDC_BASE_FREQ, LEDC_TIMER_BIT);\n  ledcAttachPin(LED_PIN, LEDC_CHANNEL);\n\n  // Apply a brightness of \"0\" to the LED to start\n  ledcWrite(LEDC_CHANNEL, 0);  // Apply PWM value to LED strand\n\n}\n\n// Instructions to repeat over and over\nvoid loop() {\n\n  // read the value from the potentiometer:\n  int potValue = analogRead(Potentiometer_Pin); // Read the potentiometer value, save it\n\n  int LEDbrightness = map(abs(potValue), 0, 4095, 0, 255); // Convert the potentiometer value to a brightness\n\n  // Turn on the LED at the calculated brightness level \n  ledcWrite(LEDC_CHANNEL, LEDbrightness); \n\n}"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
-    "title": "Electricity part 2",
+    "title": "Resistor Flex part 2",
     "section": "The main components of the mushroom lamp",
     "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)\n\n\n\n\n\n\n\n\n\n\n\n(Need a pic of the level shifter)"
   },
@@ -249,7 +249,7 @@
     "href": "HobbyEEProjects/index.html",
     "title": "Hobby Electronics Projects",
     "section": "",
-    "text": "Electricity part 2\n\n\nProbably more electrical engineering than you asked for ¯\\(ツ)/¯\n\n\n\n\n\n\n\n\nFeb 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\nControl the Flow Like a Pro ¯\\(ツ)/¯\n\n\n\n\n\n\n\n\nFeb 27, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
+    "text": "Resistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\nControl the Flow Like a Pro ¯\\(ツ)/¯\n\n\n\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
