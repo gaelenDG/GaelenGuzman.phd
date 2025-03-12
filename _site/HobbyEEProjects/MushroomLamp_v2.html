@@ -2,13 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.549">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Gaelen Guzman">
+<meta name="dcterms.date" content="2025-01-15">
+<meta name="description" content="I wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.">
 
-<title>Gaelen Guzman - Mushroom Lamp v2</title>
+<title>Mushroom Lamp v2 – Gaelen Guzman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,15 +32,16 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../assets/images/glasses-solid.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-a240eddbbdb8ddb17a7d6850d72db8bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -82,21 +85,24 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/glasses-solid.png" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Gaelen Guzman</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-classfa-solid-fa-flask-viali-research-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><i class="fa-solid fa-flask-vial"></i> Research Projects</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-classfa-regular-fa-vial-virusi-research-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text"><i class="fa-regular fa-vial-virus"></i> Research Projects</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfa-solid-fa-flask-viali-research-projects">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfa-regular-fa-vial-virusi-research-projects">    
         <li>
     <a class="dropdown-item" href="https://www.lipidinteractome.org" target="_blank">
  <span class="dropdown-text">The Lipid Interactome</span></a>
@@ -107,38 +113,21 @@ ul.task-list li input[type="checkbox"] {
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-i-classfa-solid-fa-microchipi-hobby-electronics-projects" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text"><i class="fa-solid fa-microchip"></i> Hobby Electronics Projects</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-i-classfa-solid-fa-microchipi-hobby-electronics-projects">    
-        <li>
-    <a class="dropdown-item" href="../HobbyEEProjects/MushroomLamp_v1.html">
- <span class="dropdown-text">Mushroom Lamp</span></a>
+  <li class="nav-item">
+    <a class="nav-link" href="../HobbyEEProjects/index.html"> <i class="bi bi-microchip" role="img">
+</i> 
+<span class="menu-text"><i class="fa-solid fa-microchip"></i> Hobby Electronics Projects</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../HobbyEEProjects/LightUpBabyBook.html">
- <span class="dropdown-text">Light-up Baby Book</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../HobbyEEProjects/MushroomLamp_v2.html">
- <span class="dropdown-text">Mushroom Lamp v2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../HobbyEEProjects/MagneticStirbarLamp.html">
- <span class="dropdown-text">Magnetic Stirbar Lamp</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../assets/cv/GaelenGuzman_Resume.pdf" target="_blank"> 
+    <a class="nav-link" href="../assets/cv/GaelenGuzman_Resume.pdf" target="_blank"> <i class="bi bi-person-lines-fill" role="img">
+</i> 
 <span class="menu-text">Resume</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -166,9 +155,13 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Mushroom Lamp v2</h1>
-<p class="subtitle lead">Revisiting the concept!</p>
 </div>
 
+<div>
+  <div class="description">
+    I wanted to take what I learned from my first little <a href="../HobbyEEProjects/MushroomLamp_v1.html">mushroom lamp</a> and build on it using the same Adafruit NeoPixels I used in the <a href="../HobbyEEProjects/LightUpBabyBook.html">baby book</a>. I was inspired when my friend, Becca, told me that her middle school class was <em>very</em> into mushrooms this year.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -180,6 +173,12 @@ ul.task-list li input[type="checkbox"] {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 15, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -198,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The whole project was donated to Becca’s classroom for interactive learning about hobby electronics.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="MushroomLamp_v2" title="Final product!"><video src="../assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4" class="img-fluid" controls=""></video></a><a href="../assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4">Final product!</a></p>
+<p><a href="../assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4" class="lightbox" data-gallery="MushroomLamp_v2" title="Final product!"><video src="../assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4" class="img-fluid" controls=""></video></a><a href="../assets/images/MushroomLamp_v2/ButtonDebound_testing.mp4">Final product!</a></p>
 <figcaption>Final product!</figcaption>
 </figure>
 </div>
@@ -242,9 +241,6 @@ ul.task-list li input[type="checkbox"] {
 <p>In theory, this lamp has the capacity for bluetooth and wifi connection – it would be cool to set it up with HomeAssistant so it can be controlled remotely. The GPIO pins of the ESP32 are also easily accessed, and it wouldn’t be difficult to add a light sensor or a microphone to make the lamp more responsive to the environment.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Final product!</span>
-</div>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
@@ -283,18 +279,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -326,7 +311,45 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -361,7 +384,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -409,7 +436,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -653,30 +679,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":true,"selector":".lightbox","descPosition":"bottom","closeEffect":"fade","openEffect":"fade"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":true,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 

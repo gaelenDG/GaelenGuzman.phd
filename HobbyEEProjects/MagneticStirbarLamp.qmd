@@ -1,17 +1,33 @@
 ---
 title: Magnetic Stirbar Lamp
-subtitle: Still a work-in-progress
+description: A lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. **Still a work in progress**
+date: "2025-01-31"
+image: /HobbyEEProjects/MagneticStirbarLamp/MagneticStirbarFeatured.png
 author: Gaelen Guzman
 ---
 
+## Overview
+
+My vision is a lamp that illuminates a spinning flask of liquid -- and maybe some floating iridescence! It will have a speed control dial to regulate the motor speed, and a capacitive touch sensor to cycle through different light patterns. I have aspirations of doing some woodworking to build the case/frame, though that is likely very far away at this point.
+
+## Components
+
+## Assembly
+
+So far this is such a work in progress that really all I have are tests that I've run to see if the basic components I have will work. The majority of this thing is currently just a salsa container, a destroyed baby bottle, and the cap to a bottle of orange juice -- so really it's currently a literal pile of trash.
+
 :::{.border}
-![Testing the use of the potentiometer to control the motor speed via PWM.](/assets/images/MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
+![Testing the use of the potentiometer to control the motor speed via PWM. I suspect this motor isn't going to be good enough -- its torque is just too weak, and it doesn't start spinning until like it's at >50% of it PWM power.](MagneticStirbarLamp/PotAndMotorDriver_testing.mp4){group="MagneticStirbarLamp"}
 :::
 
 :::{.border}
-![A NeoPixel chain to play with light patterns.](/assets/images/MagneticStirbarLamp/Lights.jpeg){group="MagneticStirbarLamp"}
+![A NeoPixel chain to play with light patterns.](MagneticStirbarLamp/Lights.jpeg){group="MagneticStirbarLamp"}
 :::
 
 :::{.border}
-![Testing the capacitive touch sensor and light patterns with a testing board.](/assets/images/MagneticStirbarLamp/Lights_testing.mp4){group="MagneticStirbarLamp"}
+![Testing the capacitive touch sensor and light patterns with a testing board.](MagneticStirbarLamp/Lights_testing.mp4){group="MagneticStirbarLamp"}
 :::
+
+## Code
+
+## Future Improvements

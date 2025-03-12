@@ -1,22 +1,22 @@
 ---
 title: Mushroom Lamp v1
-subtitle: Dipping my toes into hobby electronics
+description: This little nightlight looks like a small grove of mushrooms growing out of a log -- during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.
+date: "2024-10-10"
+image: MushroomLamp_v1/Final.png
 author: Gaelen Guzman
 ---
 
 :::{.border}
-![Someday I'll take a better final photo of this lamp...](/assets/images/MushroomLamp_v1/Final.png){group="MushroomLamp_v1"}
+![Someday I'll take a better final photo of this lamp...](MushroomLamp_v1/Final.png){group="MushroomLamp_v1"}
 :::
 
 </br>
 
 ## Overview
 
-This little nightlight looks like a small grove of mushrooms growing out of a log -- during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.
-
 I was inspired by this [video by DIY Perks](https://www.youtube.com/watch?v=D5LjGFkpApw){target="_blank"} on using silicone caulk to craft mushrooms with embedded LEDs -- but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!
 
-While the physical structure of the lamp is complete, I'm still working on incorporating an MQTT connection to HomeAssistant -- that way I can cycle through different light patterns!
+While the physical structure of the lamp is complete, I'm still working on incorporating an MQTT connection to HomeAssistant -- that way I can cycle through different light patterns from a dashboard!
 
 ## Materials & Components
 
@@ -33,7 +33,7 @@ While the physical structure of the lamp is complete, I'm still working on incor
 ## Assembly
 
 :::{.border}
-![Testing the concept of the lamp, with really basic control via the ESP32.](/assets/images/MushroomLamp_v1/Concept.png){group="MushroomLamp_v1"}
+![Testing the concept of the lamp, with really basic control via the ESP32.](MushroomLamp_v1/Concept.png){group="MushroomLamp_v1"}
 :::
 
 </br>
@@ -43,7 +43,7 @@ Next, I soldered the LEDs to power lines -- I decided to directly integrate the 
 I then crafted the mushroom stalks using the silicone caulk: I squirted a line of some caulk out onto some plastic film, added a small amount of dye to make nice colors, and squashed the LEDs into the line. By folding the plastic wrap over and kneading carefully, I got the wires embedded in the center of the caulk and a mostly round cross-section.
 
 :::{.border}
-![Drying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off.](/assets/images/MushroomLamp_v1/SiliconeMolding.png){group="MushroomLamp_v1"}
+![Drying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off.](MushroomLamp_v1/SiliconeMolding.png){group="MushroomLamp_v1"}
 :::
 
 </br>
@@ -55,7 +55,7 @@ I then drilled 10 mm holes into my log in what I thought would appear to be a na
 Next I started work on soldering the PCB. The main components here are the ESP32-C3 itself, one NPN2222a transistor for each LED (discussed a little more below), a pull-up resistor for the LDR, and trailing wires to power each LED pointing up away from the board so that they'd be long enough to solder to the trailing wires of the glued-in LEDs (This turned out to be a huge pain).
 
 :::{.border}
-![Forgive my terrible soldering, I was still learning and didn't yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top...](/assets/images/MushroomLamp_v1/PCBassembly.png){group="MushroomLamp_v1"}
+![Forgive my terrible soldering, I was still learning and didn't yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top...](MushroomLamp_v1/PCBassembly.png){group="MushroomLamp_v1"}
 :::
 
 The NPN2222a transistors were my rudimentary attempt at performing level shifting. The GPIO data out voltage is 3.3 V -- and in my testing, it made the LEDs just not quite as bright as I wanted them, even after messing around with different resistor levels. I decided to bump them up to 5 V by connecting the Vcc lead to the emitter pin of the transistor, and the GPIO data line connected to the base. This allowed the ESP32 to regulate the apparent brightness of the LED via PWM and increased the maximum brightness with the higher Vcc. A few days after I soldered all my transistors in place, I learned about the 74AHCT125 Level Shifter, which performs the same action with four input/output pin pairs and only one Vcc in and ground connection each; I felt a little bit like a fool for having wasted so much space on a big bulky PCB that could have been so much smaller -- but that's learning!
@@ -64,7 +64,7 @@ Soldering the LEDs to their lead wires was a huge pain. In retrospect, I should 
 
 And finally, I assembled a little log cabin using some sticks and more caulk. My vision didn't really come to reality -- this thing doesn't look all that good and I still haven't actually glued it in place because I keep telling myself I'll make a new one... I should probably just glue it down and call it done though.
 
-![The final product!](/assets/images/MushroomLamp_v1/Final.png){group="MushroomLamp_v1"}
+![The final product!](MushroomLamp_v1/Final.png){group="MushroomLamp_v1"}
 
 I glued the board in place, covered it with the bottom portion of the amanita -- and just like that, the physical components of the lamp were done! I next got started making a real light pattern.
 

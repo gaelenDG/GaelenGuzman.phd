@@ -1,0 +1,17 @@
+---
+title: "Hobby Electronics Projects"
+description-meta: "Projects, tinkering, and microcontroller fiddling"
+listing:
+  contents: .
+  type: default
+  image-align: left
+  fields:
+    - title
+    - description
+    - date
+    - image
+  sort: "date desc"
+  page-size: 10
+format: 
+  html
+---

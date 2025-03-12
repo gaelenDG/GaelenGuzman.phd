@@ -1,6 +1,8 @@
 ---
 title: Mushroom Lamp v2
-subtitle: Revisiting the concept!
+description: I wanted to take what I learned from my first little [mushroom lamp](/HobbyEEProjects/MushroomLamp_v1.qmd) and build on it using the same Adafruit NeoPixels I used in the [baby book](/HobbyEEProjects/LightUpBabyBook.qmd). I was inspired when my friend, Becca, told me that her middle school class was *very* into mushrooms this year.
+date: 2025-01-15
+image: /HobbyEEProjects/MushroomLamp_v2/MushroomLamp_v2_featured.png
 author: Gaelen Guzman
 ---
 
@@ -41,7 +43,6 @@ The whole project was donated to Becca's classroom for interactive learning abou
 ![](/assets/images/MushroomLamp_v2/WiringUnderneath.png){group="MushroomLamp_v2"}
 
 ![](/assets/images/MushroomLamp_v2/SideShrooms_testing.png){group="MushroomLamp_v2"}
-
 
 :::
 :::

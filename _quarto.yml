@@ -1,5 +1,10 @@
 project:
   type: website
+  preview:
+    port: 4321
+    browser: true
+execute: 
+  freeze: auto
   render:
     - "*.qmd"
     - "HobbyEEProjects/*.qmd"
@@ -13,16 +18,17 @@ website:
   title: "Gaelen Guzman"
   repo-url: https://github.com/gaelenDG/GaelenGuzman.github.io
   repo-actions: [source, issue]
-  # favicon: assets/images/icon.svg
+  favicon: assets/images/glasses-solid.svg
   navbar:
     pinned: true
-    # logo: assets/images/logo.png
+    logo: assets/images/glasses-solid.png
     right:
       - text: "Resume"
+        icon: person-lines-fill
         href: assets/cv/GaelenGuzman_Resume.pdf
         target: "_blank"
     left: 
-      - text: "<i class='fa-solid fa-flask-vial'></i> Research Projects"
+      - text: "<i class='fa-regular fa-vial-virus'></i> Research Projects"
         menu:
           - text: "The Lipid Interactome"
             href: https://www.lipidinteractome.org
@@ -31,17 +37,19 @@ website:
             href: https://guzmangadissertation.netlify.app
             target: "_blank"
       - text: "<i class='fa-solid fa-microchip'></i> Hobby Electronics Projects"
-        menu:
-          - href: HobbyEEProjects/MushroomLamp_v1.qmd
-            text: "Mushroom Lamp"
-          - href: HobbyEEProjects/LightUpBabyBook.qmd
-            text: "Light-up Baby Book"
-          - href: HobbyEEProjects/MushroomLamp_v2.qmd
-            text: "Mushroom Lamp v2"
-          - href: HobbyEEProjects/MagneticStirbarLamp.qmd
-            text: "Magnetic Stirbar Lamp"
-          # - href: HobbyEEProjects/SunnysideElectricityPresentations/Electricity1_presentation.qmd
-          #   text: "Sunnyside Intro to Electronics #1"
+        icon: microchip
+        href: HobbyEEProjects/index.qmd
+        # menu:
+        #   - href: HobbyEEProjects/MushroomLamp_v1.qmd
+        #     text: "Mushroom Lamp"
+        #   - href: HobbyEEProjects/LightUpBabyBook.qmd
+        #     text: "Light-up Baby Book"
+        #   - href: HobbyEEProjects/MushroomLamp_v2.qmd
+        #     text: "Mushroom Lamp v2"
+        #   - href: HobbyEEProjects/MagneticStirbarLamp.qmd
+        #     text: "Magnetic Stirbar Lamp"
+        #   - href: HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.qmd
+        #     text: "Sunnyside Middle School Intro to Electronics #1"
   sidebar: true 
   page-navigation: true
   page-footer:

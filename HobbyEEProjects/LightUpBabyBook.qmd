@@ -1,22 +1,50 @@
 ---
 title: Light-up Baby Book
-subtitle: Still a work-in-progress
+description: "This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children's story!"
+date: "2024-11-20"
+image: /HobbyEEProjects/LightUpBabyBook/LightUpBabyBookFeatured.gif
 author: Gaelen Guzman
 ---
 
+## Overview
+
+This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children's story! 
+
+I started working on this about 4 months ago, with long pauses. I recently revisited the code to refactor and reorganize things -- a big part of why this project was sitting idle was that the code was so unreadable that I couldn't get myself to work on it.
+
+The story is still a work in progress, so check back soon and hopefully I will have more updates!
+
+## Materials, Components, & Tools
+
+* Cardstock (varying thicknesses)
+* An ESP32c3 supermini microcontroller
+* A 74AHCT125 level shifter (to convert the 3.3 V data out to 5 V)
+* 5x light-dependent resistors (LDR)
+* A 10 k&ohm; pull-up resistor for the LDRs
+* 2x 470 &ohm; resistors (for the NeoPixel data lines)
+* A 5 mm hole punch
+* A crafting knife
+* Super glue
+
+## Assembly
+
 :::{.border}
-![](/assets/images/LightUpBabyBook/PatternTesting.mp4){group="LightUpBabyBook"}
+![](LightUpBabyBook/PatternTesting.mp4){group="LightUpBabyBook"}
 :::
 
 :::{.border}
-![](/assets/images/LightUpBabyBook/FrontCover_neopixels.png){group="LightUpBabyBook"}
+![](LightUpBabyBook/FrontCover_neopixels.png){group="LightUpBabyBook"}
 :::
 
 :::{.border}
-![](/assets/images/LightUpBabyBook/LDRarray_front.png){group="LightUpBabyBook"}
+![](LightUpBabyBook/LDRarray_front.png){group="LightUpBabyBook"}
 :::
 
 :::{.border}
-![](/assets/images/LightUpBabyBook/LDRarray.png){group="LightUpBabyBook"}
+![](LightUpBabyBook/LDRarray.png){group="LightUpBabyBook"}
 :::
+
+## Code
+
+## Future Improvements
 
