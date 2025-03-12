@@ -28,18 +28,25 @@
     "text": "Education\n\n\n\n\n\n\n\n\n2017 - 2024\nPhD, Microbiology and Immunology from Oregon Health & Science University\n Portland, OR\n\n\n2010 - 2014\nBS, Molecular Biology from Massachusetts Institute of Technology\n Cambridge, MA"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-moving-charged-particles",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-moving-charged-particles",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
     "title": "Resistor Flex",
-    "section": "Electricity is moving charged particles",
-    "text": "Electricity is moving charged particles\n\nEvery atom is made of particles\n\n\nProtons\nNeutrons\nElectrons"
+    "section": "Electricity is made of moving charged particles",
+    "text": "Electricity is made of moving charged particles\n\nEvery atom is made of particles\n\n\nProtons\nNeutrons\nElectrons"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-moving-charged-particles-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-moving-charged-particles-1",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles-1",
     "title": "Resistor Flex",
-    "section": "Electricity is moving charged particles",
-    "text": "Electricity is moving charged particles\n\n\n\n\n\nhigh potential -&gt; low potential\nMoves energy that can perform work\n\n\n\n\nhigh potential -&gt; low potential,\nMoves energy that can perform work\n\n\n\n\n\n\n\n\n\nCan pretend it’s like water!"
+    "section": "Electricity is made of moving charged particles",
+    "text": "Electricity is made of moving charged particles\n\n\n\n\n\nhigh potential -&gt; low potential\nMoves energy that can perform work\n\n\n\n\nhigh potential -&gt; low potential,\nMoves energy that can perform work\n\n\n\n\n\n\n\n\n\nCan pretend it’s like water!"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
+    "title": "Resistor Flex",
+    "section": "Electrons go the opposite way? Confusing!",
+    "text": "Electrons go the opposite way? Confusing!\nBenjamin Franklin didn’t know what electrons were: he guessed which way the charge was moving – and he guessed wrong!\n\n(but luckily it doesn’t change how the circuit works)"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-electricity-do-stuff",
@@ -103,6 +110,34 @@
     "title": "Resistor Flex",
     "section": "Hands on! LED Circuit #4",
     "text": "Hands on! LED Circuit #4\n\n\n\n5 V power supply\nLED\nBreadboard\nResistor\nLight dependent resistor"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
+    "title": "Resistor Flex",
+    "section": "",
+    "text": "Series\nOnly one path for the current to go.\n\n\nParallel\nMultiple ways to get back to the negative terminal."
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
+    "title": "Resistor Flex",
+    "section": "How does current behave in a series circuit?",
+    "text": "How does current behave in a series circuit?"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-parallel-circuit",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-parallel-circuit",
+    "title": "Resistor Flex",
+    "section": "How does current behave in a parallel circuit?",
+    "text": "How does current behave in a parallel circuit?"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-night-light",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-night-light",
+    "title": "Resistor Flex",
+    "section": "Hands on! Night light",
+    "text": "Hands on! Night light\n\n\n\n5 V power supply\nLED\nBreadboard\n1x 470 Ω resistor\n1x 100 kΩ resistor\nLight dependent resistor\nNPN transistor\nJumper cables"
   },
   {
     "objectID": "HobbyEEProjects/MushroomLamp_v1.html",

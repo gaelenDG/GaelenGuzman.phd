@@ -19,7 +19,7 @@ format:
 
 # What is electricity??
 
-## Electricity is moving charged particles
+## Electricity is made of moving charged particles
 
 </br> 
 
@@ -34,7 +34,7 @@ Every atom is made of particles
 ![](Pictures/atom.png){.absolute top="300" right="70" height=400}
 
 
-## Electricity is moving charged particles
+## Electricity is made of moving charged particles
 
 ::::columns
 
@@ -70,8 +70,15 @@ Can pretend it's like water!
 :::
 ::::
 
-## How does electricity do stuff?
+## Electrons go the opposite way? Confusing! 
 
+Benjamin Franklin didn't know what electrons were: he guessed which way the charge was moving -- and he guessed wrong!
+
+![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/wire-conventional-current.png){fig-align="center" .r-stretch}
+
+(but luckily it doesn't change how the circuit works)
+
+## How does electricity do stuff?
 
 :::::{.columns}
 :::{.v-center-container}
@@ -267,5 +274,63 @@ Resistors help limit the current of the
 
 :::{.column width="60%"}
 ![](  Pictures/HandsOn_4.svg){height=500}
+:::
+:::::
+
+
+# Types of circuits
+
+## 
+:::::{.columns}
+
+::::{.column width="50%"}
+
+### Series
+
+Only one path for the current to go.
+
+![](Pictures/Series.png){.absolute top=210 left=-75 width="600"}
+
+
+::::
+
+::::{.column width="50%"}
+
+### Parallel
+
+Multiple ways to get back to the negative terminal.
+
+![](Pictures/Parallel.png){.absolute top=150 right=-100 width="750"}
+
+::::
+:::::
+
+## How does current behave in a series circuit?
+
+![](Pictures/Series-Circuit-Following-Current.gif){fig-align="center"}
+
+## How does current behave in a parallel circuit?
+
+![](Pictures/Parallel-Circuit-Following-Current-1.gif){fig-align="center"}
+
+## Hands on! Night light
+
+::::: {.columns}
+
+::: {.column width="40%"}
+
+- 5 V power supply 
+- LED
+- Breadboard
+- 1x 470 &ohm; resistor
+- 1x 100 k&ohm; resistor
+- Light dependent resistor
+- NPN transistor
+- Jumper cables
+
+:::
+
+:::{.column width="60%"}
+![](  Pictures/HandsOn_5.svg){height=500}
 :::
 :::::
