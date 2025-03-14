@@ -23,9 +23,9 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.6857143"
-     inkscape:cx="110.04237"
-     inkscape:cy="70"
+     inkscape:zoom="1.756093"
+     inkscape:cx="85.701612"
+     inkscape:cy="77.444646"
      inkscape:window-width="1312"
      inkscape:window-height="449"
      inkscape:window-x="0"
@@ -34,10 +34,10 @@
      inkscape:current-layer="svg15" />
   <line
      x1="60"
-     y1="40"
+     y1="46.012871"
      x2="60"
-     y2="50"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="56.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line1" />
   <line
      x1="160"
@@ -46,84 +46,67 @@
      y2="50"
      style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
      id="line2" />
-  <g
-     id="g15"
-     transform="matrix(1,0,0,-1,0,118.76393)">
-    <path
-       d="m 160,58 m -8,0 h 16 m -8,0 8,15 h -16 l 8,-15"
-       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
-       id="path2" />
-    <path
-       d="m 160,60 m 11,2 8,-8 m 1,-1 -2,4 -2,-2 4,-2 -2,4"
-       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
-       id="path3" />
-    <path
-       d="m 160,60 m 4,-4 8,-8 m 1,-1 -2,4 -2,-2 4,-2 -2,4"
-       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
-       id="path4" />
-  </g>
   <line
      x1="60"
-     y1="20"
+     y1="20.259464"
      x2="60"
-     y2="40"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="45.448742"
+     style="stroke:#000000;stroke-width:2.24452;stroke-linecap:square"
      id="line4" />
   <line
      x1="60"
-     y1="50"
+     y1="56.012871"
      x2="60"
-     y2="51"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="57.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line5" />
   <line
      x1="50"
-     y1="51"
+     y1="57.012871"
      x2="70"
-     y2="51"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="57.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line6" />
   <line
      x1="55"
-     y1="57"
+     y1="63.012871"
      x2="65"
-     y2="57"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="63.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line7" />
   <line
      x1="50"
-     y1="63"
+     y1="69.012871"
      x2="70"
-     y2="63"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="69.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line8" />
   <line
      x1="55"
-     y1="69"
+     y1="75.012871"
      x2="65"
-     y2="69"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="75.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line9" />
   <line
      x1="60"
-     y1="69"
+     y1="75.012871"
      x2="60"
-     y2="70"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="76.012871"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line10" />
   <text
      x="46"
-     y="60"
-     style="font-family:Arial;font-size:12px;text-anchor:end"
+     y="66.012871"
+     style="font-size:12px;font-family:Arial;text-anchor:end"
      dominant-baseline="middle"
-     transform="rotate(0, 46, 60)"
      id="text10">+3V</text>
   <line
-     x1="60"
-     y1="70"
-     x2="60"
-     y2="110"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     x1="59.619453"
+     y1="77.058243"
+     x2="59.619453"
+     y2="110.17215"
+     style="stroke:#000000;stroke-width:1.81972;stroke-linecap:square"
      id="line11" />
   <line
      x1="60"
@@ -153,4 +136,70 @@
      y2="20"
      style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
      id="line15" />
+  <g
+     id="g15"
+     transform="matrix(1,0,0,-1,0,124.06552)">
+    <path
+       d="m 160,58 m -8,0 h 16 m -8,0 8,15 h -16 l 8,-15"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
+       id="path2" />
+    <path
+       d="m 160,60 m 11,2 8,-8 m 1,-1 -2,4 -2,-2 4,-2 -2,4"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
+       id="path3" />
+    <path
+       d="m 160,60 m 4,-4 8,-8 m 1,-1 -2,4 -2,-2 4,-2 -2,4"
+       style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
+       id="path4" />
+  </g>
+  <g
+     id="g1"
+     transform="translate(0.80216,6.957703)">
+    <path
+       d="m 142.42038,73.273068 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+    <path
+       d="m 142.73288,68.585568 h 1.875 c 0.41667,0 0.41667,0.625 0,0.625 h -1.875 -0.625 -1.875 c -0.41667,0 -0.41667,-0.625 0,-0.625 h 1.875"
+       id="path2-0"
+       sodipodi:nodetypes="cssccssc"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+  </g>
+  <g
+     id="g2"
+     transform="translate(0,8.957703)">
+    <path
+       d="m 143.22254,42.928647 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1-4"
+       style="fill:#ff0000;stroke-width:0.625" />
+    <path
+       d="m 143.22254,36.053647 a 0.3125,0.3125 0 0 1 0.3125,0.3125 v 1.875 h 1.875 a 0.3125,0.3125 0 0 1 0,0.625 h -1.875 v 1.875 a 0.3125,0.3125 0 0 1 -0.625,0 v -1.875 h -1.875 a 0.3125,0.3125 0 0 1 0,-0.625 h 1.875 v -1.875 a 0.3125,0.3125 0 0 1 0.3125,-0.3125"
+       id="path2-08"
+       style="fill:#ff0000;stroke-width:0.625" />
+  </g>
+  <g
+     id="g2-2"
+     transform="translate(-66.525931,11.489634)">
+    <path
+       d="m 142.42038,73.273068 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1-8"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+    <path
+       d="m 142.73288,68.585568 h 1.875 c 0.41667,0 0.41667,0.625 0,0.625 h -1.875 -0.625 -1.875 c -0.41667,0 -0.41667,-0.625 0,-0.625 h 1.875"
+       id="path2-0-3"
+       sodipodi:nodetypes="cssccssc"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+  </g>
+  <g
+     id="g3"
+     transform="translate(-67.328091,11.489634)">
+    <path
+       d="m 143.22254,42.928647 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1-4-8"
+       style="fill:#ff0000;stroke-width:0.625" />
+    <path
+       d="m 143.22254,36.053647 a 0.3125,0.3125 0 0 1 0.3125,0.3125 v 1.875 h 1.875 a 0.3125,0.3125 0 0 1 0,0.625 h -1.875 v 1.875 a 0.3125,0.3125 0 0 1 -0.625,0 v -1.875 h -1.875 a 0.3125,0.3125 0 0 1 0,-0.625 h 1.875 v -1.875 a 0.3125,0.3125 0 0 1 0.3125,-0.3125"
+       id="path2-08-4"
+       style="fill:#ff0000;stroke-width:0.625" />
+  </g>
 </svg>

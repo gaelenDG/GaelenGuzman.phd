@@ -23,13 +23,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="4.5742803"
-     inkscape:cx="154.45053"
-     inkscape:cy="103.84147"
+     inkscape:zoom="3.8612486"
+     inkscape:cx="107.3487"
+     inkscape:cy="116.02465"
      inkscape:window-width="1920"
      inkscape:window-height="895"
      inkscape:window-x="0"
-     inkscape:window-y="97"
+     inkscape:window-y="69"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg19" />
   <line
@@ -74,10 +74,10 @@
      id="path4" />
   <line
      x1="60"
-     y1="110"
+     y1="114.94538"
      x2="60"
-     y2="150"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="150.12193"
+     style="stroke:#000000;stroke-width:1.87554;stroke-linecap:square"
      id="line4" />
   <line
      x1="160"
@@ -95,7 +95,7 @@
      id="line6" />
   <g
      id="g19"
-     transform="matrix(1,0,0,-1,0,198.76393)">
+     transform="matrix(1,0,0,-1,0,206.76393)">
     <path
        d="m 160,98 m -8,0 h 16 m -8,0 8,15 h -16 l 8,-15"
        style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2;stroke-linecap:square"
@@ -164,10 +164,10 @@
      id="line13" />
   <line
      x1="60"
-     y1="100"
+     y1="94"
      x2="60"
-     y2="96"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
+     y2="90"
+     style="stroke:#000000;stroke-width:2;stroke-linecap:square"
      id="line14" />
   <line
      x1="50"
@@ -197,13 +197,6 @@
      y2="114"
      style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
      id="line18" />
-  <line
-     x1="60"
-     y1="114"
-     x2="60"
-     y2="110"
-     style="stroke:rgb(0, 0, 0);stroke-linecap:square;stroke-width:2"
-     id="line19" />
   <text
      x="46"
      y="105"
@@ -211,4 +204,54 @@
      dominant-baseline="middle"
      transform="rotate(0, 46, 105)"
      id="text19">+5V</text>
+  <g
+     id="g2"
+     transform="translate(-94.770835,53.963556)">
+    <path
+       d="m 142.42038,73.273068 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+    <path
+       d="m 142.73288,68.585568 h 1.875 c 0.41667,0 0.41667,0.625 0,0.625 h -1.875 -0.625 -1.875 c -0.41667,0 -0.41667,-0.625 0,-0.625 h 1.875"
+       id="path2-0"
+       sodipodi:nodetypes="cssccssc"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+  </g>
+  <g
+     id="g3"
+     transform="translate(-95.572995,45.963556)">
+    <path
+       d="m 143.22254,42.928647 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1-4"
+       style="fill:#ff0000;stroke-width:0.625" />
+    <path
+       d="m 143.22254,36.053647 a 0.3125,0.3125 0 0 1 0.3125,0.3125 v 1.875 h 1.875 a 0.3125,0.3125 0 0 1 0,0.625 h -1.875 v 1.875 a 0.3125,0.3125 0 0 1 -0.625,0 v -1.875 h -1.875 a 0.3125,0.3125 0 0 1 0,-0.625 h 1.875 v -1.875 a 0.3125,0.3125 0 0 1 0.3125,-0.3125"
+       id="path2-08"
+       style="fill:#ff0000;stroke-width:0.625" />
+  </g>
+  <g
+     id="g2-7"
+     transform="translate(4.451638,46.470102)">
+    <path
+       d="m 142.42038,73.273068 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1-2"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+    <path
+       d="m 142.73288,68.585568 h 1.875 c 0.41667,0 0.41667,0.625 0,0.625 h -1.875 -0.625 -1.875 c -0.41667,0 -0.41667,-0.625 0,-0.625 h 1.875"
+       id="path2-0-2"
+       sodipodi:nodetypes="cssccssc"
+       style="fill:#000000;fill-opacity:1;stroke-width:0.625" />
+  </g>
+  <g
+     id="g3-2"
+     transform="translate(3.649478,48.470102)">
+    <path
+       d="m 143.22254,42.928647 a 4.375,4.375 0 1 1 0,-8.75 4.375,4.375 0 0 1 0,8.75 m 0,0.625 a 5,5 0 1 0 0,-10 5,5 0 0 0 0,10"
+       id="path1-4-6"
+       style="fill:#ff0000;stroke-width:0.625" />
+    <path
+       d="m 143.22254,36.053647 a 0.3125,0.3125 0 0 1 0.3125,0.3125 v 1.875 h 1.875 a 0.3125,0.3125 0 0 1 0,0.625 h -1.875 v 1.875 a 0.3125,0.3125 0 0 1 -0.625,0 v -1.875 h -1.875 a 0.3125,0.3125 0 0 1 0,-0.625 h 1.875 v -1.875 a 0.3125,0.3125 0 0 1 0.3125,-0.3125"
+       id="path2-08-2"
+       style="fill:#ff0000;stroke-width:0.625" />
+  </g>
 </svg>
