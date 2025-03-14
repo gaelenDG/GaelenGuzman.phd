@@ -1,5 +1,11 @@
 ---
 title: "Gaelen Guzman, PhD"
+announcement: 
+    content: "**Hardhat Zone** - Site is still under construction. Please excuse the mess."
+    color: "#f8d7da"
+    background: "#721c24" 
+    position: below-navbar 
+    dismissable: true
 about:
   template: trestles
   image: assets/images/Portrait.png
@@ -24,8 +30,6 @@ anchor-sections: false
 
 :::{#hero-heading}
 ## Hello!
-
-**Hardhat zone: This site is still under construction!**
 
 I am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology -- focusing on the manners in which host lipids influence the progression of *Mycobacterium tuberculosis* infection. 
 

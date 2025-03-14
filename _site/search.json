@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Gaelen Guzman, PhD",
     "section": "",
-    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n      Scholar\n  \n  \n      ORCID\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nHardhat zone: This site is still under construction!\nI am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology – focusing on the manners in which host lipids influence the progression of Mycobacterium tuberculosis infection.\nI’m interested in a career in scientific communication and data science: I want to promote public health and Open Science by building a stronger bridge between scientists and the public.\nI’m also a new father, so I don’t exactly have a lot of free time – but when I do, I enjoy hobby electrical engineering projects (see some of my projects above!), rock climbing, cycling, and enjoying those Pacific Northwest outdoors.\nPlease reach out, I’d love to chat!"
+    "text": "Github\n  \n  \n    \n     LinkedIn\n  \n  \n      Scholar\n  \n  \n      ORCID\n  \n  \n    \n     Email\n  \n\n  \n  \n\n\nI am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology – focusing on the manners in which host lipids influence the progression of Mycobacterium tuberculosis infection.\nI’m interested in a career in scientific communication and data science: I want to promote public health and Open Science by building a stronger bridge between scientists and the public.\nI’m also a new father, so I don’t exactly have a lot of free time – but when I do, I enjoy hobby electrical engineering projects (see some of my projects above!), rock climbing, cycling, and enjoying those Pacific Northwest outdoors.\nPlease reach out, I’d love to chat!"
   },
   {
     "objectID": "index.html#hello",
     "href": "index.html#hello",
     "title": "Gaelen Guzman, PhD",
     "section": "",
-    "text": "Hardhat zone: This site is still under construction!\nI am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology – focusing on the manners in which host lipids influence the progression of Mycobacterium tuberculosis infection.\nI’m interested in a career in scientific communication and data science: I want to promote public health and Open Science by building a stronger bridge between scientists and the public.\nI’m also a new father, so I don’t exactly have a lot of free time – but when I do, I enjoy hobby electrical engineering projects (see some of my projects above!), rock climbing, cycling, and enjoying those Pacific Northwest outdoors.\nPlease reach out, I’d love to chat!"
+    "text": "I am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology – focusing on the manners in which host lipids influence the progression of Mycobacterium tuberculosis infection.\nI’m interested in a career in scientific communication and data science: I want to promote public health and Open Science by building a stronger bridge between scientists and the public.\nI’m also a new father, so I don’t exactly have a lot of free time – but when I do, I enjoy hobby electrical engineering projects (see some of my projects above!), rock climbing, cycling, and enjoying those Pacific Northwest outdoors.\nPlease reach out, I’d love to chat!"
   },
   {
     "objectID": "index.html#experience",
@@ -74,21 +74,21 @@
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-is-an-electric-circuit",
     "title": "Resistor Flex part 2",
     "section": "What is an electric circuit?",
-    "text": "What is an electric circuit?\n\n\nVoltage\nCurrent\nResistance"
+    "text": "What is an electric circuit?\n\n\n\n\n\nVoltage → Volts (V)\n\n\n\n\nCurrent → Amps (A)\n\n\n\n\nResistance → Ohms (Ω)"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#lights",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#lights",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#types-of-components",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#types-of-components",
     "title": "Resistor Flex part 2",
-    "section": "Lights!",
-    "text": "Lights!\n\n\nIncandescent\nLED"
+    "section": "Types of components!",
+    "text": "Types of components!\n\n\n\n\n\nTypes we talked about last time:\n\nLEDs\nResistors\nButtons\nLight-dependent resistors\nTransistors\n\n\n\n\n\n\n\nTypes we didn’t talk about last time:\n\nCapacitors\nInductors\nLevel shifters\nMany many types of sensors"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#resistors",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#resistors",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
     "title": "Resistor Flex part 2",
-    "section": "Resistors",
-    "text": "Resistors"
+    "section": "The main components of the mushroom lamp",
+    "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (a small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)\n\n\n\n\n\n\n\n\n\n\n\n(Need a pic of the level shifter)"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-1-a-blinking-led",
@@ -112,8 +112,8 @@
     "text": "Example 3: Use a potentiometer to control an LED’s brightness\n\n#include &lt;Arduino.h&gt;\n\n// Tell the computer where the potentiometer and LED are\n#define Potentiometer_Pin 3 // The potentiometer is on pin \"3\"\n#define LED_PIN 4 // The LED is on pin \"5\"\n\n// Some information to help the computer make the LED's brightness adjustable \nconst int LEDC_CHANNEL = 0;     // Use PWM channel 0\nconst int LEDC_TIMER_BIT = 8;   // 8-bit resolution (0-255)\nconst int LEDC_BASE_FREQ = 5000; // 5 kHz frequency\n\n// Run the startup instructions for the computer\nvoid setup() {\n\n  // Tell the computer what to do with the LED\n  ledcSetup(LEDC_CHANNEL, LEDC_BASE_FREQ, LEDC_TIMER_BIT);\n  ledcAttachPin(LED_PIN, LEDC_CHANNEL);\n\n  // Apply a brightness of \"0\" to the LED to start\n  ledcWrite(LEDC_CHANNEL, 0);  // Apply PWM value to LED strand\n\n}\n\n// Instructions to repeat over and over\nvoid loop() {\n\n  // read the value from the potentiometer:\n  int potValue = analogRead(Potentiometer_Pin); // Read the potentiometer value, save it\n\n  int LEDbrightness = map(abs(potValue), 0, 4095, 0, 255); // Convert the potentiometer value to a brightness\n\n  // Turn on the LED at the calculated brightness level \n  ledcWrite(LEDC_CHANNEL, LEDbrightness); \n\n}"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp-1",
     "title": "Resistor Flex part 2",
     "section": "The main components of the mushroom lamp",
     "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)\n\n\n\n\n\n\n\n\n\n\n\n(Need a pic of the level shifter)"
@@ -249,126 +249,7 @@
     "href": "HobbyEEProjects/index.html",
     "title": "Hobby Electronics Projects",
     "section": "",
-    "text": "Resistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\nControl the Flow Like a Pro ¯\\(ツ)/¯\n\n\n\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
-    "title": "Resistor Flex",
-    "section": "Electricity is made of moving charged particles",
-    "text": "Electricity is made of moving charged particles\n\n\nhigh potential → low potential\n\n\n\n\nTransports energy that can perform work"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles-1",
-    "title": "Resistor Flex",
-    "section": "Electricity is made of moving charged particles",
-    "text": "Electricity is made of moving charged particles\n\n\nhigh potential → low potential\nTransports energy that can perform work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCan pretend it’s like water!"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
-    "title": "Resistor Flex",
-    "section": "Electrons go the opposite way? Confusing!",
-    "text": "Electrons go the opposite way? Confusing!\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-electricity-do-stuff",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-electricity-do-stuff",
-    "title": "Resistor Flex",
-    "section": "How does electricity do stuff?",
-    "text": "How does electricity do stuff?\n\n\n\n\n\nVoltage → Volts (V)\n\n\n\n\nCurrent → Amps (A)\n\n\n\n\nResistance → Ohms (Ω)"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-1",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #1",
-    "text": "Hands on! LED Circuit #1\nComponents:\n\nCoin battery → \nLED →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-1-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-1-1",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #1",
-    "text": "Hands on! LED Circuit #1\nComponents:\n\nCoin battery → \nLED →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-2",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-2",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #2",
-    "text": "Hands on! LED Circuit #2\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor → \n\n   \n\n\nResistors help limit the current of the\ncircuit protecting the load from damage!"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-2-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-2-1",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #2",
-    "text": "Hands on! LED Circuit #2\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-3",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-3",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #3",
-    "text": "Hands on! LED Circuit #3\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor → \nButton →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-3-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-3-1",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #3",
-    "text": "Hands on! LED Circuit #3\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor → \nButton →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-4",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-4",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #4",
-    "text": "Hands on! LED Circuit #4\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor → \nLDR →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-4-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-4-1",
-    "title": "Resistor Flex",
-    "section": "Hands on! LED Circuit #4",
-    "text": "Hands on! LED Circuit #4\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor → \nLDR →"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
-    "title": "Resistor Flex",
-    "section": "",
-    "text": "Series\nOnly one path for the current to go.\n\n\nParallel\nMultiple ways to get back to the negative terminal."
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
-    "title": "Resistor Flex",
-    "section": "How does current behave in a series circuit?",
-    "text": "How does current behave in a series circuit?"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-parallel-circuit",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-parallel-circuit",
-    "title": "Resistor Flex",
-    "section": "How does current behave in a parallel circuit?",
-    "text": "How does current behave in a parallel circuit?"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-night-light",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-night-light",
-    "title": "Resistor Flex",
-    "section": "Hands on! Night light",
-    "text": "Hands on! Night light\n\n\n\n5 V power supply\nLED\nBreadboard\n1x 470 Ω resistor\n1x 100 kΩ resistor\nLight dependent resistor\nNPN transistor\nJumper cables"
-  },
-  {
-    "objectID": "ResearchProjects.html",
-    "href": "ResearchProjects.html",
-    "title": "Gaelen Guzman",
-    "section": "",
-    "text": "ReuseCC BY 4.0"
+    "text": "Resistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\nControl the Flow Like a Pro\n\n\nMy presentation for a Sunnyside Middle School community event – an introduction to designing and making circuits!\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
@@ -378,6 +259,13 @@
     "text": "Electricity is made when charged particles move\n\nEvery atom is made of particles\n\n\nProtons → \nElectrons → \nNeutrons"
   },
   {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-of-moving-charged-particles",
+    "title": "Resistor Flex",
+    "section": "Electricity is made of moving charged particles",
+    "text": "Electricity is made of moving charged particles\n\n\nhigh potential → low potential\n\n\n\n\nTransports energy that can perform work"
+  },
+  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#we-can-pretend-electricity-is-like-water",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#we-can-pretend-electricity-is-like-water",
     "title": "Resistor Flex",
@@ -385,18 +273,11 @@
     "text": "We can pretend electricity is like water\n\nhigh potential → low potential\nTransports energy that can perform work"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#pretend-electricity-is-like-water",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#pretend-electricity-is-like-water",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-electricity-do-stuff",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-electricity-do-stuff",
     "title": "Resistor Flex",
-    "section": "Pretend electricity is like water",
-    "text": "Pretend electricity is like water\n\nhigh potential → low potential\nTransports energy that can perform work"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-move-to-make-electricity",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-move-to-make-electricity",
-    "title": "Resistor Flex",
-    "section": "Electrons move to make electricity",
-    "text": "Electrons move to make electricity\n\n\nhigh potential → low potential\nTransports energy that can perform work"
+    "section": "How does electricity do stuff?",
+    "text": "How does electricity do stuff?\n\n\n\n\n\nVoltage → Volts (V)\n\n\n\n\nCurrent → Amps (A)\n\n\n\n\nResistance → Ohms (Ω)"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#example-of-a-load-led",
@@ -404,13 +285,6 @@
     "title": "Resistor Flex",
     "section": "Example of a load: LED",
     "text": "Example of a load: LED\n\n\n\n\n\n\n\nLight Emitting Diode\nCan only handle a small amount of current!\n/+ and - matters!"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#breadboards-make-testing-complicated-circuits-easy",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#breadboards-make-testing-complicated-circuits-easy",
-    "title": "Resistor Flex",
-    "section": "Breadboards make testing complicated circuits easy!",
-    "text": "Breadboards make testing complicated circuits easy!"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-1",
@@ -425,6 +299,13 @@
     "title": "Resistor Flex",
     "section": "Hands on! Circuit #1",
     "text": "Hands on! Circuit #1\nComponents:\n\nCoin battery → \nLED →"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#breadboards-make-testing-complicated-circuits-easy",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#breadboards-make-testing-complicated-circuits-easy",
+    "title": "Resistor Flex",
+    "section": "Breadboards make testing complicated circuits easy!",
+    "text": "Breadboards make testing complicated circuits easy!"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-2",
@@ -469,17 +350,73 @@
     "text": "Hands on! Circuit #4\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \nResistor → \nLDR →"
   },
   {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
+    "title": "Resistor Flex",
+    "section": "",
+    "text": "Series\nOnly one path for the current to go.\n\n\nParallel\nMultiple ways to get back to the negative terminal."
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
+    "title": "Resistor Flex",
+    "section": "How does current behave in a series circuit?",
+    "text": "How does current behave in a series circuit?"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-parallel-circuit",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-parallel-circuit",
+    "title": "Resistor Flex",
+    "section": "How does current behave in a parallel circuit?",
+    "text": "How does current behave in a parallel circuit?"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5",
+    "title": "Resistor Flex",
+    "section": "Hands on! Circuit #5",
+    "text": "Hands on! Circuit #5\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n220 Ω Resistor →"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5-1",
+    "title": "Resistor Flex",
+    "section": "Hands on! Circuit #5",
+    "text": "Hands on! Circuit #5\nComponents:\n\nBreadboard\n5 V power supply → \n5x LED → \n220 Ω Resistor →"
+  },
+  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6",
     "title": "Resistor Flex",
     "section": "Hands on! Circuit #6",
-    "text": "Hands on! Circuit #6\nComponents:"
+    "text": "Hands on! Circuit #6\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n4x 220 Ω Resistor →"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6-1",
+    "title": "Resistor Flex",
+    "section": "Hands on! Circuit #6",
+    "text": "Hands on! Circuit #6\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n4x 220 Ω Resistor →"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-challenge-night-light",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-challenge-night-light",
     "title": "Resistor Flex",
     "section": "Hands on challenge: Night light",
-    "text": "Hands on challenge: Night light\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \n220 Ω Resistor → \n100 kΩ Resistor → \nLDR → \nLight dependent resistor\nTransistor → \nJumper cables"
+    "text": "Hands on challenge: Night light\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \n220 Ω Resistor → \n100 kΩ Resistor → \nLDR → \nTransistor → \nJumper cables"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
+    "title": "Resistor Flex",
+    "section": "Electrons go the opposite way? Confusing!",
+    "text": "Electrons go the opposite way? Confusing!\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
+  },
+  {
+    "objectID": "ResearchProjects.html",
+    "href": "ResearchProjects.html",
+    "title": "Gaelen Guzman",
+    "section": "",
+    "text": "ReuseCC BY 4.0"
   }
 ]

@@ -21,29 +21,129 @@ format:
 # Today:
 
 * Review what we talked about last time
+* Talk about this mushroom lamp!
 * Use a computer to control a circuit
-* Talk about how I made the mushroom lamp
 * Brainstorm cool projects!
 
 # Quick review
 
 ## What is an electric circuit?
 
-:::{.incremental}
-* Voltage
-* Current
-* Resistance
+:::::{.columns}
+:::{.v-center-container}
+:::{.column width="50%"}
+:::{.fragment data-fragment-index="3"}
+- Voltage &rarr; **Volts (V)**
+:::
+:::{.fragment data-fragment-index="4"}
+- Current &rarr; **Amps (A)**
+:::
+:::{.fragment data-fragment-index="5"}
+- Resistance &rarr; **Ohms (&ohm;)**
+:::
 :::
 
-## Lights!
+:::{.column width="50%"}
+:::r-stack
 
-:::{.incremental}
-* Incandescent
-* LED
+:::{.fragment fragment-index="1"}
+:::{.fragment .fade-out fragment-index="7"}
+![](  Pictures/SimplestCircuit.png){width=600}
+:::
 :::
 
-## Resistors
+:::{.fragment .fade-in fragment-index="2"}
+:::{.fragment .fade-out fragment-index="7"}
+![](Pictures/Duracell_AA__49529.png){.absolute top=410 right=110 width="300"}
+:::
+:::
 
+:::
+:::
+:::
+:::::
+
+## Types of components!
+
+:::::{.columns}
+
+::::{.column width="50%"}
+<!-- :::{.fragment fragment-index="1"} -->
+:::{.incremental}
+* Types we talked about last time:
+  * LEDs
+  * Resistors
+  * Buttons
+  * Light-dependent resistors
+  * Transistors
+:::
+::::
+::::{.column width="50%"}
+<!-- :::{.fragment fragment-index="1"} -->
+:::{.incremental}
+* Types we didn't talk about last time:
+  * Capacitors
+  * Inductors
+  * Level shifters
+  * Many many types of sensors
+:::
+::::
+:::::
+
+# Making a device out of random stuff 
+
+## The main components of the mushroom lamp
+
+::: columns
+::: {.column width="45%"}
+::: {.fragment .fade-right fragment-index="1"}
+1.  A piece of bark
+:::
+
+::: {.fragment .fade-right fragment-index="2"}
+2.  Silicone sealant
+:::
+
+::: {.fragment .fade-right fragment-index="3"}
+3.  Red-Green-Blue LEDs
+:::
+
+::: {.fragment .fade-right fragment-index="4"}
+4.  An ESP-32 microcontroller (a small computer)
+:::
+
+::: {.fragment .fade-right fragment-index="5"}
+5. A level shifter and some resistors to control the LEDs
+:::
+:::
+
+::: {.column width="55%"}
+::: r-stack
+::: {.fragment .fade-in-then-out fragment-index="1"}
+(Need a pic of some bark)
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="2"}
+![](Pictures/Silicone_pic.png)
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="3"}
+![](Pictures/NeoPixel_pic.png)
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="4"}
+![](Pictures/ESP32_pic.png)
+:::
+
+:::{.fragment .fade-in fragment-index="5"}
+(Need a pic of the level shifter)
+:::
+
+:::
+:::
+:::
+
+## 
 
 # You can use a computer to control a circuit
 

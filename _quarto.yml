@@ -15,6 +15,12 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 website:
+  announcement: 
+    content: "**Hardhat Zone** - Site is still under construction. Please excuse the mess."
+    color: "#f8d7da"
+    background: "#721c24" 
+    position: below-navbar 
+    dismissable: true
   title: "Gaelen Guzman"
   repo-url: https://github.com/gaelenDG/GaelenGuzman.github.io
   repo-actions: [source, issue]

@@ -1,10 +1,10 @@
 ---
 title: Resistor Flex
 subtitle: Control the Flow Like a Pro
+description: "My presentation for a Sunnyside Middle School community event -- an introduction to designing and making circuits!"
 author: Gaelen Guzman
 date: 2025-03-18
 image: /HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/Presentation1_featured.gif
-
 format:
   revealjs:
     css: style.css
@@ -295,9 +295,55 @@ Multiple ways to get back to the negative terminal.
 
 ![](Pictures/Parallel-Circuit-Following-Current-1.gif){fig-align="center"}
 
+## Hands on! Circuit #5
+
+**Components:**
+
+- Breadboard
+- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
+- 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+
+![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
+![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
+![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
+![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
+
+## Hands on! Circuit #5
+
+**Components:**
+
+- Breadboard
+- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
+- 5x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+
+![](  Pictures/HandsOn_5.svg){.absolute top=25 right=-30 height=850}
+
 ## Hands on! Circuit #6
 
 **Components:**
+
+- Breadboard
+- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
+- 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+- 4x 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+
+![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
+![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
+![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
+![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
+
+## Hands on! Circuit #6
+
+**Components:**
+
+- Breadboard
+- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
+- 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+- 4x 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+
+![](  Pictures/HandsOn_6.svg){.absolute top=350 right=-30 height=450}
 
 ## Hands on challenge: Night light
 
@@ -309,12 +355,10 @@ Multiple ways to get back to the negative terminal.
 - 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
 - 100 k&ohm; Resistor &rarr;  ![](Pictures/symbols_resistor.png){height="25"}
 - LDR &rarr; ![](Pictures/symbols_LDR.png){height=70}
-
-- Light dependent resistor
 - Transistor &rarr; ![](Pictures/symbols_NPN.png){height=50}
 - Jumper cables 
 
-![](  Pictures/HandsOn_7.svg){width="600"}
+![](  Pictures/HandsOn_7.svg){.absolute top=200 right=-20 width="600"}
 
 ## Electrons go the opposite way? Confusing! 
 
