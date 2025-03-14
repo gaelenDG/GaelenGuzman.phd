@@ -1,0 +1,7 @@
+---
+title: The Lipid Interactome
+description: The **Lipid Interactome** is an interactive, centralized resource designed to harmonize, compare, and integrate lipid interactome datasets. It adheres to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, ensuring that lipid–protein interaction data is systematically organized and easily accessible to researchers. By consolidating proteomics data from multifunctional lipid probes, this resource facilitates the systematic study of lipid-binding proteins across different lipid species and cellular models.
+image: Images/SitePreview.gif
+date: 2025-01-25
+---
+

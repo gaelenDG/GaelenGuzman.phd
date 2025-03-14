@@ -1,11 +1,6 @@
 ---
 title: "Gaelen Guzman, PhD"
-announcement: 
-    content: "**Hardhat Zone** - Site is still under construction. Please excuse the mess."
-    color: "#f8d7da"
-    background: "#721c24" 
-    position: below-navbar 
-    dismissable: true
+
 about:
   template: trestles
   image: assets/images/Portrait.png

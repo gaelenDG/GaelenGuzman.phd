@@ -16,9 +16,9 @@ copyright:
   year: 2025
 website:
   announcement: 
-    content: "**Hardhat Zone** - Site is still under construction. Please excuse the mess."
-    color: "#f8d7da"
-    background: "#721c24" 
+    content: "<i class='bi bi-cone-striped'></i> **Hardhat Zone** - Site is still under construction. Please excuse the mess."
+    color: "#ffa500"
+    background: "#ffa500" 
     position: below-navbar 
     dismissable: true
   title: "Gaelen Guzman"
@@ -35,27 +35,17 @@ website:
         target: "_blank"
     left: 
       - text: "<i class='fa-regular fa-vial-virus'></i> Research Projects"
-        menu:
-          - text: "The Lipid Interactome"
-            href: https://www.lipidinteractome.org
-            target: "_blank"
-          - text: "TB & The Sphinx (My dissertation)"
-            href: https://guzmangadissertation.netlify.app
-            target: "_blank"
+        href: ResearchProjects/index.qmd
+        # menu:
+        #   - text: "The Lipid Interactome"
+        #     href: https://www.lipidinteractome.org
+        #     target: "_blank"
+        #   - text: "TB & The Sphinx (My dissertation)"
+        #     href: https://guzmangadissertation.netlify.app
+        #     target: "_blank"
       - text: "<i class='fa-solid fa-microchip'></i> Hobby Electronics Projects"
         icon: microchip
         href: HobbyEEProjects/index.qmd
-        # menu:
-        #   - href: HobbyEEProjects/MushroomLamp_v1.qmd
-        #     text: "Mushroom Lamp"
-        #   - href: HobbyEEProjects/LightUpBabyBook.qmd
-        #     text: "Light-up Baby Book"
-        #   - href: HobbyEEProjects/MushroomLamp_v2.qmd
-        #     text: "Mushroom Lamp v2"
-        #   - href: HobbyEEProjects/MagneticStirbarLamp.qmd
-        #     text: "Magnetic Stirbar Lamp"
-        #   - href: HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.qmd
-        #     text: "Sunnyside Middle School Intro to Electronics #1"
   sidebar: true 
   page-navigation: true
   page-footer:
