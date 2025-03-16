@@ -27,7 +27,7 @@ format:
 
 # Quick review
 
-## What is an electric circuit?
+## What makes an electric circuit?
 
 :::::{.columns}
 :::{.v-center-container}
@@ -81,16 +81,22 @@ format:
 ::::{.column width="50%"}
 <!-- :::{.fragment fragment-index="1"} -->
 :::{.incremental}
-* Types we didn't talk about last time:
+* Types we didn't experiment with last time:
   * Capacitors
   * Inductors
   * Level shifters
-  * Many many types of sensors
+  * Many, many types of sensors
 :::
 ::::
 :::::
 
-# Making a device out of random stuff 
+# Let's talk about inventing!
+
+## My mushroom lamp
+
+:::{.v-center-container}
+![](/HobbyEEProjects/MushroomLamp_v2/ButtonDebound_testing.mp4){height=500}
+:::
 
 ## The main components of the mushroom lamp
 
@@ -124,7 +130,7 @@ format:
 :::
 
 ::: {.fragment .fade-in-then-out fragment-index="2"}
-![](Pictures/Silicone_pic.png)
+![](Pictures/Silicone_pic.png){height=500}
 :::
 
 ::: {.fragment .fade-in-then-out fragment-index="3"}
@@ -136,7 +142,7 @@ format:
 :::
 
 :::{.fragment .fade-in fragment-index="5"}
-(Need a pic of the level shifter)
+![](Pictures/LevelShifter.png)
 :::
 
 :::
@@ -166,10 +172,9 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   digitalWrite(LED_PIN, HIGH);  // turn the LED on (voltage HIGH)
-  delay(1000);                      // wait for 1 second
+  delay(1000);                  // wait for 1 second
   digitalWrite(LED_PIN, LOW);   // turn the LED off (voltage LOW)
-  delay(1000); 
-                       // wait for 1 second
+  delay(1000);                  // wait for 1 second
 }
 ```
 
@@ -247,57 +252,4 @@ void loop() {
 
 }
 ```
-
-# How does this mushroom lamp work?
-
-## The main components of the mushroom lamp
-
-::: columns
-::: {.column width="45%"}
-::: {.fragment .fade-right fragment-index="1"}
-1.  A piece of bark
-:::
-
-::: {.fragment .fade-right fragment-index="2"}
-2.  Silicone sealant
-:::
-
-::: {.fragment .fade-right fragment-index="3"}
-3.  Red-Green-Blue LEDs
-:::
-
-::: {.fragment .fade-right}
-4.  An ESP-32 microcontroller (small computer)
-:::
-
-::: {.fragment .fade-right fragment-index="4"}
-5. A level shifter and some resistors to control the LEDs
-:::
-:::
-
-::: {.column width="55%"}
-::: r-stack
-::: {.fragment .fade-in-then-out fragment-index="1"}
-(Need a pic of some bark)
-:::
-
-::: {.fragment .fade-in-then-out fragment-index="2"}
-![](Pictures/Silicone_pic.png)
-:::
-
-::: {.fragment .fade-in-then-out fragment-index="3"}
-![](Pictures/NeoPixel_pic.png)
-:::
-
-::: {.fragment .fade-in-then-out fragment-index="4"}
-![](Pictures/ESP32_pic.png)
-:::
-
-:::{.fragment .fade-in fragment-index="5"}
-(Need a pic of the level shifter)
-:::
-
-:::
-:::
-:::
 

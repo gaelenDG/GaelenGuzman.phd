@@ -18,6 +18,12 @@ format:
     fig-align: center
 ---
 
+# Safety first! 
+
+**Electricity can be dangerous!**
+
+**Always do this with an adult!**
+
 # What is electricity??
 
 :::::{columns}
@@ -295,7 +301,7 @@ Multiple ways to get back to the negative terminal.
 
 ![](Pictures/Parallel-Circuit-Following-Current-1.gif){fig-align="center"}
 
-## Hands on! Circuit #5
+## Hands on! LED Circuit #5
 
 **Components:**
 
@@ -309,7 +315,7 @@ Multiple ways to get back to the negative terminal.
 ![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
 ![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
 
-## Hands on! Circuit #5
+## Hands on! LED Circuit #5
 
 **Components:**
 
@@ -320,30 +326,51 @@ Multiple ways to get back to the negative terminal.
 
 ![](  Pictures/HandsOn_5.svg){.absolute top=25 right=-30 height=850}
 
-## Hands on! Circuit #6
+:::{.fragment .absolute top=600}
+*Discussion: Why doesn't this one work??*
+:::
+
+## Hands on! LED Circuit #6
 
 **Components:**
 
 - Breadboard
 - 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
 - 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 4x 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
 
 ![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
 ![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
 ![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
 ![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
 
-## Hands on! Circuit #6
+## Hands on! LED Circuit #6
 
 **Components:**
 
 - Breadboard
 - 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
 - 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 4x 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
 
-![](  Pictures/HandsOn_6.svg){.absolute top=350 right=-30 height=450}
+![](  Pictures/HandsOn_6.svg){.absolute top=250 right="-30" height=450}
+
+:::{.fragment .absolute top=625}
+*Discussion: Why does this one work??*
+:::
+
+## Transistors: Electrical switches
+
+:::{.fragment}
+![](Pictures/NPN2222a.png){fig-align="center" height=500}
+:::
+
+:::{.fragment}
+**OFF** if no current delivered to the *Base*
+:::
+:::{.fragment}
+**ON** when even a tiny bit of current flows to the *Base*
+:::
 
 ## Hands on challenge: Night light
 
@@ -362,11 +389,61 @@ Multiple ways to get back to the negative terminal.
 
 ## Electrons go the opposite way? Confusing! 
 
+![](Pictures/wire-conventional-current.png){fig-align="center" .r-stretch}
+
 Benjamin Franklin didn't know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!
 
-![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/wire-conventional-current.png){fig-align="center" .r-stretch}
+## Electrons go the opposite way? Confusing! 
+
+![](Pictures/wire-conventional-current.png){fig-align="center" .r-stretch}
 
 By convention, we always pretend that a <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="red" class="bi bi-plus-circle" viewBox="0 0 16 16">
   <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
   <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
 </svg> charge is going around the circuit -- even though it's just imaginary, it doesn't change how the circuit works.
+
+# Brainstorm! 
+
+## What can we invent?
+
+So many types of components!
+
+:::::{.columns}
+
+::::{.column width="50%"}
+* Batteries
+* Resistors
+* LEDs
+* Light-dependent resistors
+* Buttons
+* Transistors
+::::
+
+::::{.column width="50%"}
+:::{.incremental}
+* Motors
+* Valves
+* Cameras
+* Microphones
+* Solar panels
+* Temperature sensors
+* Air quality sensors
+* Magnetic field sensors
+* Moisture sensors
+
+::::
+:::::
+
+:::{.notes}
+"Dumb" devices:
+  * LDR -- Nightlight
+  * Hall effect magnet sensor -- Door security sensor
+  * Thermistor & Motor -- Automatic fan 
+  * LDRs, Motor, & Solar panel -- sun-tracking solar battery
+* "Smart" Devices
+  * Thermometer & Air quality sensor -- Weather station
+  * Camera & AI vision -- Train camera
+  * Moisture sensor & Servo -- Automatic plant watering irrigation
+  * Clock and LEDs -- visual alarm clock (wake up more naturally)
+  * LDRs & RGB LEDs -- baby book, mushroom lamps
+:::

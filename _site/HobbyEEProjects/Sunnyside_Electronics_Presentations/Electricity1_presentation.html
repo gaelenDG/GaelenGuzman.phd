@@ -145,6 +145,12 @@ Gaelen Guzman
 
   <p class="date">2025-03-18</p>
 </section>
+<section id="safety-first" class="title-slide slide level1 center">
+<h1>Safety first!</h1>
+<p><strong>Electricity can be dangerous!</strong></p>
+<p><strong>Always do this with an adult!</strong></p>
+</section>
+
 <section>
 <section id="what-is-electricity" class="title-slide slide level1 center">
 <h1>What is electricity??</h1>
@@ -399,8 +405,8 @@ Gaelen Guzman
 </figure>
 </div>
 </section>
-<section id="hands-on-circuit-5" class="slide level2">
-<h2>Hands on! Circuit #5</h2>
+<section id="hands-on-led-circuit-5" class="slide level2">
+<h2>Hands on! LED Circuit #5</h2>
 <p><strong>Components:</strong></p>
 <ul>
 <li>Breadboard</li>
@@ -410,8 +416,8 @@ Gaelen Guzman
 </ul>
 <p><img data-src="Pictures/AAbatteryHolder.png" class="absolute" style="top: 100px; right: 250px; height: 300px; "> <img data-src="Pictures/Breadboard.png" class="absolute" style="top: 350px; right: 300px; height: 300px; "> <img data-src="Pictures/LED.png" class="absolute" style="top: 150px; right: -20px; height: 300px; "> <img data-src="Pictures/220-Ohm-Resistor.png" class="absolute" style="top: 400px; right: 100px; height: 300px; "></p>
 </section>
-<section id="hands-on-circuit-5-1" class="slide level2">
-<h2>Hands on! Circuit #5</h2>
+<section id="hands-on-led-circuit-5-1" class="slide level2">
+<h2>Hands on! LED Circuit #5</h2>
 <p><strong>Components:</strong></p>
 <ul>
 <li>Breadboard</li>
@@ -420,28 +426,50 @@ Gaelen Guzman
 <li>220 Ω Resistor → <img data-src="Pictures/symbols_resistor.png" height="25"></li>
 </ul>
 <p><img data-src="Pictures/HandsOn_5.svg" class="absolute" style="top: 25px; right: -30px; height: 850px; "></p>
+<div class="fragment absolute" style="top: 600px; ">
+<p><em>Discussion: Why doesn’t this one work??</em></p>
+</div>
 </section>
-<section id="hands-on-circuit-6" class="slide level2">
-<h2>Hands on! Circuit #6</h2>
+<section id="hands-on-led-circuit-6" class="slide level2">
+<h2>Hands on! LED Circuit #6</h2>
 <p><strong>Components:</strong></p>
 <ul>
 <li>Breadboard</li>
 <li>5 V power supply → <img data-src="Pictures/symbols_Battery.png" height="50"></li>
 <li>4x LED → <img data-src="Pictures/symbols_LED.png" height="50"></li>
-<li>4x 220 Ω Resistor → <img data-src="Pictures/symbols_resistor.png" height="25"></li>
+<li>220 Ω Resistor → <img data-src="Pictures/symbols_resistor.png" height="25"></li>
 </ul>
 <p><img data-src="Pictures/AAbatteryHolder.png" class="absolute" style="top: 100px; right: 250px; height: 300px; "> <img data-src="Pictures/Breadboard.png" class="absolute" style="top: 350px; right: 300px; height: 300px; "> <img data-src="Pictures/LED.png" class="absolute" style="top: 150px; right: -20px; height: 300px; "> <img data-src="Pictures/220-Ohm-Resistor.png" class="absolute" style="top: 400px; right: 100px; height: 300px; "></p>
 </section>
-<section id="hands-on-circuit-6-1" class="slide level2">
-<h2>Hands on! Circuit #6</h2>
+<section id="hands-on-led-circuit-6-1" class="slide level2">
+<h2>Hands on! LED Circuit #6</h2>
 <p><strong>Components:</strong></p>
 <ul>
 <li>Breadboard</li>
 <li>5 V power supply → <img data-src="Pictures/symbols_Battery.png" height="50"></li>
 <li>4x LED → <img data-src="Pictures/symbols_LED.png" height="50"></li>
-<li>4x 220 Ω Resistor → <img data-src="Pictures/symbols_resistor.png" height="25"></li>
+<li>220 Ω Resistor → <img data-src="Pictures/symbols_resistor.png" height="25"></li>
 </ul>
-<p><img data-src="Pictures/HandsOn_6.svg" class="absolute" style="top: 350px; right: -30px; height: 450px; "></p>
+<p><img data-src="Pictures/HandsOn_6.svg" class="absolute" style="top: 250px; right: -30px; height: 450px; "></p>
+<div class="fragment absolute" style="top: 625px; ">
+<p><em>Discussion: Why does this one work??</em></p>
+</div>
+</section>
+<section id="transistors-electrical-switches" class="slide level2">
+<h2>Transistors: Electrical switches</h2>
+<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="Pictures/NPN2222a.png" class="quarto-figure quarto-figure-center" height="500"></p>
+</figure>
+</div>
+</div>
+<div class="fragment">
+<p><strong>OFF</strong> if no current delivered to the <em>Base</em></p>
+</div>
+<div class="fragment">
+<p><strong>ON</strong> when even a tiny bit of current flows to the <em>Base</em></p>
+</div>
 </section>
 <section id="hands-on-challenge-night-light" class="slide level2">
 <h2>Hands on challenge: Night light</h2>
@@ -460,11 +488,60 @@ Gaelen Guzman
 </section>
 <section id="electrons-go-the-opposite-way-confusing" class="slide level2">
 <h2>Electrons go the opposite way? Confusing!</h2>
-<p>Benjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!</p>
 
-<img data-src="../../HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/wire-conventional-current.png" class="r-stretch quarto-figure quarto-figure-center"><p>By convention, we always pretend that a <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="red" class="bi bi-plus-circle" viewbox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path> </svg> charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works.</p>
+<img data-src="Pictures/wire-conventional-current.png" class="r-stretch quarto-figure quarto-figure-center"><p>Benjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!</p>
+</section>
+<section id="electrons-go-the-opposite-way-confusing-1" class="slide level2">
+<h2>Electrons go the opposite way? Confusing!</h2>
 
+<img data-src="Pictures/wire-conventional-current.png" class="r-stretch quarto-figure quarto-figure-center"><p>By convention, we always pretend that a <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="red" class="bi bi-plus-circle" viewbox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path> </svg> charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works.</p>
+</section></section>
+<section>
+<section id="brainstorm" class="title-slide slide level1 center">
+<h1>Brainstorm!</h1>
 
+</section>
+<section id="what-can-we-invent" class="slide level2">
+<h2>What can we invent?</h2>
+<p>So many types of components!</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Batteries</li>
+<li>Resistors</li>
+<li>LEDs</li>
+<li>Light-dependent resistors</li>
+<li>Buttons</li>
+<li>Transistors</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div>
+<ul>
+<li class="fragment">Motors</li>
+<li class="fragment">Valves</li>
+<li class="fragment">Cameras</li>
+<li class="fragment">Microphones</li>
+<li class="fragment">Solar panels</li>
+<li class="fragment">Temperature sensors</li>
+<li class="fragment">Air quality sensors</li>
+<li class="fragment">Magnetic field sensors</li>
+<li class="fragment">Moisture sensors</li>
+</ul>
+</div>
+</div><aside class="notes">
+<p>“Dumb” devices: * LDR – Nightlight * Hall effect magnet sensor – Door security sensor * Thermistor &amp; Motor – Automatic fan * LDRs, Motor, &amp; Solar panel – sun-tracking solar battery * “Smart” Devices * Thermometer &amp; Air quality sensor – Weather station * Camera &amp; AI vision – Train camera * Moisture sensor &amp; Servo – Automatic plant watering irrigation * Clock and LEDs – visual alarm clock (wake up more naturally) * LDRs &amp; RGB LEDs – baby book, mushroom lamps</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

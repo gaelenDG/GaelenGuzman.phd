@@ -154,32 +154,39 @@
     "text": "How does current behave in a parallel circuit?"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-5",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-5",
     "title": "Resistor Flex",
-    "section": "Hands on! Circuit #5",
-    "text": "Hands on! Circuit #5\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n220 Ω Resistor →"
+    "section": "Hands on! LED Circuit #5",
+    "text": "Hands on! LED Circuit #5\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n220 Ω Resistor →"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-5-1",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-5-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-5-1",
     "title": "Resistor Flex",
-    "section": "Hands on! Circuit #5",
-    "text": "Hands on! Circuit #5\nComponents:\n\nBreadboard\n5 V power supply → \n5x LED → \n220 Ω Resistor →"
+    "section": "Hands on! LED Circuit #5",
+    "text": "Hands on! LED Circuit #5\nComponents:\n\nBreadboard\n5 V power supply → \n5x LED → \n220 Ω Resistor → \n\n\n\nDiscussion: Why doesn’t this one work??"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-6",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-6",
     "title": "Resistor Flex",
-    "section": "Hands on! Circuit #6",
-    "text": "Hands on! Circuit #6\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n4x 220 Ω Resistor →"
+    "section": "Hands on! LED Circuit #6",
+    "text": "Hands on! LED Circuit #6\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n220 Ω Resistor →"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-circuit-6-1",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-6-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-led-circuit-6-1",
     "title": "Resistor Flex",
-    "section": "Hands on! Circuit #6",
-    "text": "Hands on! Circuit #6\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n4x 220 Ω Resistor →"
+    "section": "Hands on! LED Circuit #6",
+    "text": "Hands on! LED Circuit #6\nComponents:\n\nBreadboard\n5 V power supply → \n4x LED → \n220 Ω Resistor → \n\n\n\nDiscussion: Why does this one work??"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#transistors-electrical-switches",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#transistors-electrical-switches",
+    "title": "Resistor Flex",
+    "section": "Transistors: Electrical switches",
+    "text": "Transistors: Electrical switches\n\n\n\n\n\n\n\n\nOFF if no current delivered to the Base\n\n\nON when even a tiny bit of current flows to the Base"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#hands-on-challenge-night-light",
@@ -193,7 +200,21 @@
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
     "title": "Resistor Flex",
     "section": "Electrons go the opposite way? Confusing!",
-    "text": "Electrons go the opposite way? Confusing!\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
+    "text": "Electrons go the opposite way? Confusing!\n\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing-1",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing-1",
+    "title": "Resistor Flex",
+    "section": "Electrons go the opposite way? Confusing!",
+    "text": "Electrons go the opposite way? Confusing!\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#what-can-we-invent",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#what-can-we-invent",
+    "title": "Resistor Flex",
+    "section": "What can we invent?",
+    "text": "What can we invent?\nSo many types of components!\n\n\n\nBatteries\nResistors\nLEDs\nLight-dependent resistors\nButtons\nTransistors\n\n\n\n\nMotors\nValves\nCameras\nMicrophones\nSolar panels\nTemperature sensors\nAir quality sensors\nMagnetic field sensors\nMoisture sensors\n\n\n\n“Dumb” devices: * LDR – Nightlight * Hall effect magnet sensor – Door security sensor * Thermistor & Motor – Automatic fan * LDRs, Motor, & Solar panel – sun-tracking solar battery * “Smart” Devices * Thermometer & Air quality sensor – Weather station * Camera & AI vision – Train camera * Moisture sensor & Servo – Automatic plant watering irrigation * Clock and LEDs – visual alarm clock (wake up more naturally) * LDRs & RGB LEDs – baby book, mushroom lamps"
   },
   {
     "objectID": "HobbyEEProjects/index.html",
@@ -329,32 +350,39 @@
     "text": "Future Improvements\n\nI truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…\nThis is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!\nA slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.\nI’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard."
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-is-an-electric-circuit",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-is-an-electric-circuit",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
     "title": "Resistor Flex part 2",
-    "section": "What is an electric circuit?",
-    "text": "What is an electric circuit?\n\n\n\n\n\nVoltage → Volts (V)\n\n\n\n\nCurrent → Amps (A)\n\n\n\n\nResistance → Ohms (Ω)"
+    "section": "What makes an electric circuit?",
+    "text": "What makes an electric circuit?\n\n\n\n\n\nVoltage → Volts (V)\n\n\n\n\nCurrent → Amps (A)\n\n\n\n\nResistance → Ohms (Ω)"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#types-of-components",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#types-of-components",
     "title": "Resistor Flex part 2",
     "section": "Types of components!",
-    "text": "Types of components!\n\n\n\n\n\nTypes we talked about last time:\n\nLEDs\nResistors\nButtons\nLight-dependent resistors\nTransistors\n\n\n\n\n\n\n\nTypes we didn’t talk about last time:\n\nCapacitors\nInductors\nLevel shifters\nMany many types of sensors"
+    "text": "Types of components!\n\n\n\n\n\nTypes we talked about last time:\n\nLEDs\nResistors\nButtons\nLight-dependent resistors\nTransistors\n\n\n\n\n\n\n\nTypes we didn’t experiment with last time:\n\nCapacitors\nInductors\nLevel shifters\nMany, many types of sensors"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#my-mushroom-lamp",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#my-mushroom-lamp",
+    "title": "Resistor Flex part 2",
+    "section": "My mushroom lamp",
+    "text": "My mushroom lamp\n\nVideo"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
     "title": "Resistor Flex part 2",
     "section": "The main components of the mushroom lamp",
-    "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (a small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)\n\n\n\n\n\n\n\n\n\n\n\n(Need a pic of the level shifter)"
+    "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (a small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-1-a-blinking-led",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-1-a-blinking-led",
     "title": "Resistor Flex part 2",
     "section": "Example 1: A blinking LED",
-    "text": "Example 1: A blinking LED\n\n// Tell the computer where the LED is\n#define LED_PIN 4 // The LED is on pin \"5\"\n\n// the setup function runs once when you press reset or power the board\nvoid setup() {\n  // initialize digital pin LED_BUILTIN as an output.\n  pinMode(LED_PIN, OUTPUT);\n\n}\n\n// the loop function runs over and over again forever\nvoid loop() {\n  digitalWrite(LED_PIN, HIGH);  // turn the LED on (voltage HIGH)\n  delay(1000);                      // wait for 1 second\n  digitalWrite(LED_PIN, LOW);   // turn the LED off (voltage LOW)\n  delay(1000); \n                       // wait for 1 second\n}"
+    "text": "Example 1: A blinking LED\n\n// Tell the computer where the LED is\n#define LED_PIN 4 // The LED is on pin \"5\"\n\n// the setup function runs once when you press reset or power the board\nvoid setup() {\n  // initialize digital pin LED_BUILTIN as an output.\n  pinMode(LED_PIN, OUTPUT);\n\n}\n\n// the loop function runs over and over again forever\nvoid loop() {\n  digitalWrite(LED_PIN, HIGH);  // turn the LED on (voltage HIGH)\n  delay(1000);                  // wait for 1 second\n  digitalWrite(LED_PIN, LOW);   // turn the LED off (voltage LOW)\n  delay(1000);                  // wait for 1 second\n}"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-2-use-a-button-to-control-an-led",
@@ -369,13 +397,6 @@
     "title": "Resistor Flex part 2",
     "section": "Example 3: Use a potentiometer to control an LED’s brightness",
     "text": "Example 3: Use a potentiometer to control an LED’s brightness\n\n#include &lt;Arduino.h&gt;\n\n// Tell the computer where the potentiometer and LED are\n#define Potentiometer_Pin 3 // The potentiometer is on pin \"3\"\n#define LED_PIN 4 // The LED is on pin \"5\"\n\n// Some information to help the computer make the LED's brightness adjustable \nconst int LEDC_CHANNEL = 0;     // Use PWM channel 0\nconst int LEDC_TIMER_BIT = 8;   // 8-bit resolution (0-255)\nconst int LEDC_BASE_FREQ = 5000; // 5 kHz frequency\n\n// Run the startup instructions for the computer\nvoid setup() {\n\n  // Tell the computer what to do with the LED\n  ledcSetup(LEDC_CHANNEL, LEDC_BASE_FREQ, LEDC_TIMER_BIT);\n  ledcAttachPin(LED_PIN, LEDC_CHANNEL);\n\n  // Apply a brightness of \"0\" to the LED to start\n  ledcWrite(LEDC_CHANNEL, 0);  // Apply PWM value to LED strand\n\n}\n\n// Instructions to repeat over and over\nvoid loop() {\n\n  // read the value from the potentiometer:\n  int potValue = analogRead(Potentiometer_Pin); // Read the potentiometer value, save it\n\n  int LEDbrightness = map(abs(potValue), 0, 4095, 0, 255); // Convert the potentiometer value to a brightness\n\n  // Turn on the LED at the calculated brightness level \n  ledcWrite(LEDC_CHANNEL, LEDbrightness); \n\n}"
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp-1",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp-1",
-    "title": "Resistor Flex part 2",
-    "section": "The main components of the mushroom lamp",
-    "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)\n\n\n\n\n\n\n\n\n\n\n\n(Need a pic of the level shifter)"
   },
   {
     "objectID": "HobbyEEProjects/MagneticStirbarLamp.html",
