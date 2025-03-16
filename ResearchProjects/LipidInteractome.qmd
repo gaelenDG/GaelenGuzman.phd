@@ -1,10 +1,19 @@
 ---
 title: The Lipid Interactome
-description: The **Lipid Interactome** is an interactive, centralized resource designed to harmonize, compare, and integrate lipid interactome datasets. It adheres to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, ensuring that lipid–protein interaction data is systematically organized and easily accessible to researchers. By consolidating proteomics data from multifunctional lipid probes, this resource facilitates the systematic study of lipid-binding proteins across different lipid species and cellular models.
+description: This interactive web tool aggregates the data from a number of publications which utilize synthetic, functionalized lipid analogs to do affinity enrichment in order to identify the protein interactors of select bioactive lipids. 
 image: Images/SitePreview.gif
 date: 2025-01-25
 ---
 
 ## Overview
 
+The **Lipid Interactome** is an interactive, centralized resource designed to harmonize, compare, and integrate lipid interactome datasets. It adheres to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, ensuring that lipid–protein interaction data is systematically organized and easily accessible to researchers. By consolidating proteomics data from multifunctional lipid probes, this resource facilitates the systematic study of lipid-binding proteins across different lipid species and cellular models.
+
+I built this repository with the guidance of Dr. Fikadu Tafesse and Dr. Carsten Schultz in order to make these data more accessible and reusable -- hopefully it can help lipid researchers select candidate proteins for analyzing the functional roles of lipids.
+
 Click here to visit the Lipid Interactome: [LipidInteractome.org](lipidinteractome.org){target="_blank"}
+
+## Site structure
+
+The Lipid Interactome was built using Quarto, is stored on GitHub, and hosted on Netlify -- I apparently have a pretty predictable strategy for building and hosting sites.
+

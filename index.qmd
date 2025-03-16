@@ -2,7 +2,7 @@
 title: "Gaelen Guzman, PhD"
 
 about:
-  template: trestles
+  template: broadside
   image: assets/images/Portrait.png
   id: hero-heading
   links:

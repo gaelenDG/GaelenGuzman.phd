@@ -1,0 +1,13 @@
+<div class="listing-block">
+  <h3>
+    {% if listing.external-url %}
+      <a href="{{ listing.external-url }}" target="_blank">{{ listing.title }}</a>
+    {% else %}
+      <a href="{{ listing.path }}">{{ listing.title }}</a>
+    {% endif %}
+  </h3>
+  <p>{{ listing.description }}</p>
+  {% if listing.image %}
+    <img src="{{ listing.image }}" alt="Preview image for {{ listing.title }}">
+  {% endif %}
+</div>

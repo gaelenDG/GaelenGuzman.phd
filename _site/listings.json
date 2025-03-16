@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/ResearchProjects/Dissertation.html",
+    "items": [
+      "/ResearchProjects/index.html",
+      "/ResearchProjects/LipidInteractome.html"
+    ]
+  },
+  {
     "listing": "/HobbyEEProjects/index.html",
     "items": [
       "/HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
