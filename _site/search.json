@@ -35,13 +35,6 @@
     "text": "ReuseCC BY 4.0"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html",
-    "title": "Resistor Flex",
-    "section": "",
-    "text": "Electricity can be dangerous!\nAlways do this with an adult!"
-  },
-  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
     "title": "Resistor Flex",
@@ -355,13 +348,6 @@
     "title": "Mushroom Lamp v1",
     "section": "Future Improvements",
     "text": "Future Improvements\n\nI truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…\nThis is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!\nA slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.\nI’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard."
-  },
-  {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
-    "title": "Resistor Flex part 2",
-    "section": "",
-    "text": "Review what we talked about last time\nTalk about this mushroom lamp!\nUse a computer to control a circuit\nBrainstorm cool projects!"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
