@@ -35,6 +35,13 @@
     "text": "ReuseCC BY 4.0"
   },
   {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html",
+    "title": "Resistor Flex",
+    "section": "",
+    "text": "Electricity can be dangerous!\nAlways do this with an adult!"
+  },
+  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
     "title": "Resistor Flex",
@@ -350,6 +357,13 @@
     "text": "Future Improvements\n\nI truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…\nThis is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!\nA slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.\nI’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard."
   },
   {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
+    "title": "Resistor Flex part 2",
+    "section": "",
+    "text": "Review what we talked about last time\nTalk about this mushroom lamp!\nUse a computer to control a circuit\nBrainstorm cool projects!"
+  },
+  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
     "title": "Resistor Flex part 2",
@@ -364,18 +378,39 @@
     "text": "Types of components!\n\n\n\n\n\nTypes we talked about last time:\n\nLEDs\nResistors\nButtons\nLight-dependent resistors\nTransistors\n\n\n\n\n\n\n\nTypes we didn’t experiment with last time:\n\nCapacitors\nInductors\nLevel shifters\nMany, many types of sensors"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#my-mushroom-lamp",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#my-mushroom-lamp",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#breadboards-make-testing-complicated-circuits-easy",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#breadboards-make-testing-complicated-circuits-easy",
     "title": "Resistor Flex part 2",
-    "section": "My mushroom lamp",
-    "text": "My mushroom lamp\n\nVideo"
+    "section": "Breadboards make testing complicated circuits easy!",
+    "text": "Breadboards make testing complicated circuits easy!"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#transistors-electrical-switches",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#transistors-electrical-switches",
+    "title": "Resistor Flex part 2",
+    "section": "Transistors: Electrical switches",
+    "text": "Transistors: Electrical switches\n\n\n\n\n\n\n\n\nOFF if no current delivered to the Base\n\n\nON when even a tiny bit of current flows to the Base"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#hands-on-challenge-night-light",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#hands-on-challenge-night-light",
+    "title": "Resistor Flex part 2",
+    "section": "Hands on challenge: Night light",
+    "text": "Hands on challenge: Night light\nComponents:\n\nBreadboard\n5 V power supply → \nLED → \n220 Ω Resistor → \n100 kΩ Resistor → \nLDR → \nTransistor → \nJumper cables"
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#my-mushroom-lamp-making-your-own",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#my-mushroom-lamp-making-your-own",
+    "title": "Resistor Flex part 2",
+    "section": "My mushroom lamp (& making your own!)",
+    "text": "My mushroom lamp (& making your own!)\n\nVideo"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#the-main-components-of-the-mushroom-lamp",
     "title": "Resistor Flex part 2",
     "section": "The main components of the mushroom lamp",
-    "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (a small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs\n\n\n\n\n\n(Need a pic of some bark)"
+    "text": "The main components of the mushroom lamp\n\n\n\n\nA piece of bark\n\n\n\n\nSilicone sealant\n\n\n\n\nRed-Green-Blue LEDs\n\n\n\n\nAn ESP-32 microcontroller (a small computer)\n\n\n\n\nA level shifter and some resistors to control the LEDs"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#example-1-a-blinking-led",

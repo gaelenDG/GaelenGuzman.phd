@@ -90,9 +90,55 @@ format:
 ::::
 :::::
 
+
+## Breadboards make testing complicated circuits easy!
+
+:::{.v-center-container}
+:::{.r-stack}
+
+:::{.fragment .fade-in-then-out}
+![](Pictures/Breadboard.png)
+:::
+
+:::{.fragment .fade-in}
+![](Pictures/breadboard-right-and-wrong.jpg)
+:::
+:::
+:::
+
+## Transistors: Electrical switches
+
+:::{.fragment}
+![](Pictures/NPN2222a.png){fig-align="center" height=500}
+:::
+
+:::{.fragment}
+**OFF** if no current delivered to the *Base*
+:::
+:::{.fragment}
+**ON** when even a tiny bit of current flows to the *Base*
+:::
+
+# Assemble a night light
+
+## Hands on challenge: Night light
+
+**Components:**
+
+- Breadboard
+- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
+- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+- 100 k&ohm; Resistor &rarr;  ![](Pictures/symbols_resistor.png){height="25"}
+- LDR &rarr; ![](Pictures/symbols_LDR.png){height=70}
+- Transistor &rarr; ![](Pictures/symbols_NPN.png){height=50}
+- Jumper cables 
+
+![](  Pictures/HandsOn_7.svg){.absolute top=200 right=-20 width="600"}
+
 # Let's talk about inventing!
 
-## My mushroom lamp
+## My mushroom lamp (& making your own!)
 
 :::{.v-center-container}
 ![](/HobbyEEProjects/MushroomLamp_v2/ButtonDebound_testing.mp4){height=500}
@@ -126,7 +172,7 @@ format:
 ::: {.column width="55%"}
 ::: r-stack
 ::: {.fragment .fade-in-then-out fragment-index="1"}
-(Need a pic of some bark)
+![](Pictures/Bark.png){height=750}
 :::
 
 ::: {.fragment .fade-in-then-out fragment-index="2"}
