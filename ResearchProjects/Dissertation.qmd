@@ -10,9 +10,9 @@ external-url: https://guzmangadissertation.netlify.app
 ---
 
 
-<meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app">
+<!-- <meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app">
 
-[Click here if you are not redirected!](https://guzmangadissertation.netlify.app).
+[Click here if you are not redirected!](https://guzmangadissertation.netlify.app). -->
 
 
 ```{r, include=FALSE, echo=FALSE}
