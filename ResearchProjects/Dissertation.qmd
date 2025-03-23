@@ -3,7 +3,7 @@ title: Dissertation work
 description: "My dissertation is free to view online -- all 300 pages of it! Take a look if you're interested in *Mycobacterium tuberculosis*, Sphingolipids, Host-Pathogen Interactions, Lipidomics, Proteomics, or the history of Tuberculosis, please take a look!"
 date: 2024-02-19
 listing: true  # Ensure it appears in the listing
-engine: knitr  # Prevents Quarto from processing content
+# engine: knitr  # Prevents Quarto from processing content
 # freeze: true  # Avoid re-rendering issues
 image: Images/DissertationPreview.png
 external-url: https://guzmangadissertation.netlify.app
@@ -12,7 +12,7 @@ external-url: https://guzmangadissertation.netlify.app
 
 <meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app">
 
-[Click here if you are not redirected](https://guzmangadissertation.netlify.app).
+[Click here if you are not redirected!](https://guzmangadissertation.netlify.app).
 
 <!-- 
 ```{r, include=FALSE, echo=FALSE}
