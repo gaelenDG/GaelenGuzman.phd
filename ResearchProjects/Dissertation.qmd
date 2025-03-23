@@ -4,7 +4,7 @@ description: "My dissertation is free to view online -- all 300 pages of it! Tak
 date: 2024-02-19
 listing: true  # Ensure it appears in the listing
 engine: knitr  # Prevents Quarto from processing content
-freeze: true  # Avoid re-rendering issues
+# freeze: true  # Avoid re-rendering issues
 image: Images/DissertationPreview.png
 external-url: https://guzmangadissertation.netlify.app
 ---
