@@ -13,7 +13,6 @@ listing:
   sort: "date desc"
   page-size: 10
 format: 
-  html:
-    page-layout: full
+  html
 ---
 
