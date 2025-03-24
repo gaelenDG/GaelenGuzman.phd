@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/ResearchProjects/Dissertation.html",
+    "items": [
+      "/ResearchProjects/index.html",
+      "/ResearchProjects/LipidInteractome.html"
+    ]
+  },
+  {
     "listing": "/HobbyEEProjects/index.html",
     "items": [
       "/HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
@@ -8,6 +15,13 @@
       "/HobbyEEProjects/MushroomLamp_v2.html",
       "/HobbyEEProjects/LightUpBabyBook.html",
       "/HobbyEEProjects/MushroomLamp_v1.html"
+    ]
+  },
+  {
+    "listing": "/ResearchProjects/index.html",
+    "items": [
+      "/ResearchProjects/LipidInteractome.html",
+      "/ResearchProjects/Dissertation.html"
     ]
   }
 ]

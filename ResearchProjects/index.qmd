@@ -1,24 +1,24 @@
 ---
 title: "Research Projects"
 description-meta: "Laboratory and Data Science projects"
-# listing:
-#   contents: .
-#   type: default
-#   image-align: left
-#   fields:
-#     - title
-#     - description
-#     - date
-#     - image
-#   sort: "date desc"
-#   page-size: 10
+listing:
+  contents: .
+  type: default
+  image-align: left
+  fields:
+    - title
+    - description
+    - date
+    - image
+  sort: "date desc"
+  page-size: 10
 format: 
   html:
     page-layout: full
 
 ---
 
-
+<!-- 
 ## The lipid Interactome
 
 **Date**: Jan 25, 2025
@@ -36,4 +36,4 @@ format:
 
 **Description**: My dissertation is free to view online -- all 300 pages of it! Take a look if you're interested in *Mycobacterium tuberculosis*, Sphingolipids, Host-Pathogen Interactions, Lipidomics, Proteomics, or the history of Tuberculosis, please take a look!
 
-[![](Images/DissertationPreview.png)](https://gaelenguzman.phd/ResearchProjects/Dissertation.html)
+[![](Images/DissertationPreview.png)](https://gaelenguzman.phd/ResearchProjects/Dissertation.html) -->
