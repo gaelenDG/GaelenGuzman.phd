@@ -18,9 +18,8 @@ format:
 
 ---
 
-## Research Projects
 
-### The lipid Interactome
+## The lipid Interactome
 
 **Date**: Jan 25, 2025
 
@@ -30,9 +29,8 @@ format:
 
 <br>
 
-<hr>
 
-### Dissertation work
+## Dissertation work
 
 **Date**: Feb 19, 2025
 

@@ -34,7 +34,8 @@ website:
         href: assets/cv/GaelenGuzman_Resume.pdf
         target: "_blank"
     left: 
-      - text: "<i class='fa-regular fa-vial-virus'></i> Research Projects"
+      - text: "Research Projects"
+        icon: bi-virus2
         href: ResearchProjects/index.qmd
         # menu:
         #   - text: "The Lipid Interactome"
@@ -43,8 +44,8 @@ website:
         #   - text: "TB & The Sphinx (My dissertation)"
         #     href: https://guzmangadissertation.netlify.app
         #     target: "_blank"
-      - text: "<i class='fa-solid fa-microchip'></i> Hobby Electronics Projects"
-        icon: microchip
+      - text: "Hobby Electronics Projects"
+        icon: bi-cpu
         href: HobbyEEProjects/index.qmd
   sidebar: true 
   page-navigation: true
