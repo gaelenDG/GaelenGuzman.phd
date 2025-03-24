@@ -4,7 +4,7 @@ project:
     port: 4321
     browser: true
 execute: 
-  freeze: auto
+  freeze: false
   render:
     - "*.qmd"
     - "ResearchProjects/*.qmd"
@@ -38,13 +38,6 @@ website:
       - text: "Research Projects"
         icon: bi-virus2
         href: ResearchProjects/index.qmd
-        # menu:
-        #   - text: "The Lipid Interactome"
-        #     href: https://www.lipidinteractome.org
-        #     target: "_blank"
-        #   - text: "TB & The Sphinx (My dissertation)"
-        #     href: https://guzmangadissertation.netlify.app
-        #     target: "_blank"
       - text: "Hobby Electronics Projects"
         icon: bi-cpu
         href: HobbyEEProjects/index.qmd
