@@ -1,0 +1,16 @@
+---
+title: "Dissertation Chapter  6"
+subtitle: "An Affinity for Sphingolipids: Trifunctional lipid probes reveal protein-sphingolipid interactions during *Mycobacterium tuberculosis* infection"
+description: "Understanding the molecular interactions underlying Mtb’s capacity for immune subversion and hijacking of the host cell can provide a unique insight into potential new routes of antitubercular therapy. Because *Mtb* is a pathogen with a unique sensitivity to the host lipid compartment, and because sphingolipids are a lipid family with emerging roles in regulating antimicrobial functions in macrophages, we sought to characterize the sphingolipid interactome of an Mtb-infected cell. To this end, we utilized trifunctionalized lipid analogs as affinity handles for enrichment proteomics. We found that *Mtb* infection induces a significant reprogramming of proteins that interact with sphingosine. These changes included a downregulation of interactions among proteins involved in secretory trafficking and lysosomal maturation and an upregulation of interactions with cytoskeletal proteins. We further identify a candidate *Mtb* protein that selectively interacts with trifunctional sphingosine. This analysis is the first of its kind and represents a crucial step in characterizing how sphingolipids mediate the cellular response to intracellular infection."
+date: 2024-02-19
+image: Images/Chapter6.png
+listing: true  # Ensure it appears in the listing
+engine: knitr  # Prevents Quarto from processing content
+freeze: true  # Avoid re-rendering issues
+external-url: https://guzmangadissertation.netlify.app/parts/results/results_trifunctionalproteomics
+---
+
+
+<meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app/parts/results/results_trifunctionalproteomics">
+
+[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/results/results_trifunctionalproteomics)

@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-02-19">
+
+<title>Dissertation Chapter 10 – Gaelen Guzman</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/images/glasses-solid.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a240eddbbdb8ddb17a7d6850d72db8bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/glasses-solid.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Gaelen Guzman</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../ResearchProjects/index.html"> <i class="bi bi-virus2" role="img">
+</i> 
+<span class="menu-text">Research Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../HobbyEEProjects/index.html"> <i class="bi bi-cpu" role="img">
+</i> 
+<span class="menu-text">Hobby Electronics Projects</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../assets/cv/GaelenGuzman_Resume.pdf" target="_blank"> <i class="bi bi-person-lines-fill" role="img">
+</i> 
+<span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="82d7d54750f38963123eec1a631d3234" class="alert alert-primary hidden"><div class="quarto-announcement-content">
+<p><i class="bi bi-cone-striped"></i> <strong>Hardhat Zone</strong> - Site is still under construction. Please excuse the mess.</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Dissertation Chapter 10</h1>
+<p class="subtitle lead">Systematic analysis of the sphingomyelin synthase family in C. elegans</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 19, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Sphingomyelin (SM) is a major component of mammalian cell membranes and particularly abundant in the myelin sheath that surrounds nerve fibers. Its production is catalyzed by SM synthases SMS1 and SMS2, which interconvert phosphatidylcholine and ceramide to diacylglycerol and SM in the Golgi and at the plasma membrane, respectively. As the lipids participating in this reaction fulfill both structural and signaling functions, SMS enzymes have considerable potential to influence diverse important cellular processes. The nematode Caenorhabditis elegans is an attractive model for studying both animal development and human disease. The organism contains five SMS homologues but none of these have been characterized in any detail. Here, we carried out the first systematic analysis of SMS family members in C. elegans. Using heterologous expression systems, genetic ablation, metabolic labeling and lipidome analyses, we show that C. elegans harbors at least three distinct SM synthases and one ceramide phosphoethanolamine (CPE) synthase. Moreover, C. elegans SMS family members have partially overlapping but also unique sub-cellular distributions and together occupy all principal compartments of the secretory pathway. Our findings shed light on crucial aspects of sphingolipid metabolism in a valuable animal model and opens avenues for exploring the role of SM and its metabolic intermediates in organismal development.
+  </div>
+</div>
+
+
+</header>
+
+
+<meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app/parts/addenda/addenda_celegans_sms_family">
+<p><a href="https://guzmangadissertation.netlify.app/parts/addenda/addenda_celegans_sms_family">Click here if you are not redirected!</a></p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937142032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1507">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/Dissertation.html" class="no-external"></a></p><a href="../ResearchProjects/Dissertation.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/DissertationPreview.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/Dissertation.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/Dissertation.html" class="no-external">Dissertation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/Dissertation.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/Dissertation.html" class="no-external">My dissertation is free to view online – all 300 pages of it! Take a look if you’re interested in <em>Mycobacterium tuberculosis</em>, Sphingolipids, Host-Pathogen Interactions, Lipidomics, Proteomics, or the history of Tuberculosis, please take a look!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/Dissertation.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937365386" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter1.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter1.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter1.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter1.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter1.html" class="no-external">Dissertation Chapter 1</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter1.html" class="no-external">An accessible overview</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter1.html" class="no-external">This chapter explores the devastating illness of tuberculosis (TB) and the growing interest in host-directed therapy (HDT) as a potential avenue for novel anti-TB therapies. We aim to convey how one niche class of human lipids, sphingolipids, may affect the course of a <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) infection. We introduce TB, its historical context, and the evolution of mycobacteria alongside humans. We also introduce the crucial and enigmatic roles of sphingolipids throughout human biology and how they may present novel ways of treating TB infections. These historical contexts are essential for a deeper discussion on the interplay between <em>Mtb</em> infection and the lipids in the host cell. Further, it is necessary for individuals attempting to discover potential tuberculosis treatments to consider the disease’s historical background. A low-cost, effective therapy is a crucial first step in rectifying the long-standing systemic injustices of tuberculosis treatment.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter1.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937367816" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter2.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter2.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter2.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter2.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter2.html" class="no-external">Dissertation Chapter 2</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter2.html" class="no-external">TB &amp; The Sphinx</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter2.html" class="no-external"><em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) is a significant cause of infectious death worldwide. This intracellular pathogen uses many mechanisms to subvert the host immune system and lie undetected before causing active disease. This subtle pathogen is uniquely dependent on host lipids for energy, production of host-damaging materiel, and immune subversion. In the face of antibiotic-resistant <em>Mtb</em> strains, researchers have turned toward lipid biology for potential avenues of novel antitubercular therapy. The sphingolipid family has gained attention for its profound roles in determining cell fate, immune signaling, and antimicrobial activity. We review the state of the field regarding sphingolipids as candidate targets of host-directed antitubercular intervention.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter2.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937386788" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter3.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter3.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter3.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter3.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter3.html" class="no-external">Dissertation Chapter 3</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter3.html" class="no-external">Breaking and Entering: Sphingomyelin Biosynthesis Is Essential for Phagocytic Signaling during <em>Mycobacterium tuberculosis</em> Host Cell Entry</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter3.html" class="no-external">Phagocytosis by alveolar macrophages is the obligate first step in <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) infection, yet the mechanism underlying this process is incompletely understood. Here we show that <em>Mtb</em> invasion relies on an intact sphingolipid biosynthetic pathway. Inhibition or knockout of early sphingolipid biosynthetic enzymes greatly reduces <em>Mtb</em> uptake across multiple phagocytic cell types without affecting other forms of endocytosis. While the phagocytic receptor Dectin-1 undergoes normal clustering at the pathogen contact sites, sphingolipid biosynthetic mutant cells fail to segregate the regulatory phosphatase CD45 from the clustered receptors. Blocking sphingolipid production also impairs downstream activation of Rho GTPases, actin dynamics, and phosphoinositide turnover at the nascent phagocytic cup. Moreover, we find that production of sphingomyelin, not glycosphingolipids, is essential for <em>Mtb</em> uptake. Collectively, our data support a critical role of sphingomyelin biosynthesis in an early stage of <em>Mtb</em> infection and provide novel insights into the mechanism underlying phagocytic entry of this pathogen.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter3.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937390952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter4.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter4.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter4.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter4.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter4.html" class="no-external">Dissertation Chapter 4</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter4.html" class="no-external">Sealing the Gaps: Sphingolipids are essential for repairing the endosomal damage caused by Mycobacterium tuberculosis</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter4.html" class="no-external">Tuberculosis infection remains one of the leading causes of death worldwide, causing over 1.3 million deaths in 2022 alone. With the emergence of antibiotic-resistant strains of <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>), there is a pressing need for novel and improved therapeutics. Here, we characterize the critical role of sphingolipids in restricting intracellular replication of Mtb. Sphingolipids are essential for rapidly responding to membrane damage and maintaining lysosomal integrity during <em>Mtb</em> infection. Additionally, sphingolipids enable the restriction of <em>Mtb</em> growth within host cells. Understanding the influence of host sphingolipids on <em>Mtb</em> infection may reveal novel routes for host-directed therapy. This research provides valuable insights into the pathogenesis of <em>Mtb</em> infection and could pave the way for developing new therapeutic strategies.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter4.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937392932" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter5.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter5.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter5.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter5.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter5.html" class="no-external">Dissertation Chapter 5</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter5.html" class="no-external">Living Off the Fat of the Cell: A lipidomics map of the Mycobacterium tuberculosis-infected cell</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter5.html" class="no-external">For centuries, humans have been seeking reliable treatment for tuberculosis, but unfortunately, it still poses a significant threat to global health. Recent research has shown that host lipid biology may offer new opportunities for developing novel antitubercular therapy. Here, we identify unique signatures of <em>Mycobacterium tuberculosis</em> (<em>Mtb</em>) infection by comparing the global lipidome of cells infected with pathogenic and attenuated <em>Mtb</em> strains against the lipidomes of cells treated with isolated <em>Mtb</em> cell wall components. We find that pathogenic and attenuated infections and treatments with pathogen-associated molecular patterns induce significant upregulation of diacylglycerol production. However, only pathogenic infection increases the production of triacylglycerol and acylcarnitine, reflecting induced fatty acid β-oxidation, while inhibiting the synthesis of lysophospholipids and plasmalogens, which reflects concerted subversions of the macrophage antimicrobial program. This research shows great potential in identifying potential host-directed therapies.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter5.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937395851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter6.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter6.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter6.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter6.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter6.html" class="no-external">Dissertation Chapter 6</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter6.html" class="no-external">An Affinity for Sphingolipids: Trifunctional lipid probes reveal protein-sphingolipid interactions during <em>Mycobacterium tuberculosis</em> infection</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter6.html" class="no-external">Understanding the molecular interactions underlying Mtb’s capacity for immune subversion and hijacking of the host cell can provide a unique insight into potential new routes of antitubercular therapy. Because <em>Mtb</em> is a pathogen with a unique sensitivity to the host lipid compartment, and because sphingolipids are a lipid family with emerging roles in regulating antimicrobial functions in macrophages, we sought to characterize the sphingolipid interactome of an Mtb-infected cell. To this end, we utilized trifunctionalized lipid analogs as affinity handles for enrichment proteomics. We found that <em>Mtb</em> infection induces a significant reprogramming of proteins that interact with sphingosine. These changes included a downregulation of interactions among proteins involved in secretory trafficking and lysosomal maturation and an upregulation of interactions with cytoskeletal proteins. We further identify a candidate <em>Mtb</em> protein that selectively interacts with trifunctional sphingosine. This analysis is the first of its kind and represents a crucial step in characterizing how sphingolipids mediate the cellular response to intracellular infection.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter6.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937397867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter7.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter7.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter6.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter7.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter7.html" class="no-external">Dissertation Chapter 7</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter7.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter7.html" class="no-external">Genetic tools to study sphingolipids in disease: Sphingolipids are a critical family of membrane lipids with diverse functions in eukaryotic cells, and a growing body of literature supports that these lipids play essential roles during the lifecycles of viruses. While small molecule inhibitors of sphingolipid synthesis and metabolism are widely used, the advent of CRISPR-based genomic editing techniques allows for nuanced exploration into the manners in which sphingolipids influence various stages of viral infections. Here we describe some of these critical considerations needed in designing studies utilizing genomic editing techniques for manipulating the sphingolipid metabolic pathway, as well as the current body of literature regarding how viruses depend on the products of this pathway. Here, we highlight the ways in which sphingolipids affect viruses as these pathogens interact with and influence their host cell and describe some of the many open questions remaining in the field.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter7.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937378108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter8.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter8.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter8.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter8.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter8.html" class="no-external">Dissertation Chapter 8</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter8.html" class="no-external">The Squeaky Yeast Gets Greased: The Roles of Host Lipids in the Clearance of Pathogenic Fungi</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter8.html" class="no-external">Fungal infections remain a global health threat with high morbidity and mortality. The human immune system must, therefore, perpetually defend against invasive fungal infections. Phagocytosis is critical for the clearance of fungal pathogens, as this cellular process allows select immune cells to internalize and destroy invading fungal cells. While much is known about the protein players that enable phagocytosis, the various roles that lipids play during this fundamental innate immune process are still being illuminated. In this review, we describe recent discoveries that shed new light on the mechanisms by which host lipids enable the phagocytic uptake and clearance of fungal pathogens.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter8.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937382700" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/DissertationChapter9.html" class="no-external"></a></p><a href="../ResearchProjects/DissertationChapter9.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/Chapter9.png" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/DissertationChapter9.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/DissertationChapter9.html" class="no-external">Dissertation Chapter 9</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/DissertationChapter9.html" class="no-external">Rapid visualization and quantification of phagocytosis in neutrophils</a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/DissertationChapter9.html" class="no-external">Phagocytosis by phagocytes such as neutrophils is a crucial part of the host innate immune response against invading pathogens. Phagocytosis is a complex process that initiates with the binding of the particles on the cell surface of the phagocytes through the interaction of pattern recognition receptors with ligands on the surface of the pathogens. During this process, phagocytes undergo extensive membrane reorganization and cytoskeleton rearrangement at their cell surface. To gain better insight about the molecular mechanisms of this dynamic cellular process, visualization and quantification in a high-throughput manner is essential. Here, we describe a microscope-based method to visualize and quantify phagocytic uptake of pathogens (such as bacteria and fungi) and model particulates that are larger than 0.5 μm (such as Zymosan A and IgG-coated beads).</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/DissertationChapter9.html" class="no-external">
+<div class="listing-date">
+Feb 19, 2024
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-listing-file-modified-sort="1742937344747" data-listing-reading-time-sort="1" data-listing-word-count-sort="80">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/index.html" class="no-external"></a></p><a href="../ResearchProjects/index.html" class="no-external">
+<p class="card-img-top"><img src="Images/SitePreview.gif"  class="thumbnail-image card-img"/></p>
+</a><p><a href="../ResearchProjects/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/index.html" class="no-external">Research Projects</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/index.html" class="no-external">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-left" data-index="0" data-listing-date-sort="1737792000000" data-listing-file-modified-sort="1742747635868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="thumbnail">
+<p></p>
+<p></p>
+<p></p>
+</div>
+<div class="body">
+
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+This interactive web tool aggregates the data from a number of publications which utilize synthetic, functionalized lipid analogs to do affinity enrichment in…</div></div><div class="metadata"><div class="listing-date"></div></div></div><div class="quarto-post image-left" data-index="1" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937142032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1507"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"><em></em></div></div><div class="metadata"><div class="listing-date"></div></div></div><div class="quarto-post image-left" data-index="2" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937334569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"></div></div></div><div class="quarto-post image-left" data-index="3" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937248172" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"><em></em><em></em><em></em></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"><em></em><em></em><em></em></div></div></div><div class="quarto-post image-left" data-index="4" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937237504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"><em></em><em></em><em></em></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"><em></em><em></em><em></em></div></div></div><div class="quarto-post image-left" data-index="5" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937185303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"><em></em></div><div class="listing-description"><em></em><em></em><em></em><em></em><em></em><em></em></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"><em></em><em></em><em></em><em></em><em></em><em></em></div></div></div><div class="quarto-post image-left" data-index="6" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937193620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"><em></em><em></em><em></em><em></em><em></em><em></em></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"><em></em><em></em><em></em><em></em><em></em><em></em></div></div></div><div class="quarto-post image-left" data-index="7" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937202838" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"><em></em><em></em><em></em><em></em></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"><em></em><em></em><em></em><em></em></div></div></div><div class="quarto-post image-left" data-index="8" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937209893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"><em></em></div><div class="listing-description"><em></em><em></em><em></em></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"><em></em><em></em><em></em></div></div></div><div class="quarto-post image-left" data-index="9" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742937219005" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"></div></div></div><div class="quarto-post image-left" data-index="10" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742936814120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"></div></div></div><div class="quarto-post image-left" data-index="11" data-listing-date-sort="1708329600000" data-listing-file-modified-sort="1742936936550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9"><div class="thumbnail"><p></p><p></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="metadata-value listing-abstract"></div></div></div></div><div class="listing-no-matching d-none"></div></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../ResearchProjects/index.html" class="no-external"></a></p><a href="../ResearchProjects/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-listing-date-sort="1737792000000" data-listing-file-modified-sort="1742747635868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="142">
+<div class="thumbnail">
+<p><a href="../ResearchProjects/LipidInteractome.html" class="no-external"></a></p><a href="../ResearchProjects/LipidInteractome.html" class="no-external">
+<p><img loading="lazy" src="../ResearchProjects/Images/SitePreview.gif" class="thumbnail-image"></p>
+</a><p><a href="../ResearchProjects/LipidInteractome.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../ResearchProjects/LipidInteractome.html" class="no-external">The Lipid Interactome</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../ResearchProjects/LipidInteractome.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../ResearchProjects/LipidInteractome.html" class="no-external">This interactive web tool aggregates the data from a number of publications which utilize synthetic, functionalized lipid analogs to do affinity enrichment in order to identify the protein interactors of select bioactive lipids.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../ResearchProjects/LipidInteractome.html" class="no-external">
+<div class="listing-date">
+Jan 25, 2025
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2025 Gaelen Guzman | Built with Quarto
+  </li>  
+</ul>
+    <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/ResearchProjects/DissertationChapter10.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

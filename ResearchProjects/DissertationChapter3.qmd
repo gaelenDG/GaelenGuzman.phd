@@ -1,0 +1,16 @@
+---
+title: "Dissertation Chapter  3"
+subtitle: "Breaking and Entering: Sphingomyelin Biosynthesis Is Essential for Phagocytic Signaling during *Mycobacterium tuberculosis* Host Cell Entry"
+description: "Phagocytosis by alveolar macrophages is the obligate first step in *Mycobacterium tuberculosis* (*Mtb*) infection, yet the mechanism underlying this process is incompletely understood. Here we show that *Mtb* invasion relies on an intact sphingolipid biosynthetic pathway. Inhibition or knockout of early sphingolipid biosynthetic enzymes greatly reduces *Mtb* uptake across multiple phagocytic cell types without affecting other forms of endocytosis. While the phagocytic receptor Dectin-1 undergoes normal clustering at the pathogen contact sites, sphingolipid biosynthetic mutant cells fail to segregate the regulatory phosphatase CD45 from the clustered receptors. Blocking sphingolipid production also impairs downstream activation of Rho GTPases, actin dynamics, and phosphoinositide turnover at the nascent phagocytic cup. Moreover, we find that production of sphingomyelin, not glycosphingolipids, is essential for *Mtb* uptake. Collectively, our data support a critical role of sphingomyelin biosynthesis in an early stage of *Mtb* infection and provide novel insights into the mechanism underlying phagocytic entry of this pathogen."
+date: 2024-02-19
+image: Images/Chapter3.png
+listing: true  # Ensure it appears in the listing
+engine: knitr  # Prevents Quarto from processing content
+freeze: true  # Avoid re-rendering issues
+external-url: https://guzmangadissertation.netlify.app/parts/results/results_mtb_phagocytosis
+---
+
+
+<meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app/parts/results/results_mtb_phagocytosis">
+
+[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/results/results_mtb_phagocytosis)

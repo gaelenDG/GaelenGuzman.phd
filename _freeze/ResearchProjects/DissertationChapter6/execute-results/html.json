@@ -1,0 +1,15 @@
+{
+  "hash": "a39837aaeb2065dbc1b9eecd508746df",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Dissertation Chapter 6: An Affinity for Sphingolipids\"\nsubtitle: \"Trifunctional lipid probes reveal protein-sphingolipid interactions during *Mycobacterium tuberculosis* infection\"\nabstract: \"Understanding the molecular interactions underlying Mtb’s capacity for immune subversion and hijacking of the host cell can provide a unique insight into potential new routes of antitubercular therapy. Because *Mtb* is a pathogen with a unique sensitivity to the host lipid compartment, and because sphingolipids are a lipid family with emerging roles in regulating antimicrobial functions in macrophages, we sought to characterize the sphingolipid interactome of an Mtb-infected cell. To this end, we utilized trifunctionalized lipid analogs as affinity handles for enrichment proteomics. We found that *Mtb* infection induces a significant reprogramming of proteins that interact with sphingosine. These changes included a downregulation of interactions among proteins involved in secretory trafficking and lysosomal maturation and an upregulation of interactions with cytoskeletal proteins. We further identify a candidate *Mtb* protein that selectively interacts with trifunctional sphingosine. This analysis is the first of its kind and represents a crucial step in characterizing how sphingolipids mediate the cellular response to intracellular infection.\"\ndate: 2024-02-19\nimage: Images/Chapter6.png\nlisting: true  # Ensure it appears in the listing\nengine: knitr  # Prevents Quarto from processing content\nfreeze: true  # Avoid re-rendering issues\nexternal-url: https://guzmangadissertation.netlify.app/parts/results/results_trifunctionalproteomics\n---\n\n\n\n\n\n\n<meta http-equiv=\"refresh\" content=\"0;url=https://guzmangadissertation.netlify.app/parts/results/results_trifunctionalproteomics\">\n\n[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/results/results_trifunctionalproteomics)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

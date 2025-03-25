@@ -1,0 +1,15 @@
+{
+  "hash": "d0785e956a0d82ad72cdc66777967aa2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Dissertation Chapter 8: The Squeaky Yeast Gets Greased\"\nsubtitle: \"The Roles of Host Lipids in the Clearance of Pathogenic Fungi\"\nabstract: \"Fungal infections remain a global health threat with high morbidity and mortality. The human immune system must, therefore, perpetually defend against invasive fungal infections. Phagocytosis is critical for the clearance of fungal pathogens, as this cellular process allows select immune cells to internalize and destroy invading fungal cells. While much is known about the protein players that enable phagocytosis, the various roles that lipids play during this fundamental innate immune process are still being illuminated. In this review, we describe recent discoveries that shed new light on the mechanisms by which host lipids enable the phagocytic uptake and clearance of fungal pathogens.\"\ndate: 2024-02-19\nimage: Images/Chapter8.png\nlisting: true  # Ensure it appears in the listing\nengine: knitr  # Prevents Quarto from processing content\nfreeze: true  # Avoid re-rendering issues\nexternal-url: https://guzmangadissertation.netlify.app/parts/addenda/addenda_sls_fungus\n---\n\n\n\n\n\n\n<meta http-equiv=\"refresh\" content=\"0;url=https://guzmangadissertation.netlify.app/parts/addenda/addenda_sls_fungus\">\n\n[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/addenda/addenda_sls_fungus)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

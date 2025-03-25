@@ -1,0 +1,16 @@
+---
+title: "Dissertation Chapter  5"
+subtitle: "Living Off the Fat of the Cell: A lipidomics map of the Mycobacterium tuberculosis-infected cell"
+description: "For centuries, humans have been seeking reliable treatment for tuberculosis, but unfortunately, it still poses a significant threat to global health. Recent research has shown that host lipid biology may offer new opportunities for developing novel antitubercular therapy. Here, we identify unique signatures of *Mycobacterium tuberculosis* (*Mtb*) infection by comparing the global lipidome of cells infected with pathogenic and attenuated *Mtb* strains against the lipidomes of cells treated with isolated *Mtb* cell wall components. We find that pathogenic and attenuated infections and treatments with pathogen-associated molecular patterns induce significant upregulation of diacylglycerol production. However, only pathogenic infection increases the production of triacylglycerol and acylcarnitine, reflecting induced fatty acid β-oxidation, while inhibiting the synthesis of lysophospholipids and plasmalogens, which reflects concerted subversions of the macrophage antimicrobial program. This research shows great potential in identifying potential host-directed therapies."
+date: 2024-02-19
+image: Images/Chapter5.png
+listing: true  # Ensure it appears in the listing
+engine: knitr  # Prevents Quarto from processing content
+freeze: true  # Avoid re-rendering issues
+external-url: https://guzmangadissertation.netlify.app/parts/results/results_mtb_lipidomics_v2
+---
+
+
+<meta http-equiv="refresh" content="0;url=https://guzmangadissertation.netlify.app/parts/results/results_mtb_lipidomics_v2">
+
+[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/results/results_mtb_lipidomics_v2)

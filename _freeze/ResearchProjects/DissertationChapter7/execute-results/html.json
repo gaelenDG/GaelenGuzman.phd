@@ -1,0 +1,15 @@
+{
+  "hash": "65c5167aa2b976003d6a628b0e2b7dce",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Dissertation Chapter 7\"\nabstract: \"Genetic tools to study sphingolipids in disease: Sphingolipids are a critical family of membrane lipids with diverse functions in eukaryotic cells, and a growing body of literature supports that these lipids play essential roles during the lifecycles of viruses. While small molecule inhibitors of sphingolipid synthesis and metabolism are widely used, the advent of CRISPR-based genomic editing techniques allows for nuanced exploration into the manners in which sphingolipids influence various stages of viral infections. Here we describe some of these critical considerations needed in designing studies utilizing genomic editing techniques for manipulating the sphingolipid metabolic pathway, as well as the current body of literature regarding how viruses depend on the products of this pathway. Here, we highlight the ways in which sphingolipids affect viruses as these pathogens interact with and influence their host cell and describe some of the many open questions remaining in the field.\"\ndate: 2024-02-19\nimage: Images/Chapter6.png\nlisting: true  # Ensure it appears in the listing\nengine: knitr  # Prevents Quarto from processing content\nfreeze: true  # Avoid re-rendering issues\nexternal-url: https://guzmangadissertation.netlify.app/parts/addenda/addenda_sls_genetictools\n---\n\n\n\n\n<meta http-equiv=\"refresh\" content=\"0;url=https://guzmangadissertation.netlify.app/parts/addenda/addenda_sls_genetictools\">\n\n[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/addenda/addenda_sls_genetictools)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

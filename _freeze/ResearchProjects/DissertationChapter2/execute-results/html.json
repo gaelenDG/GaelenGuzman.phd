@@ -1,0 +1,15 @@
+{
+  "hash": "b2df9ab4a40c1b3726b20aa2de8ed894",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Introduction Chapter 2 -- TB & The Sphinx\nabstract: \"*Mycobacterium tuberculosis* (*Mtb*) is a significant cause of infectious death worldwide. This intracellular pathogen uses many mechanisms to subvert the host immune system and lie undetected before causing active disease. This subtle pathogen is uniquely dependent on host lipids for energy, production of host-damaging materiel, and immune subversion. In the face of antibiotic-resistant *Mtb* strains, researchers have turned toward lipid biology for potential avenues of novel antitubercular therapy. The sphingolipid family has gained attention for its profound roles in determining cell fate, immune signaling, and antimicrobial activity. We review the state of the field regarding sphingolipids as candidate targets of host-directed antitubercular intervention.\"\ndate: 2024-02-19\nimage: Images/DissertationPreview.png\nlisting: true  # Ensure it appears in the listing\nengine: knitr  # Prevents Quarto from processing content\nfreeze: true  # Avoid re-rendering issues\nexternal-url: https://guzmangadissertation.netlify.app/parts/introduction/intro_layperson\n---\n\n\n\n\n\n\n<meta http-equiv=\"refresh\" content=\"0;url=https://guzmangadissertation.netlify.app/parts/introduction/intro_layperson\">\n\n[Click here if you are not redirected!](https://guzmangadissertation.netlify.app/parts/introduction/intro_layperson)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

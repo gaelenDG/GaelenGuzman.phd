@@ -10,7 +10,9 @@ listing:
     - description
     - date
     - image
-  sort: "date desc"
+  sort: 
+    - "date desc"
+    - "title"
   page-size: 10
 format: 
   html:
