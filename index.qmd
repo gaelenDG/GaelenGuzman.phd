@@ -26,9 +26,9 @@ anchor-sections: false
 :::{#hero-heading}
 ## Hello!
 
-I am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology -- focusing on the manners in which host lipids influence the progression of *Mycobacterium tuberculosis* infection. 
+I am a postdoctoral researcher with Dr. Fikadu Tafesse at Oregon Health & Science University. I study microbiology and lipid biology -- focusing on the manners in which host lipids influence the progression of *Mycobacterium tuberculosis* infection. Check out some of my research above!
 
-I'm interested in a career in scientific communication and data science: I want to promote public health and Open Science by building a stronger bridge between scientists and the public. 
+I'm interested in a career in scientific communication and data science: I want to promote public health and open science by building a stronger bridge between scientists and the public. I'm looking for a new position as my postdoc is wrapping up, so feel free to check out my resume above for more details about my skills and experience -- some are listed below too.
 
 I'm also a new father, so I don't exactly have a lot of free time -- but when I do, I enjoy hobby electrical engineering projects (see some of my projects above!), rock climbing, cycling, and enjoying those Pacific Northwest outdoors.
 
@@ -45,11 +45,15 @@ Please reach out, I'd love to chat!
 | [May 2024 - Present]{.small-text} | Postdoctoral Researcher \@ [Tafesse Lab, OHSU](https://www.tafesselab.com){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Portland, OR]{.small-text} |
 | [Mar 2014 - June 2017]{.small-text} | Research Associate II \@ [Proteomics Platform, Broad Institute](https://www.broadinstitute.org/proteomics){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Cambridge, MA]{.small-text} |
 
-
-
 ## <i class="fa-regular fa-book-open"></i> Education
 
 |  |  |  | 
 |:---|:-------------------------|-----:|
 | [2017 - 2024]{.small-text} | PhD, Microbiology and Immunology from Oregon Health & Science University | [<i class="fa-regular fa-location-dot"></i> Portland, OR]{.small-text} |
 | [2010 - 2014]{.small-text} | BS, Molecular Biology from Massachusetts Institute of Technology | [<i class="fa-regular fa-location-dot"></i> Cambridge, MA]{.small-text} |
+
+## Data Analysis Skills
+
+
+## Laboratory Skills
+
