@@ -18,7 +18,7 @@ format:
     fig-align: center
 ---
 
-# Safety first! 
+# Safety first!
 
 **Electricity can be dangerous!**
 
@@ -26,271 +26,242 @@ format:
 
 # What is electricity??
 
-:::::{columns}
-
-::::{.column width="50%"}
+::::: {columns}
+::: {.column width="50%"}
 ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/LightningBolt.gif)
-::::
+:::
 
-::::{.column width="50%"}
-::::
+::: {.column width="50%"}
+:::
 :::::
 
 ## Electricity is made when charged particles move
 
-</br> 
+</br>
 
-Every atom is made of particles 
+Every atom is made of particles
 
-:::{.incremental}
-* Protons    &rarr; ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/plus-circle.svg){.absolute top=315 left=275 height="36"}
-* Electrons &rarr; ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/minus-circle.svg){.absolute top=385 left=275 height="36"}
-* Neutrons
+::: incremental
+-   Protons → ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/plus-circle.svg){.absolute top="315" left="275" height="36"}
+-   Electrons → ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/minus-circle.svg){.absolute top="385" left="275" height="36"}
+-   Neutrons
 :::
 
-![](Pictures/atom.png){.absolute top="300" right="70" height=400}
-
+![](Pictures/atom.png){.absolute top="300" right="70" height="400"}
 
 ## Electricity is made of moving charged particles
 
-:::{.fragment .fade-in fragment-index="1"}
-* *high potential* &rarr; *low potential*
-:::
-:::{.fragment .fade-in fragment-index="2"}
-* Transports energy that can perform work
+::: {.fragment .fade-in fragment-index="1"}
+-   *high potential* → *low potential*
 :::
 
-:::{.fragment .fade-in fragment-index='3'}
+::: {.fragment .fade-in fragment-index="2"}
+-   Transports energy that can perform work
+:::
+
+::: {.fragment .fade-in fragment-index="3"}
 ![](Pictures/direct-currents600_10.gif){fig-align="center" width="850"}
 :::
 
 ## We can pretend electricity is like water
 
-* *high potential* &rarr; *low potential*
-* Transports energy that can perform work
+-   *high potential* → *low potential*
+-   Transports energy that can perform work
 
 ![](Pictures/Series_1T1B.gif){fig-align="center" width="850"}
 
 ## How does electricity do stuff?
 
-:::::{.columns}
-:::{.v-center-container}
-:::{.column width="50%"}
-:::{.fragment data-fragment-index="3"}
-- Voltage &rarr; **Volts (V)**
-:::
-:::{.fragment data-fragment-index="4"}
-- Current &rarr; **Amps (A)**
-:::
-:::{.fragment data-fragment-index="5"}
-- Resistance &rarr; **Ohms (&ohm;)**
-:::
+:::::::::::::: columns
+::::::::::::: v-center-container
+:::::: {.column width="50%"}
+::: {.fragment data-fragment-index="3"}
+-   Voltage → **Volts (V)**
 :::
 
-:::{.column width="50%"}
-:::r-stack
-
-:::{.fragment fragment-index="1"}
-:::{.fragment .fade-out fragment-index="7"}
-![](  Pictures/SimplestCircuit.png){width=600}
-:::
+::: {.fragment data-fragment-index="4"}
+-   Current → **Amps (A)**
 :::
 
-:::{.fragment .fade-in fragment-index="2"}
-:::{.fragment .fade-out fragment-index="7"}
-![](Pictures/Duracell_AA__49529.png){.absolute top=410 right=110 width="300"}
+::: {.fragment data-fragment-index="5"}
+-   Resistance → **Ohms (Ω)**
 :::
-:::
+::::::
 
+:::::::: {.column width="50%"}
+::::::: r-stack
+:::: {.fragment fragment-index="1"}
+::: {.fragment .fade-out fragment-index="7"}
+![](Pictures/SimplestCircuit.png){width="600"}
 :::
-:::
-:::
-:::::
-
-## Example of a load: LED 
-:::{.v-center-container}
-:::::{.columns}
-::::{.column width="30%"}
-![](Pictures/LED.png){.absolute top=120 left=25 height="600"}
 ::::
 
-
-::::{.column width="70%"}
-:::{.incremental}
-* **L**ight **E**mitting **D**iode
-* Can only handle a *small* amount of current!
-* /+ and - matters!
+:::: {.fragment .fade-in fragment-index="2"}
+::: {.fragment .fade-out fragment-index="7"}
+![](Pictures/Duracell_AA__49529.png){.absolute top="410" right="110" width="300"}
 :::
 ::::
-:::::
+:::::::
+::::::::
+:::::::::::::
+::::::::::::::
 
+## Example of a load: LED
 
-:::{.fragment .fade-in fragment-index="1"}
-![](Pictures/plus-circle.svg){.absolute top=360 left=50 height=50}
+::::::::: v-center-container
+:::::: columns
+::: {.column width="30%"}
+![](Pictures/LED.png){.absolute top="120" left="25" height="600"}
 :::
 
-:::{.fragment .fade-in fragment-index="1"}
-![](Pictures/minus-circle.svg){.absolute top=360 left=200 height=50}
+:::: {.column width="70%"}
+::: incremental
+-   **L**ight **E**mitting **D**iode
+-   Can only handle a *small* amount of current!
+-   /+ and - matters!
+:::
+::::
+::::::
+
+::: {.fragment .fade-in fragment-index="1"}
+![](Pictures/plus-circle.svg){.absolute top="360" left="50" height="50"}
 :::
 
+::: {.fragment .fade-in fragment-index="1"}
+![](Pictures/minus-circle.svg){.absolute top="360" left="200" height="50"}
 :::
-## Hands on! Circuit #1 
+:::::::::
+
+## Hands on! Circuit #1
 
 **Components:**
 
-- Coin battery &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+-   Coin battery → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
 
-![](Pictures/CoinBattery.png){.absolute top=300 right=400 height=200}
+![](Pictures/CoinBattery.png){.absolute top="300" right="400" height="200"}
 
-![](  Pictures/LED.png){.absolute top=200 right=10 height=400}
+![](Pictures/LED.png){.absolute top="200" right="10" height="400"}
 
-
-
-## Hands on! Circuit #1 
+## Hands on! Circuit #1
 
 **Components:**
 
-- Coin battery &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+-   Coin battery → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
 
-
-![](Pictures/HandsOn_1.svg){.absolute top=100 right=-20 height=500}
+![](Pictures/HandsOn_1.svg){.absolute top="100" right="-20" height="500"}
 
 ## Breadboards make testing complicated circuits easy!
 
-:::{.v-center-container}
-:::{.r-stack}
-
-:::{.fragment .fade-in-then-out}
+:::::: v-center-container
+::::: r-stack
+::: {.fragment .fade-in-then-out}
 ![](Pictures/Breadboard.png)
 :::
 
-:::{.fragment .fade-in}
+::: {.fragment .fade-in}
 ![](Pictures/breadboard-right-and-wrong.jpg)
 :::
-:::
+:::::
+::::::
+
+## Hands on! Circuit #2
+
+**Components:**
+
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   **Resistor** → ![](Pictures/symbols_resistor.png){height="25"}
+
+![](Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"} ![](Pictures/Breadboard.png){.absolute top="350" right="300" height="300"} ![](Pictures/LED.png){.absolute top="150" right="-20" height="300"} ![](Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
+
+::: aside
+Resistors help limit the current of the
+
+circuit protecting the load from damage!
 :::
 
 ## Hands on! Circuit #2
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- **Resistor** &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   **Resistor** → ![](Pictures/symbols_resistor.png){height="25"}
 
-
-![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
-![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
-![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
-![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
-
-
-::: aside
-Resistors help limit the current of the
-
- circuit protecting the load from damage!
-:::
-
-## Hands on! Circuit #2 
-
-**Components:**
-
-- Breadboard 
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- **Resistor** &rarr; ![](Pictures/symbols_resistor.png){height="25"}
-
-![](Pictures/HandsOn_2.svg){.absolute top=100 right=-10 height=700}
-
+![](Pictures/HandsOn_2.svg){.absolute top="100" right="-10" height="700"}
 
 ## Hands on! Circuit #3
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
-- Button &rarr; ![](Pictures/symbols_Button.png){height="20"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   Resistor → ![](Pictures/symbols_resistor.png){height="25"}
+-   Button → ![](Pictures/symbols_Button.png){height="20"}
 
-![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
-![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
-![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
-![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
-![](  Pictures/Button.png){.absolute top="500" right="550" height="200"}
+![](Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"} ![](Pictures/Breadboard.png){.absolute top="350" right="300" height="300"} ![](Pictures/LED.png){.absolute top="150" right="-20" height="300"} ![](Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"} ![](Pictures/Button.png){.absolute top="500" right="550" height="200"}
 
 ## Hands on! Circuit #3
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
-- Button &rarr; ![](Pictures/symbols_Button.png){height="20"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   Resistor → ![](Pictures/symbols_resistor.png){height="25"}
+-   Button → ![](Pictures/symbols_Button.png){height="20"}
 
-![](Pictures/HandsOn_3.svg){.absolute top=75 right=-40 height=700}
-
-## Hands on! Circuit #4
-
-**Components:**
- 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
-- LDR &rarr; ![](Pictures/symbols_LDR.png){height=70}
-
-![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
-![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
-![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
-![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
-![](  Pictures/LDR.png){.absolute top="400" right="550" height="300"}
-
-
+![](Pictures/HandsOn_3.svg){.absolute top="75" right="-40" height="700"}
 
 ## Hands on! Circuit #4
 
 **Components:**
- 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
-- LDR &rarr; ![](Pictures/symbols_LDR.png){height=70}
 
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   Resistor → ![](Pictures/symbols_resistor.png){height="25"}
+-   LDR → ![](Pictures/symbols_LDR.png){height="70"}
 
-![](  Pictures/HandsOn_4.svg){.absolute top=100 right=-10 height=700}
+![](Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"} ![](Pictures/Breadboard.png){.absolute top="350" right="300" height="300"} ![](Pictures/LED.png){.absolute top="150" right="-20" height="300"} ![](Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"} ![](Pictures/LDR.png){.absolute top="400" right="550" height="300"}
 
+## Hands on! Circuit #4
+
+**Components:**
+
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   Resistor → ![](Pictures/symbols_resistor.png){height="25"}
+-   LDR → ![](Pictures/symbols_LDR.png){height="70"}
+
+![](Pictures/HandsOn_4.svg){.absolute top="100" right="-10" height="700"}
 
 # Types of circuits
 
 ## 
-:::::{.columns}
 
-::::{.column width="50%"}
-
+::::: columns
+::: {.column width="50%"}
 ### Series
 
 Only one path for the current to go.
 
-![](Pictures/Series.png){.absolute top=210 left=-75 width="600"}
+![](Pictures/Series.png){.absolute top="210" left="-75" width="600"}
+:::
 
-
-::::
-
-::::{.column width="50%"}
-
+::: {.column width="50%"}
 ### Parallel
 
 Multiple ways to get back to the negative terminal.
 
-![](Pictures/Parallel.png){.absolute top=150 right=-100 width="750"}
-
-::::
+![](Pictures/Parallel.png){.absolute top="150" right="-100" width="750"}
+:::
 :::::
 
 ## How does current behave in a series circuit?
@@ -305,28 +276,25 @@ Multiple ways to get back to the negative terminal.
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   4x LED → ![](Pictures/symbols_LED.png){height="50"}
+-   220 Ω Resistor → ![](Pictures/symbols_resistor.png){height="25"}
 
-![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
-![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
-![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
-![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
+![](Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"} ![](Pictures/Breadboard.png){.absolute top="350" right="300" height="300"} ![](Pictures/LED.png){.absolute top="150" right="-20" height="300"} ![](Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
 
 ## Hands on! LED Circuit #5
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- 5x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   5x LED → ![](Pictures/symbols_LED.png){height="50"}
+-   220 Ω Resistor → ![](Pictures/symbols_resistor.png){height="25"}
 
-![](  Pictures/HandsOn_5.svg){.absolute top=25 right=-30 height=850}
+![](Pictures/HandsOn_5.svg){.absolute top="25" right="-30" height="850"}
 
-:::{.fragment .absolute top=600}
+::: {.fragment .absolute top="600"}
 *Discussion: Why doesn't this one work??*
 :::
 
@@ -334,41 +302,39 @@ Multiple ways to get back to the negative terminal.
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   4x LED → ![](Pictures/symbols_LED.png){height="50"}
+-   220 Ω Resistor → ![](Pictures/symbols_resistor.png){height="25"}
 
-![](  Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"}
-![](  Pictures/Breadboard.png){.absolute top="350" right="300" height="300"}
-![](  Pictures/LED.png){.absolute top=150 right=-20 height="300"}
-![](  Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
+![](Pictures/AAbatteryHolder.png){.absolute top="100" right="250" height="300"} ![](Pictures/Breadboard.png){.absolute top="350" right="300" height="300"} ![](Pictures/LED.png){.absolute top="150" right="-20" height="300"} ![](Pictures/220-Ohm-Resistor.png){.absolute top="400" right="100" height="300"}
 
 ## Hands on! LED Circuit #6
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- 4x LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   4x LED → ![](Pictures/symbols_LED.png){height="50"}
+-   220 Ω Resistor → ![](Pictures/symbols_resistor.png){height="25"}
 
-![](  Pictures/HandsOn_6.svg){.absolute top=250 right="-30" height=450}
+![](Pictures/HandsOn_6.svg){.absolute top="250" right="-30" height="450"}
 
-:::{.fragment .absolute top=625}
+::: {.fragment .absolute top="625"}
 *Discussion: Why does this one work??*
 :::
 
 ## Transistors: Electrical switches
 
-:::{.fragment}
-![](Pictures/NPN2222a.png){fig-align="center" height=500}
+::: fragment
+![](Pictures/NPN2222a.png){fig-align="center" height="500"}
 :::
 
-:::{.fragment}
+::: fragment
 **OFF** if no current delivered to the *Base*
 :::
-:::{.fragment}
+
+::: fragment
 **ON** when even a tiny bit of current flows to the *Base*
 :::
 
@@ -376,74 +342,60 @@ Multiple ways to get back to the negative terminal.
 
 **Components:**
 
-- Breadboard
-- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
-- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
-- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
-- 100 k&ohm; Resistor &rarr;  ![](Pictures/symbols_resistor.png){height="25"}
-- LDR &rarr; ![](Pictures/symbols_LDR.png){height=70}
-- Transistor &rarr; ![](Pictures/symbols_NPN.png){height=50}
-- Jumper cables 
+-   Breadboard
+-   5 V power supply → ![](Pictures/symbols_Battery.png){height="50"}
+-   LED → ![](Pictures/symbols_LED.png){height="50"}
+-   220 Ω Resistor → ![](Pictures/symbols_resistor.png){height="25"}
+-   100 kΩ Resistor → ![](Pictures/symbols_resistor.png){height="25"}
+-   LDR → ![](Pictures/symbols_LDR.png){height="70"}
+-   Transistor → ![](Pictures/symbols_NPN.png){height="50"}
+-   Jumper cables
 
-![](  Pictures/HandsOn_7.svg){.absolute top=200 right=-20 width="600"}
+![](Pictures/HandsOn_7.svg){.absolute top="200" right="-20" width="600"}
 
-## Electrons go the opposite way? Confusing! 
+## Electrons go the opposite way? Confusing!
 
-![](Pictures/wire-conventional-current.png){fig-align="center" .r-stretch}
+![](Pictures/wire-conventional-current.png){.r-stretch fig-align="center"}
 
 Benjamin Franklin didn't know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!
 
-## Electrons go the opposite way? Confusing! 
+## Electrons go the opposite way? Confusing!
 
-![](Pictures/wire-conventional-current.png){fig-align="center" .r-stretch}
+![](Pictures/wire-conventional-current.png){.r-stretch fig-align="center"}
 
-By convention, we always pretend that a <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="red" class="bi bi-plus-circle" viewBox="0 0 16 16">
-  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
-</svg> charge is going around the circuit -- even though it's just imaginary, it doesn't change how the circuit works.
+By convention, we always pretend that a <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="red" class="bi bi-plus-circle" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/> <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/> </svg> charge is going around the circuit -- even though it's just imaginary, it doesn't change how the circuit works.
 
-# Brainstorm! 
+# Brainstorm!
 
 ## What can we invent?
 
 So many types of components!
 
-:::::{.columns}
-
-::::{.column width="50%"}
-* Batteries
-* Resistors
-* LEDs
-* Light-dependent resistors
-* Buttons
-* Transistors
-::::
-
-::::{.column width="50%"}
-:::{.incremental}
-* Motors
-* Valves
-* Cameras
-* Microphones
-* Solar panels
-* Temperature sensors
-* Air quality sensors
-* Magnetic field sensors
-* Moisture sensors
-
-::::
-:::::
-
-:::{.notes}
-"Dumb" devices:
-  * LDR -- Nightlight
-  * Hall effect magnet sensor -- Door security sensor
-  * Thermistor & Motor -- Automatic fan 
-  * LDRs, Motor, & Solar panel -- sun-tracking solar battery
-* "Smart" Devices
-  * Thermometer & Air quality sensor -- Weather station
-  * Camera & AI vision -- Train camera
-  * Moisture sensor & Servo -- Automatic plant watering irrigation
-  * Clock and LEDs -- visual alarm clock (wake up more naturally)
-  * LDRs & RGB LEDs -- baby book, mushroom lamps
+::::::: columns
+::: {.column width="50%"}
+-   Batteries
+-   Resistors
+-   LEDs
+-   Light-dependent resistors
+-   Buttons
+-   Transistors
 :::
+
+:::: {.column width="50%"}
+::: incremental
+-   Motors
+-   Valves
+-   Cameras
+-   Microphones
+-   Solar panels
+-   Temperature sensors
+-   Air quality sensors
+-   Magnetic field sensors
+-   Moisture sensors
+:::
+::::
+
+::: notes
+"Dumb" devices: \* LDR -- Nightlight \* Hall effect magnet sensor -- Door security sensor \* Thermistor & Motor -- Automatic fan \* LDRs, Motor, & Solar panel -- sun-tracking solar battery \* "Smart" Devices \* Thermometer & Air quality sensor -- Weather station \* Camera & AI vision -- Train camera \* Moisture sensor & Servo -- Automatic plant watering irrigation \* Clock and LEDs -- visual alarm clock (wake up more naturally) \* LDRs & RGB LEDs -- baby book, mushroom lamps
+:::
+:::::::
