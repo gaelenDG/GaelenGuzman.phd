@@ -30,7 +30,7 @@ website:
     pinned: true
     logo: assets/images/glasses-solid.png
     right:
-      - text: "CV"
+      - text: "Curriculum Vitae"
         icon: person-lines-fill
         href: assets/cv/GG_CV_20250424.pdf
         target: "_blank"
