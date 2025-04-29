@@ -30,9 +30,9 @@ website:
     pinned: true
     logo: assets/images/glasses-solid.png
     right:
-      - text: "Resume"
+      - text: "CV"
         icon: person-lines-fill
-        href: assets/cv/GaelenGuzman_Resume.pdf
+        href: assets/cv/GG_CV_20250424.pdf
         target: "_blank"
     left: 
       - text: "Research Projects"
