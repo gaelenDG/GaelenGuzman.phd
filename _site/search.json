@@ -91,13 +91,6 @@
     "text": "Future Improvements"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html",
-    "title": "Resistor Flex part 2",
-    "section": "",
-    "text": "Review what we talked about last time\nTalk about this mushroom lamp!\nUse a computer to control a circuit\nBrainstorm cool projects!"
-  },
-  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity2_presentation.html#what-makes-an-electric-circuit",
     "title": "Resistor Flex part 2",
@@ -301,13 +294,6 @@
     "text": "Resistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\nControl the Flow Like a Pro\n\n\nMy presentation for a Sunnyside Middle School community event – an introduction to designing and making circuits!\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html",
-    "title": "Resistor Flex",
-    "section": "",
-    "text": "Electricity can be dangerous!\nAlways do this with an adult!"
-  },
-  {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
     "title": "Resistor Flex",
@@ -410,7 +396,7 @@
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#section",
     "title": "Resistor Flex",
     "section": "",
-    "text": "Series\nOnly one path for the current to go.\n\n\n\n\nParallel\nMultiple ways to get back to the negative terminal."
+    "text": "Series\nOnly one path for the current to go.\n\n\nParallel\nMultiple ways to get back to the negative terminal."
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
@@ -473,14 +459,14 @@
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
     "title": "Resistor Flex",
     "section": "Electrons go the opposite way? Confusing!",
-    "text": "Electrons go the opposite way? Confusing!\n\n\n\n\n\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!"
+    "text": "Electrons go the opposite way? Confusing!\n\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!"
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing-1",
     "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing-1",
     "title": "Resistor Flex",
     "section": "Electrons go the opposite way? Confusing!",
-    "text": "Electrons go the opposite way? Confusing!\n\n\n\n\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
+    "text": "Electrons go the opposite way? Confusing!\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#what-can-we-invent",
