@@ -46,3 +46,9 @@ I next needed to craft a stable mount for this sensor sit close enough to a magn
 This project is my first which has a real connection with the real world. I need to be confident that this little device won't end up spazzing out and opening the garage door while we're away. 
 
 My ideas for this include: using a GeoFence to disable it when I'm away for some amount of time (i.e. reporting my location to HomeAssistant, and putting it into a hard off state) and not actually giving it any of its own automation ability (I had originally wanted it to automatically trigger the door to close after some amount of time, instead I might have it send a push notification to me via HomeAssistant).
+
+(Picture of final mounting pending!)
+
+## Future Improvements
+
+This may be the first of my hobby electronics projects that is actually done?? It's also maybe the least actually artistic. A future improvement may be to build a nice-looking housing for this little device so it looks less janky hanging on the wall. 

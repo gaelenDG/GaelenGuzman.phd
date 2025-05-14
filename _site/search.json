@@ -81,7 +81,14 @@
     "href": "HobbyEEProjects/AutomatedGarageDoorRemote.html#code",
     "title": "Automated Garage Door Remote",
     "section": "Code",
-    "text": "Code\nThis project is my first which has a real connection with the real world. I need to be confident that this little device won’t end up spazzing out and opening the garage door while we’re away.\nMy ideas for this include: using a GeoFence to disable it when I’m away for some amount of time (i.e. reporting my location to HomeAssistant, and putting it into a hard off state) and not actually giving it any of its own automation ability (I had originally wanted it to automatically trigger the door to close after some amount of time, instead I might have it send a push notification to me via HomeAssistant)."
+    "text": "Code\nThis project is my first which has a real connection with the real world. I need to be confident that this little device won’t end up spazzing out and opening the garage door while we’re away.\nMy ideas for this include: using a GeoFence to disable it when I’m away for some amount of time (i.e. reporting my location to HomeAssistant, and putting it into a hard off state) and not actually giving it any of its own automation ability (I had originally wanted it to automatically trigger the door to close after some amount of time, instead I might have it send a push notification to me via HomeAssistant).\n(Picture of final mounting pending!)"
+  },
+  {
+    "objectID": "HobbyEEProjects/AutomatedGarageDoorRemote.html#future-improvements",
+    "href": "HobbyEEProjects/AutomatedGarageDoorRemote.html#future-improvements",
+    "title": "Automated Garage Door Remote",
+    "section": "Future Improvements",
+    "text": "Future Improvements\nThis may be the first of my hobby electronics projects that is actually done?? It’s also maybe the least actually artistic. A future improvement may be to build a nice-looking housing for this little device so it looks less janky hanging on the wall."
   },
   {
     "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Electricity1_presentation.html#electricity-is-made-when-charged-particles-move",
@@ -529,7 +536,7 @@
     "href": "index.html#professional-experience",
     "title": "Gaelen Guzman, PhD",
     "section": " Professional Experience",
-    "text": "Professional Experience\n\n\n\nApril 2025 - Present\nOpen Science Consultant with Robert Thibault, CAS\n Portland, OR (remote)\n\n\nMay 2024 - April 2025\nPostdoctoral Researcher with the Tafesse Lab, OHSU\n Portland, OR\n\n\nMar 2014 - June 2017\nResearch Associate II with the Proteomics Platform, Broad Institute\n Cambridge, MA"
+    "text": "Professional Experience\n\n\n\nMay 2025 - Present\nData Science Consultant with Carsten Schultz, LipidInteractome.org\n Portland, OR (remote)\n\n\nApril 2025 - Present\nOpen Science Consultant with Robert Thibault, CAS\n Portland, OR (remote)\n\n\nMay 2024 - April 2025\nPostdoctoral Researcher with the Tafesse Lab, OHSU\n Portland, OR\n\n\nMar 2014 - June 2017\nResearch Associate II with the Proteomics Platform, Broad Institute\n Cambridge, MA"
   },
   {
     "objectID": "index.html#education",

@@ -42,6 +42,7 @@ Please reach out, I'd love to chat!
 
 |  |  |  | 
 |:-----|:------------|-------:|
+| [May 2025 - Present]{.small-text} | Data Science Consultant with Carsten Schultz, [LipidInteractome.org](https://lipidinteractome.org){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Portland, OR (remote)]{.small-text} |
 | [April 2025 - Present]{.small-text} | Open Science Consultant with Robert Thibault, [CAS](https://www.aligningscience.com){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Portland, OR (remote)]{.small-text} |
 | [May 2024 - April 2025]{.small-text} | Postdoctoral Researcher with the [Tafesse Lab, OHSU](https://www.tafesselab.com){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Portland, OR]{.small-text} |
 | [Mar 2014 - June 2017]{.small-text} | Research Associate II with the [Proteomics Platform, Broad Institute](https://www.broadinstitute.org/proteomics){target="_blank"} | [<i class="fa-regular fa-location-dot"></i> Cambridge, MA]{.small-text} |
