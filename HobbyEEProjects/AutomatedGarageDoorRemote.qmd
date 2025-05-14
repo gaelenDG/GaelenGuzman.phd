@@ -1,0 +1,48 @@
+---
+title: Automated Garage Door Remote
+description: "A device to help me be certain that I closed the garage door on my way out of the house -- sync'ed with Home Assistant!"
+date: "2025-05-01"
+image: /HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png
+author: Gaelen Guzman
+---
+
+## Overview
+
+My wife and I just moved into a new apartment and we now have a surprising new responsibility: a garage. I imagine that this isn't a problem for most people, but I've *struggled* to close the door a few times as I drive away... and now I have a new-found anxiety that I've left the door open a lot of the time. 
+
+I thought that maybe I could use one of my ESP32s as a sensor to report the closed/open state of the door so I can check in the middle of the night without getting up. I figured that while I was at it, I may as well automate it such that the door can close itself if left open for too long. 
+
+## Materials & Components
+
+* ESP32-C3 super mini
+* A cheap garage door remote (make sure it matches signal type of the opener!)
+* A Hall effect sensor
+* A spare USB data cable
+
+## Assembly
+
+As usual, I forgot to take very many pictures while this was a work in progress...
+
+I started this project by trying to find a way to activate the remote with the ESP32. At first I tried using some input pins on the remote PCB (see the picture below), but I couldn't get the signal to work properly with these -- I think because the voltage going into the "CLK" pinout wasn't correct. 
+
+:::{.border}
+![My first testing board -- not the final wiring schematic](/HobbyEEProjects/AutomatedGarageDoorRemote/InitialTestingSetup.jpeg){group="AutomatedGarageDoor"}
+:::
+
+After some testing with a breadboard, I found that the most reliable way to do this was to add a transistor that could close the activation button using a 3.3 V GPIO output signal. Interestingly, I also noticed that this transistor needed an additional load LED going to the ESP32 ground in order to work -- which I think suggests that the button typically uses a pull-down resistor? 
+
+My next step was to start testing the WiFi and MQTT connections so that I could get the ESP32 to publish the door state to my HomeAssistant setup -- and to subscribe to a command topic which would allow me to open and close the door on command. I did a lot of testing with the battery removed from the door remote so I didn't open and close the door 10,000x -- instead, I added an extra external button so I could manually trigger the ESP32 to detect an open/close signal. I used the ESP32's on-board RGB LED as a reporter signal of the WiFi/MQTT connection and the trigger signal (note the bright red signal when I push the button in the video below).
+
+![An external button triggers the ESP32 to update an "open"/"closed" boolean which HomeAssistant reads as "Unlocked"/"Locked". This also works in reverse: triggering a state change in HomeAssistant updates the state onboard the ESP32. However, without an external sensor, the ESP32 has no way to record the real state of the door.](/HobbyEEProjects/AutomatedGarageDoorRemote/HomeAssistantPublishing.mp4){group="AutomatedGarageDoor"}
+
+Adding a Hall effect sensor allows me to detect the true state of the door. I wanted this sensor to be on a long cord so I'd have options on where to mount it -- cue me destroying a spare USB-C cable and attaching 3-pin connectors to each end. 
+
+![The final ESP32/door remote setup, featuring the can used to build the mount.](/HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png)
+
+I next needed to craft a stable mount for this sensor sit close enough to a magnet on the garage door. I thought *very* carefully about my options and decided that an aluminum can would be the perfect source material for this mount. I got out my tin snips, a metal ruler, and some super adhesive mounting tape to build a little mount. I then drilled some holes in order to screw the Hall effect sensor to the mount and fixed the whole thing to the wall close enough to my magnet to be triggered when the door is closed.
+
+## Code
+
+This project is my first which has a real connection with the real world. I need to be confident that this little device won't end up spazzing out and opening the garage door while we're away. 
+
+My ideas for this include: using a GeoFence to disable it when I'm away for some amount of time (i.e. reporting my location to HomeAssistant, and putting it into a hard off state) and not actually giving it any of its own automation ability (I had originally wanted it to automatically trigger the door to close after some amount of time, instead I might have it send a push notification to me via HomeAssistant).
