@@ -37,7 +37,16 @@ My next step was to start testing the WiFi and MQTT connections so that I could 
 
 Adding a Hall effect sensor allows me to detect the true state of the door. I wanted this sensor to be on a long cord so I'd have options on where to mount it -- cue me destroying a spare USB-C cable and attaching 3-pin connectors to each end. 
 
-![The final ESP32/door remote setup, featuring the can used to build the mount.](/HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png)
+:::{.border}
+::: {layout="[[1], [1,1]]"}
+![The final ESP32/door remote setup, featuring the can used to build the mount.](/HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png){group="AutomatedGarageDoor"}
+
+![](/HobbyEEProjects/AutomatedGarageDoorRemote/VitaminRMount.jpg){group="AutomatedGarageDoor"}
+
+![](/HobbyEEProjects/AutomatedGarageDoorRemote/VitaminRMount2.jpg){group="AutomatedGarageDoor"}
+
+:::
+:::
 
 I next needed to craft a stable mount for this sensor sit close enough to a magnet on the garage door. I thought *very* carefully about my options and decided that an aluminum can would be the perfect source material for this mount. I got out my tin snips, a metal ruler, and some super adhesive mounting tape to build a little mount. I then drilled some holes in order to screw the Hall effect sensor to the mount and fixed the whole thing to the wall close enough to my magnet to be triggered when the door is closed.
 
@@ -47,8 +56,12 @@ This project is my first which has a real connection with the real world. I need
 
 My ideas for this include: using a GeoFence to disable it when I'm away for some amount of time (i.e. reporting my location to HomeAssistant, and putting it into a hard off state) and not actually giving it any of its own automation ability (I had originally wanted it to automatically trigger the door to close after some amount of time, instead I might have it send a push notification to me via HomeAssistant).
 
-(Picture of final mounting pending!)
+I had a fun round of debugging when the sensor got dislodged and the remote got activated every 2 seconds for the 10+ minutes it took for my wife to come down and unplug it following the first time I left the house after installing the device... The solutions were to find a better spot to mount the sensor and to add a 15 second delay after the trigger function to give the door sufficient time to actually close.
 
 ## Future Improvements
 
 This may be the first of my hobby electronics projects that is actually done?? It's also maybe the least actually artistic. A future improvement may be to build a nice-looking housing for this little device so it looks less janky hanging on the wall. 
+
+:::{.border}
+![Holy cow does this look janky. I'll need to find a nice way to arrange these cables, house the ESP32/remote, and affix everything to the wall.](/HobbyEEProjects/AutomatedGarageDoorRemote/JankyWallAttachment.jpg){group="AutomatedGarageDoor"}
+:::

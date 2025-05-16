@@ -216,11 +216,30 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p>Adding a Hall effect sensor allows me to detect the true state of the door. I wanted this sensor to be on a long cord so I’d have options on where to mount it – cue me destroying a spare USB-C cable and attaching 3-pin connectors to each end.</p>
+<div class="border">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[1], [1,1]]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="The final ESP32/door remote setup, featuring the can used to build the mount."><img src="../HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png" class="img-fluid figure-img" alt="The final ESP32/door remote setup, featuring the can used to build the mount."></a></p>
+<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png" class="lightbox" data-gallery="AutomatedGarageDoor" title="The final ESP32/door remote setup, featuring the can used to build the mount."><img src="../HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png" class="img-fluid figure-img" alt="The final ESP32/door remote setup, featuring the can used to build the mount."></a></p>
 <figcaption>The final ESP32/door remote setup, featuring the can used to build the mount.</figcaption>
 </figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote/VitaminRMount.jpg" class="lightbox" data-gallery="AutomatedGarageDoor"><img src="../HobbyEEProjects/AutomatedGarageDoorRemote/VitaminRMount.jpg" class="img-fluid"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote/VitaminRMount2.jpg" class="lightbox" data-gallery="AutomatedGarageDoor"><img src="../HobbyEEProjects/AutomatedGarageDoorRemote/VitaminRMount2.jpg" class="img-fluid"></a></p>
+</div>
+</div>
+</div>
 </div>
 <p>I next needed to craft a stable mount for this sensor sit close enough to a magnet on the garage door. I thought <em>very</em> carefully about my options and decided that an aluminum can would be the perfect source material for this mount. I got out my tin snips, a metal ruler, and some super adhesive mounting tape to build a little mount. I then drilled some holes in order to screw the Hall effect sensor to the mount and fixed the whole thing to the wall close enough to my magnet to be triggered when the door is closed.</p>
 </section>
@@ -228,11 +247,19 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="code">Code</h2>
 <p>This project is my first which has a real connection with the real world. I need to be confident that this little device won’t end up spazzing out and opening the garage door while we’re away.</p>
 <p>My ideas for this include: using a GeoFence to disable it when I’m away for some amount of time (i.e.&nbsp;reporting my location to HomeAssistant, and putting it into a hard off state) and not actually giving it any of its own automation ability (I had originally wanted it to automatically trigger the door to close after some amount of time, instead I might have it send a push notification to me via HomeAssistant).</p>
-<p>(Picture of final mounting pending!)</p>
+<p>I had a fun round of debugging when the sensor got dislodged and the remote got activated every 2 seconds for the 10+ minutes it took for my wife to come down and unplug it following the first time I left the house after installing the device… The solutions were to find a better spot to mount the sensor and to add a 15 second delay after the trigger function to give the door sufficient time to actually close.</p>
 </section>
 <section id="future-improvements" class="level2">
 <h2 class="anchored" data-anchor-id="future-improvements">Future Improvements</h2>
 <p>This may be the first of my hobby electronics projects that is actually done?? It’s also maybe the least actually artistic. A future improvement may be to build a nice-looking housing for this little device so it looks less janky hanging on the wall.</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote/JankyWallAttachment.jpg" class="lightbox" data-gallery="AutomatedGarageDoor" title="Holy cow does this look janky. I’ll need to find a nice way to arrange these cables, house the ESP32/remote, and affix everything to the wall."><img src="../HobbyEEProjects/AutomatedGarageDoorRemote/JankyWallAttachment.jpg" class="img-fluid figure-img" alt="Holy cow does this look janky. I’ll need to find a nice way to arrange these cables, house the ESP32/remote, and affix everything to the wall."></a></p>
+<figcaption>Holy cow does this look janky. I’ll need to find a nice way to arrange these cables, house the ESP32/remote, and affix everything to the wall.</figcaption>
+</figure>
+</div>
+</div>
 
 
 </section>
