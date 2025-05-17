@@ -2,7 +2,7 @@
 title: Automated Garage Door Remote
 description: "A device to help me be certain that I closed the garage door on my way out of the house -- sync'ed with Home Assistant!"
 date: "2025-05-01"
-image: /HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png
+image: AutomatedGarageDoorRemote/CraftingMount.png
 author: Gaelen Guzman
 ---
 
