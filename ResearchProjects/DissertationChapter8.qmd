@@ -1,5 +1,5 @@
 ---
-title: "The Squeaky Yeast Gets Greased"
+title: "8. The Squeaky Yeast Gets Greased"
 subtitle: "The Roles of Host Lipids in the Clearance of Pathogenic Fungi"
 description: "Fungal infections remain a global health threat with high morbidity and mortality. The human immune system must, therefore, perpetually defend against invasive fungal infections. Phagocytosis is critical for the clearance of fungal pathogens, as this cellular process allows select immune cells to internalize and destroy invading fungal cells. While much is known about the protein players that enable phagocytosis, the various roles that lipids play during this fundamental innate immune process are still being illuminated. In this review, we describe recent discoveries that shed new light on the mechanisms by which host lipids enable the phagocytic uptake and clearance of fungal pathogens."
 date: 2024-02-19

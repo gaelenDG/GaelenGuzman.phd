@@ -1,5 +1,5 @@
 ---
-title: "Rapid visualization and quantification of phagocytosis in neutrophils"
+title: "9. Rapid visualization and quantification of phagocytosis in neutrophils"
 subtitle: "A protocol for using high-content fluorescence microscopy to quantify phagocytosis."
 description: "Phagocytosis by phagocytes such as neutrophils is a crucial part of the host innate immune response against invading pathogens. Phagocytosis is a complex process that initiates with the binding of the particles on the cell surface of the phagocytes through the interaction of pattern recognition receptors with ligands on the surface of the pathogens. During this process, phagocytes undergo extensive membrane reorganization and cytoskeleton rearrangement at their cell surface. To gain better insight about the molecular mechanisms of this dynamic cellular process, visualization and quantification in a high-throughput manner is essential. Here, we describe a microscope-based method to visualize and quantify phagocytic uptake of pathogens (such as bacteria and fungi) and model particulates that are larger than 0.5 μm (such as Zymosan A and IgG-coated beads)."
 date: 2024-02-19
