@@ -1,7 +1,7 @@
 ---
 title: Dissertation
 description: "My dissertation is free to view online -- all 300 pages of it! Take a look if you're interested in *Mycobacterium tuberculosis*, Sphingolipids, Host-Pathogen Interactions, Lipidomics, Proteomics, or the history of Tuberculosis, please take a look!"
-date: 2024-02-19 
+date: 2024-02-20 
 image: Images/DissertationPreview.png
 listing: true  # Ensure it appears in the listing
 engine: knitr  # Prevents Quarto from processing content
