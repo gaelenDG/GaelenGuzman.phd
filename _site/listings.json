@@ -55,7 +55,6 @@
     "items": [
       "/ResearchProjects/LipidInteractome.html",
       "/ResearchProjects/DissertationChapter1.html",
-      "/ResearchProjects/DissertationChapter10.html",
       "/ResearchProjects/DissertationChapter2.html",
       "/ResearchProjects/DissertationChapter3.html",
       "/ResearchProjects/DissertationChapter4.html",
@@ -64,7 +63,8 @@
       "/ResearchProjects/DissertationChapter7.html",
       "/ResearchProjects/DissertationChapter8.html",
       "/ResearchProjects/DissertationChapter9.html",
-      "/ResearchProjects/Dissertation.html"
+      "/ResearchProjects/Dissertation.html",
+      "/ResearchProjects/DissertationChapter10.html"
     ]
   },
   {
