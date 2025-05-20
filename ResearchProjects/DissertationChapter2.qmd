@@ -1,6 +1,6 @@
 ---
-title: "Dissertation Chapter  2"
-subtitle: TB & The Sphinx
+title: "TB & The Sphinx"
+subtitle: "A technical review of sphingolipids as a target of host directed therapies for treating Tuberculosis disease."
 description: "*Mycobacterium tuberculosis* (*Mtb*) is a significant cause of infectious death worldwide. This intracellular pathogen uses many mechanisms to subvert the host immune system and lie undetected before causing active disease. This subtle pathogen is uniquely dependent on host lipids for energy, production of host-damaging materiel, and immune subversion. In the face of antibiotic-resistant *Mtb* strains, researchers have turned toward lipid biology for potential avenues of novel antitubercular therapy. The sphingolipid family has gained attention for its profound roles in determining cell fate, immune signaling, and antimicrobial activity. We review the state of the field regarding sphingolipids as candidate targets of host-directed antitubercular intervention."
 date: 2024-02-19
 image: Images/Chapter2.png
