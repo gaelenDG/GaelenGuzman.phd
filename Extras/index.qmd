@@ -1,0 +1,21 @@
+---
+title: "Windy Moo Babysitting Instructions"
+description-meta: "Broken up by age! Assuming he'll need different instructions at 10 months vs 10 years..."
+listing:
+  contents: .
+  type: default
+  image-align: left
+  fields:
+    - title
+    - description
+    - date
+    - image
+  sort: 
+    - "date desc"
+    - "title"
+  page-size: 10
+format: 
+  html:
+    page-layout: full
+---
+

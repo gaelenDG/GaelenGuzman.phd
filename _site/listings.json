@@ -214,5 +214,17 @@
       "/ResearchProjects/index.html",
       "/ResearchProjects/LipidInteractome.html"
     ]
+  },
+  {
+    "listing": "/Extras/WindyMooDotGov.html",
+    "items": [
+      "/Extras/index.html"
+    ]
+  },
+  {
+    "listing": "/Extras/index.html",
+    "items": [
+      "/Extras/WindyMooDotGov.html"
+    ]
   }
 ]
