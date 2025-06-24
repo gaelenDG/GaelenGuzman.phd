@@ -41,6 +41,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-a240eddbbdb8ddb17a7d6850d72db8bb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -131,7 +134,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#site-structure" id="toc-site-structure" class="nav-link" data-scroll-target="#site-structure">Site structure</a></li>
+  <li><a href="#site-structure" id="toc-site-structure" class="nav-link" data-scroll-target="#site-structure">Site structure</a>
+  <ul class="collapse">
+  <li><a href="#data-presentationorganization" id="toc-data-presentationorganization" class="nav-link" data-scroll-target="#data-presentationorganization">Data presentation/organization</a></li>
+  <li><a href="#un-rigorous-comparisons" id="toc-un-rigorous-comparisons" class="nav-link" data-scroll-target="#un-rigorous-comparisons">Un-rigorous comparisons</a></li>
+  <li><a href="#data-storage" id="toc-data-storage" class="nav-link" data-scroll-target="#data-storage">Data storage</a></li>
+  <li><a href="#data-submission" id="toc-data-submission" class="nav-link" data-scroll-target="#data-submission">Data submission</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/ResearchProjects/LipidInteractome.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -171,14 +180,35 @@ ul.task-list li input[type="checkbox"] {
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>The <strong>Lipid Interactome</strong> is an interactive, centralized resource designed to harmonize, compare, and integrate lipid interactome datasets. It adheres to FAIR (Findable, Accessible, Interoperable, and Reusable) data principles, ensuring that lipid–protein interaction data is systematically organized and easily accessible to researchers. By consolidating proteomics data from multifunctional lipid probes, this resource facilitates the systematic study of lipid-binding proteins across different lipid species and cellular models.</p>
+<div class="border">
+<p><a href="Images/SitePreview.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="Images/SitePreview.gif" class="img-fluid"></a></p>
+</div>
 <p>I built this repository with the guidance of Dr.&nbsp;Fikadu Tafesse and Dr.&nbsp;Carsten Schultz in order to make these data more accessible and reusable – hopefully it can help lipid researchers select candidate proteins for analyzing the functional roles of lipids.</p>
 <p>Click here to visit the Lipid Interactome: <a href="lipidinteractome.org" target="_blank">LipidInteractome.org</a></p>
 </section>
 <section id="site-structure" class="level2">
 <h2 class="anchored" data-anchor-id="site-structure">Site structure</h2>
 <p>The Lipid Interactome was built using Quarto, is stored on GitHub, and hosted on Netlify – I apparently have a pretty predictable strategy for building and hosting sites.</p>
+<section id="data-presentationorganization" class="level3">
+<h3 class="anchored" data-anchor-id="data-presentationorganization">Data presentation/organization</h3>
+<p>Because several of the studies we’ve included on the site so far have used multiple lipid probes, we decided to split the site into two parts: pages displaying the entire dataset of each individual interactomics study and pages for each lipid probe (with datasets further separated by cell type analyzed). I thought this was valuable because some of the datasets are inherently more comparable – for example, the <a href="https://lipidinteractome.org/lipidprobe/phosphatidicacid">PA</a> and <a href="https://lipidinteractome.org/lipidprobe/phosphatidylethanolamine">PE</a> data were collected together as parts of a single larger TMT experiment, as reported by <a href="https://lipidinteractome.org/individualstudies/at_2025">Thomas et al.&nbsp;in 2025</a>.</p>
+</section>
+<section id="un-rigorous-comparisons" class="level3">
+<h3 class="anchored" data-anchor-id="un-rigorous-comparisons">Un-rigorous comparisons</h3>
+<p>While it isn’t advisable to directly and quantitatively compare datasets collected from different studies, we wanted a way to qualitatively compare different datasets to see broad trends: Are there big overlaps in protein ids? Are the highly enriched proteins in one dataset also enriched in another? To do this, I built a nifty little comparison tool using Shiny which allows the user to select two lipid probes of interest and visualize the log2 fold-change of all proteins identified in each dataset: https://lipidinteractome.org/lipidprobe/enrichedhitscomparison. The cell background of each probe dataset is listed in the user selection to prepare for a future where we have datasets of the same lipid probe but different cell lines.</p>
+</section>
+<section id="data-storage" class="level3">
+<h3 class="anchored" data-anchor-id="data-storage">Data storage</h3>
+<p>This is a work in progress. I’ve been somewhat careful to describe this site as a data repository or a data aggregation site – because I definitely don’t think this site qualifies as a database just yet. Right now, each page consists of a static HTML page defined by a manually-written Quarto document, which pulls from a folder of .csv files to render the visualizations and allow for user download.</p>
+<p>I would like to eventually get this site closer to a true database, where users are inputting queries for which lipid probe to visualize and under the hood the site pulls the data and renders the page. I don’t think my manual annotation method will work in the future we’re imagining – where there may be a rapid increase in this type of study!</p>
+</section>
+<section id="data-submission" class="level3">
+<h3 class="anchored" data-anchor-id="data-submission">Data submission</h3>
+<p>In anticipation of a broadened interest in this type of study, we supply a <a href="https://lipidinteractome.org/contactus/datasubmission">data submission page</a> – this somewhat relies on the data supplier having ratiometric data that aligns with some of my data formatting requirements. These requirements were originally written when I only had a handful of datasets and they all came from the same data pipeline – so all my standardized plotting functions rely on common column headers and data transformations.</p>
+<p>I’ve already repeatedly needed to find my own paths for data wrangling on new datasets that don’t fit neatly in my standardized plotting functions/visualization schemes. For example, <a href="https://lipidinteractome.org/individualstudies/dh_2017">Höglinger et al.&nbsp;(2017)</a> used peptide spectral counts to determine selective enrichment to one of three lipid probes – there’s no ratiometric data here! And I can’t really figure out a nice way to present these results alongside ratiometric data…</p>
 
 
+</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
@@ -617,6 +647,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":true,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
