@@ -27,7 +27,7 @@ Because several of the studies we've included on the site so far have used multi
 
 ### Un-rigorous comparisons
 
-While it isn't advisable to directly and quantitatively compare datasets collected from different studies, we wanted a way to qualitatively compare different datasets to see broad trends: Are there big overlaps in protein ids? Are the highly enriched proteins in one dataset also enriched in another? To do this, I built a nifty little comparison tool using Shiny which allows the user to select two lipid probes of interest and visualize the log2 fold-change of all proteins identified in each dataset: https://lipidinteractome.org/lipidprobe/enrichedhitscomparison. The cell background of each probe dataset is listed in the user selection to prepare for a future where we have datasets of the same lipid probe but different cell lines.
+While it isn't advisable to directly and quantitatively compare datasets collected from different studies, we wanted a way to qualitatively compare different datasets to see broad trends: Are there big overlaps in protein ids? Are the highly enriched proteins in one dataset also enriched in another? To do this, I built a [nifty little comparison tool](https://lipidinteractome.org/lipidprobe/enrichedhitscomparison) using Shiny which allows the user to select two lipid probes of interest and visualize the log2 fold-change of all proteins identified in each dataset. The cell background of each probe dataset is listed in the user selection to prepare for a future where we have datasets of the same lipid probe but different cell lines.
 
 ### Data storage
 

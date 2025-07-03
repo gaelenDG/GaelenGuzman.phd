@@ -72,7 +72,18 @@ This guy's gotten used to a straightforward pre-sleep routine down in the baseme
 
 **When to intervene:** Sometimes this guy is just too wound up or too tired to fall asleep, and he'll complain/yell for a few minutes. If he's really upset (actually screaming) or if it's been more than ~15 minutes, I'd go down there to check on him -- sometimes he'll realize he's still hungry once he's in his tent, other times he has a big burp, and other other times he'll need a new diaper before going to sleep. I usually bring ~2 oz of formula down with me and check if he's interested.
 
-**Big heads up:** The sound has been unpredictable on the baby monitor for a few weeks now -- you may need to actively check every once in a while by looking at the screen or listening for him from the door upstairs. We're trying to figure out what's wrong with it, so hopefully you won't have to deal with this. 
+~~**Big heads up:** The sound has been unpredictable on the baby monitor for a few weeks now -- you may need to actively check every once in a while by looking at the screen or listening for him from the door upstairs. We're trying to figure out what's wrong with it, so hopefully you won't have to deal with this.~~
+
+**Baby monitor update:** The microphone is now totally dead in the baby monitor... So I made one! There are a few ways to access the audio stream:
+
+1. As long as you're on our WiFi, you can go to this link on any device: <http://192.168.0.42:8000/babyroom.mp3>. I recommend checking that the stream is still playing every once in a while -- my phone likes to shut it off frequently...
+
+2. You can also use the Home Assistant app on the really shitty purple tablet -- when you open the app it should be the first view available, just press play and make sure the volume is up. 
+    - This thing is a piece of trash lol, so if it isn't working you can try to restart the HA app. 
+    - If it's still still not working, try opening the Tailscale app and see if it says "Connected" at the top (If the battery died, you'll need to do this also!).
+    - Sometimes this thing just doesn't work and it defies all logic, just give up and use the link above on a different device.
+
+3. You can hear him from pretty much anywhere in the house once he starts yelling, don't panic if the tablet isn't working and link above is broken, you'll definitely hear him if you're inside!
 
 ## Feeding Instructions
 
@@ -129,12 +140,12 @@ You are extremely welcome to use our car for some adventures with the little guy
 
 ### The Car Seat -- Graco Extend2Fit
 
+**The instructions manual is stored in the little slot underneath the seat! Check here if anything feels off.**
+
 :::{.border}
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/jvaOuE-8lmI?si=qBjBdaTLzTINiwDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Look I thought about writing a thing about how to use the car seat and then I realized it would be so much easier to just link to a video. So here it is -- check this out if we forgot to show you how to use the car seat!
+I thought about writing a thing about how to use the car seat and then I realized it would be so much easier to just link to a video. So here it is -- check this out if we forgot to show you how to use the car seat or if you want a reminder!
 :::
-
-**The instructions manual is stored in the little slot underneath the seat! Check here if anything feels off.**
 
