@@ -8,3 +8,18 @@
 .small-text {
   font-size: 0.75em;
 }
+
+// The hover help symbol with tips - just call within a span and it will display text on hover.
+.help-symbol {
+  cursor: pointer;
+  color: blue;
+  background-color: rgba(173, 216, 230, 0.2); /* Light blue highlight */
+  border-radius: 84px; /* Rounded corners */
+  padding: 2px 2px; /* Add some padding for better visibility */
+  text-decoration: bold;
+}
+
+.help-symbol:hover {
+  color: darkblue;
+}
+

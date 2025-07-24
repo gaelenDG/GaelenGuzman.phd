@@ -4,8 +4,7 @@ subtitle: How to use computers to build devices!
 description: "My presentation for day 2 of the Sunnyside Middle School community teaching week -- instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!"
 author: Gaelen Guzman
 date: 2025-03-25
-image: Pictures/Presentation2_featured.gif
-
+listing: false
 format:
   revealjs:
     css: style.css

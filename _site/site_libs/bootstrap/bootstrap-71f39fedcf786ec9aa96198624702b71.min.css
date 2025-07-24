@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap";.small-text{font-size:.75em}/*!
+@import"https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap";.small-text{font-size:.75em}.help-symbol{cursor:pointer;color:blue;background-color:rgba(173,216,230,.2);border-radius:84px;padding:2px 2px;text-decoration:bold}.help-symbol:hover{color:#00008b}/*!
  * Bootstrap  v5.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)

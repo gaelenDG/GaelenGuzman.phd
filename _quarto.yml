@@ -9,6 +9,8 @@ execute:
     - "*.qmd"
     - "ResearchProjects/*.qmd"
     - "HobbyEEProjects/*.qmd"
+resources:
+  - "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentations/**"
 format-links: true
 prefer-html: true
 license: "CC by"

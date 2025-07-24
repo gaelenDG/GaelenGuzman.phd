@@ -4,7 +4,7 @@ subtitle: Control the Flow Like a Pro
 description: "My presentation for a Sunnyside Middle School community event -- an introduction to designing and making circuits!"
 author: Gaelen Guzman
 date: 2025-03-18
-image: /HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/Presentation1_featured.gif
+listing: false
 format:
   revealjs:
     css: style.css
@@ -28,7 +28,7 @@ format:
 
 ::::: {columns}
 ::: {.column width="50%"}
-![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/LightningBolt.gif)
+![](Pictures/LightningBolt.gif)
 :::
 
 ::: {.column width="50%"}
@@ -42,8 +42,8 @@ format:
 Every atom is made of particles
 
 ::: incremental
--   Protons → ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/plus-circle.svg){.absolute top="315" left="275" height="36"}
--   Electrons → ![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/minus-circle.svg){.absolute top="385" left="275" height="36"}
+-   Protons → ![](Pictures/plus-circle.svg){.absolute top="315" left="275" height="36"}
+-   Electrons → ![](Pictures/minus-circle.svg){.absolute top="385" left="275" height="36"}
 -   Neutrons
 :::
 
