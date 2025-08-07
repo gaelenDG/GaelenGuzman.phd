@@ -48,6 +48,7 @@ website:
   page-footer:
     center:
       - text: "© 2025 Gaelen Guzman | Built with Quarto"
+  google-analytics: "G-PGPKM53WTL"
       
 
 format:
