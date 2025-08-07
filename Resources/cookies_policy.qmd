@@ -1,9 +1,0 @@
----
-title: Cookies Policy
-toc: false
-anchor-sections: false
----
-
-Sorry if it's weird that I'm collecting some Google Analytics data on this site -- I'm purely hoping to get an idea of whether I'm getting visitors! 
-
-I guarantee that I'm not using this data for anything, nor am I planning to push ads to this little portfolio thing. Feel free to restrict!
