@@ -50,7 +50,9 @@ website:
       - text: "© 2025 Gaelen Guzman | Built with Quarto"
   # google-analytics: 
   #   tracking-id: "G-HDHCDTKM4V"
-  cookie-consent: true
+  cookie-consent: 
+    type: express
+    policy-url: Resources/cookies_policy.html
       
 
 format:
