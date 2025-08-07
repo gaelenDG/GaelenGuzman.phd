@@ -48,8 +48,9 @@ website:
   page-footer:
     center:
       - text: "© 2025 Gaelen Guzman | Built with Quarto"
-  google-analytics: 
-    tracking-id: "G-HDHCDTKM4V"
+  # google-analytics: 
+  #   tracking-id: "G-HDHCDTKM4V"
+  cookie-consent: true
       
 
 format:
@@ -66,4 +67,14 @@ format:
     sidebar: true
     include-in-header: 
       - text: |
+          <!-- Google tag (gtag.js) -->
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGPKM53WTL"></script>
+          <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-PGPKM53WTL');
+          </script>
           <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
+
