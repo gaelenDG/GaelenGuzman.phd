@@ -9,6 +9,9 @@ about:
     - icon: github
       text: "Github"
       href: https://github.com/gaelenDG
+    - icon: git
+      text: "Codeberg"
+      href: https://codeberg.org/gaelenDG
     - icon: linkedin
       text: "LinkedIn"
       href: https://www.linkedin.com/in/gaelen-guzman-26495590/
