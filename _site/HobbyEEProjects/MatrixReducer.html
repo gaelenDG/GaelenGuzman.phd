@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Projects, tinkering, and microcontroller fiddling">
+<meta name="author" content="Gaelen Guzman">
+<meta name="dcterms.date" content="2025-08-15">
+<meta name="description" content="A silly Shiny app to transform input matrices to reduced row echelon form">
 
-<title>Hobby Electronics Projects – Gaelen Guzman</title>
+<title>Matrix Reducer – Gaelen Guzman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/images/glasses-solid.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
 <script type="text/javascript" charset="UTF-8">
 document.addEventListener('DOMContentLoaded', function () {
@@ -130,35 +101,6 @@ cookieconsent.run({
 </script>
 <script src="https://kit.fontawesome.com/f829805578.js" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -189,7 +131,7 @@ window.Quarto = {
 <span class="menu-text">Research Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../HobbyEEProjects/index.html" aria-current="page"> <i class="bi bi-cpu" role="img">
+    <a class="nav-link" href="../HobbyEEProjects/index.html"> <i class="bi bi-cpu" role="img">
 </i> 
 <span class="menu-text">Hobby Electronics Projects</span></a>
   </li>  
@@ -211,25 +153,42 @@ window.Quarto = {
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hobby Electronics Projects</h1>
+<h1 class="title">Matrix Reducer</h1>
+</div>
+
+<div>
+  <div class="description">
+    A silly Shiny app to transform input matrices to reduced row echelon form
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
 
-<div class="quarto-title-meta column-page">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gaelen Guzman </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 15, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -242,214 +201,25 @@ window.Quarto = {
 
 
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiny App Embedding</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 75vh;
+      border: none;
+    }
+  </style>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-date-sort="1755241200000" data-listing-file-modified-sort="1755297204243" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="52">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MatrixReducer.html" class="no-external"></a></p><a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="../HobbyEEProjects/MatrixReducer.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">Matrix Reducer</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">A silly Shiny app to transform input matrices to reduced row echelon form</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">
-<div class="listing-date">
-Aug 15, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-listing-date-sort="1746082800000" data-listing-file-modified-sort="1747490265643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="898">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external"></a></p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">Automated Garage Door Remote</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">A device to help me be certain that I closed the garage door on my way out of the house – sync’ed with Home Assistant!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">
-<div class="listing-date">
-May 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-listing-date-sort="1742886000000" data-listing-file-modified-sort="1753387252338" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external"></a></p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_featured.gif" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">Resistor Flex part 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">How to use computers to build devices!</a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">My presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">
-<div class="listing-date">
-Mar 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="3" data-listing-date-sort="1742281200000" data-listing-file-modified-sort="1753386873055" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external"></a></p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_featured.gif" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">Resistor Flex</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">control the flow like a pro!</a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">My presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">
-<div class="listing-date">
-Mar 18, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="4" data-listing-date-sort="1738310400000" data-listing-file-modified-sort="1741816233563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external"></a></p><a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MagneticStirbarLamp/MagneticStirbarFeatured.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">Magnetic Stirbar Lamp</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">A lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. <strong>Still a work in progress</strong></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">
-<div class="listing-date">
-Jan 31, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="5" data-listing-date-sort="1736928000000" data-listing-file-modified-sort="1742227093035" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="619">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external"></a></p><a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MushroomLamp_v2/MushroomLamp_v2_featured.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">Mushroom Lamp v2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">I wanted to take what I learned from my first little <span>mushroom lamp</span> and build on it using the same Adafruit NeoPixels I used in the <span>baby book</span>. I was inspired when my friend, Becca, told me that her middle school class was <em>very</em> into mushrooms this year.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="6" data-listing-date-sort="1732089600000" data-listing-file-modified-sort="1741816178107" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="150">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external"></a></p><a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/LightUpBabyBook/LightUpBabyBookFeatured.gif" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">Light-up Baby Book</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">
-<div class="listing-date">
-Nov 20, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="7" data-listing-date-sort="1728543600000" data-listing-file-modified-sort="1741816149511" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1530">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external"></a></p><a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MushroomLamp_v1/Final.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">Mushroom Lamp v1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">This little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+
+  <iframe src="https://gaelen-guzman.shinyapps.io/RREF_app/"></iframe>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -879,7 +649,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2025 Gaelen Guzman | Built with Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MatrixReducer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

@@ -350,95 +350,18 @@
     "text": "Future Improvements"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html",
-    "title": "Resistor Flex",
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html",
+    "title": "Resistor Flex part 2",
     "section": "",
     "text": "?\nReuseCC BY 4.0"
   },
   {
-    "objectID": "HobbyEEProjects/MushroomLamp_v1.html",
-    "href": "HobbyEEProjects/MushroomLamp_v1.html",
-    "title": "Mushroom Lamp v1",
+    "objectID": "HobbyEEProjects/index.html",
+    "href": "HobbyEEProjects/index.html",
+    "title": "Hobby Electronics Projects",
     "section": "",
-    "text": "Someday I’ll take a better final photo of this lamp…"
-  },
-  {
-    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#overview",
-    "href": "HobbyEEProjects/MushroomLamp_v1.html#overview",
-    "title": "Mushroom Lamp v1",
-    "section": "Overview",
-    "text": "Overview\nI was inspired by this video by DIY Perks on using silicone caulk to craft mushrooms with embedded LEDs – but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!\nWhile the physical structure of the lamp is complete, I’m still working on incorporating an MQTT connection to HomeAssistant – that way I can cycle through different light patterns from a dashboard!"
-  },
-  {
-    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#materials-components",
-    "href": "HobbyEEProjects/MushroomLamp_v1.html#materials-components",
-    "title": "Mushroom Lamp v1",
-    "section": "Materials & Components",
-    "text": "Materials & Components\n\nA piece of bark (found in my back yard)\nSilicone caulk sealant\nSilicone dye\nStandard LEDs (1x red, 1x green, 1x blue - and a bonus white flickering one taken from an LED candle)\nAn ESP32c3 supermini microcontroller\nNPN2222a transistors (to convert the 3.3 V GPIO output to 5 V)\nA light-dependent resistor (LDR)\nA 10 kΩ pull-up resistor for the LDR\n470 Ω resistors (for the LEDs)"
-  },
-  {
-    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#assembly",
-    "href": "HobbyEEProjects/MushroomLamp_v1.html#assembly",
-    "title": "Mushroom Lamp v1",
-    "section": "Assembly",
-    "text": "Assembly\n\n\n\n\nTesting the concept of the lamp, with really basic control via the ESP32.\n\n\n\n\nNext, I soldered the LEDs to power lines – I decided to directly integrate the current limiting resistor into the stalk of the mushroom so I wouldn’t be tempted to test the mushrooms without a resistor (a stupid mistake that killed my first test mushroom!).\nI then crafted the mushroom stalks using the silicone caulk: I squirted a line of some caulk out onto some plastic film, added a small amount of dye to make nice colors, and squashed the LEDs into the line. By folding the plastic wrap over and kneading carefully, I got the wires embedded in the center of the caulk and a mostly round cross-section.\n\n\n\n\nDrying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off.\n\n\n\n\nFor the mushroom caps, I squeezed out more caulk and dye to match the LED colors and left them to dry between layers of plastic wrap. I used the tops of bottles and curved things to help them set in the right shape. Once everything dried, I used a big glob of caulk to glue the tops to the bottoms.\nI then drilled 10 mm holes into my log in what I thought would appear to be a natural arrangement and fed the trailing LED leads through and then used more caulk to glue them in place. I also drilled and glued in place the light-dependent resistor near the back of the bark and the bare flickering LED right in the center. I left the underside of the amanita off for the time being – my vision was to make it big enough to cover the board underneath, so it needed to be glued in place as a final step.\nNext I started work on soldering the PCB. The main components here are the ESP32-C3 itself, one NPN2222a transistor for each LED (discussed a little more below), a pull-up resistor for the LDR, and trailing wires to power each LED pointing up away from the board so that they’d be long enough to solder to the trailing wires of the glued-in LEDs (This turned out to be a huge pain).\n\n\n\n\nForgive my terrible soldering, I was still learning and didn’t yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top…\n\n\n\nThe NPN2222a transistors were my rudimentary attempt at performing level shifting. The GPIO data out voltage is 3.3 V – and in my testing, it made the LEDs just not quite as bright as I wanted them, even after messing around with different resistor levels. I decided to bump them up to 5 V by connecting the Vcc lead to the emitter pin of the transistor, and the GPIO data line connected to the base. This allowed the ESP32 to regulate the apparent brightness of the LED via PWM and increased the maximum brightness with the higher Vcc. A few days after I soldered all my transistors in place, I learned about the 74AHCT125 Level Shifter, which performs the same action with four input/output pin pairs and only one Vcc in and ground connection each; I felt a little bit like a fool for having wasted so much space on a big bulky PCB that could have been so much smaller – but that’s learning!\nSoldering the LEDs to their lead wires was a huge pain. In retrospect, I should have set it up with two-pronged plugs to make them just slot into place. Instead, I had to painstakingly squeeze the hot soldering iron between the PCB and the bark, being careful to not melt anything. It was a many-hours-long struggle and resulted in a huge mess of connections which are super prone to shorting out with small jostles… This was definitely the worst way I could have done it! Big notes to my future self with this!\nAnd finally, I assembled a little log cabin using some sticks and more caulk. My vision didn’t really come to reality – this thing doesn’t look all that good and I still haven’t actually glued it in place because I keep telling myself I’ll make a new one… I should probably just glue it down and call it done though.\n\n\n\nThe final product!\n\n\nI glued the board in place, covered it with the bottom portion of the amanita – and just like that, the physical components of the lamp were done! I next got started making a real light pattern."
-  },
-  {
-    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#code",
-    "href": "HobbyEEProjects/MushroomLamp_v1.html#code",
-    "title": "Mushroom Lamp v1",
-    "section": "Code",
-    "text": "Code\nThis was my first coding adventure with C++ – I’ll shamefully admit that I asked ChatGPT a lot of questions in order to get me started here, but after a while I started to realize it wasn’t that much more helpful than Googling my question and finding StackOverflow threads.\nPrior to this little project, I haven’t done basically anything with hardware, and it took a lot of learning to understand how to use non-blocking timing patterns to make sure that the lights don’t interfere with each other – and so that the lamp is constantly probing the surrounding light levels.\nIn short, the loop function starts by checking the ambient light – if it’s too light out, the lamp goes into a light sleep mode and checks again a few times each second. If the ambient light is dim enough, it triggers a step in the pattern light function.\nOn boot, each LED is assigned the minimum brightness value, an empty timer, and a random time interval. Using the random time interval, each LED is then assigned a calculated timespan for updating its brightness level. Each time the pattern loop begins, it goes through each LED and assesses whether an appropriate amount of time has passed to either increase or decrease the brightness ([total interval] / [num steps between min and max brightness]) – and if an appropriate amount of time has passed, the LED steps up until it hits the max brightness and then goes down until the minimum brightness. At the minimum brightness, the LED is assigned a new time interval.\nThe goal was to make the mushrooms look like they’re breathing, and I like to think it’s pretty good!\nThe LED inside the cabin flickers to make it seem like a little inhabitant is sitting by the fire. This isn’t directly controlled by the ESP32 – I just stole the LED from an electric candle, so it has a semi-random flickering pattern built into its PCB. The unfortunate side-effect of this is that I cannot control the brightness myself to adjust its pattern, but that’s ok!"
-  },
-  {
-    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#future-improvements",
-    "href": "HobbyEEProjects/MushroomLamp_v1.html#future-improvements",
-    "title": "Mushroom Lamp v1",
-    "section": "Future Improvements",
-    "text": "Future Improvements\n\nI truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…\nThis is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!\nA slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.\nI’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard."
-  },
-  {
-    "objectID": "HobbyEEProjects/LightUpBabyBook.html",
-    "href": "HobbyEEProjects/LightUpBabyBook.html",
-    "title": "Light-up Baby Book",
-    "section": "",
-    "text": "This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\nI started working on this about 4 months ago, with long pauses. I recently revisited the code to refactor and reorganize things – a big part of why this project was sitting idle was that the code was so unreadable that I couldn’t get myself to work on it.\nThe story is still a work in progress, so check back soon and hopefully I will have more updates!"
-  },
-  {
-    "objectID": "HobbyEEProjects/LightUpBabyBook.html#overview",
-    "href": "HobbyEEProjects/LightUpBabyBook.html#overview",
-    "title": "Light-up Baby Book",
-    "section": "",
-    "text": "This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\nI started working on this about 4 months ago, with long pauses. I recently revisited the code to refactor and reorganize things – a big part of why this project was sitting idle was that the code was so unreadable that I couldn’t get myself to work on it.\nThe story is still a work in progress, so check back soon and hopefully I will have more updates!"
-  },
-  {
-    "objectID": "HobbyEEProjects/LightUpBabyBook.html#materials-components-tools",
-    "href": "HobbyEEProjects/LightUpBabyBook.html#materials-components-tools",
-    "title": "Light-up Baby Book",
-    "section": "Materials, Components, & Tools",
-    "text": "Materials, Components, & Tools\n\nCardstock (varying thicknesses)\nAn ESP32c3 supermini microcontroller\nA 74AHCT125 level shifter (to convert the 3.3 V data out to 5 V)\n5x light-dependent resistors (LDR)\nA 10 kΩ pull-up resistor for the LDRs\n2x 470 Ω resistors (for the NeoPixel data lines)\nA 5 mm hole punch\nA crafting knife\nSuper glue"
-  },
-  {
-    "objectID": "HobbyEEProjects/LightUpBabyBook.html#assembly",
-    "href": "HobbyEEProjects/LightUpBabyBook.html#assembly",
-    "title": "Light-up Baby Book",
-    "section": "Assembly",
-    "text": "Assembly\n\nVideo"
-  },
-  {
-    "objectID": "HobbyEEProjects/LightUpBabyBook.html#code",
-    "href": "HobbyEEProjects/LightUpBabyBook.html#code",
-    "title": "Light-up Baby Book",
-    "section": "Code",
-    "text": "Code"
-  },
-  {
-    "objectID": "HobbyEEProjects/LightUpBabyBook.html#future-improvements",
-    "href": "HobbyEEProjects/LightUpBabyBook.html#future-improvements",
-    "title": "Light-up Baby Book",
-    "section": "Future Improvements",
-    "text": "Future Improvements"
+    "text": "Matrix Reducer\n\n\n\n\n\nA silly Shiny app to transform input matrices to reduced row echelon form\n\n\n\n\n\nAug 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAutomated Garage Door Remote\n\n\n\n\n\nA device to help me be certain that I closed the garage door on my way out of the house – sync’ed with Home Assistant!\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\ncontrol the flow like a pro!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
   },
   {
     "objectID": "HobbyEEProjects/MushroomLamp_v2.html",
@@ -483,18 +406,102 @@
     "text": "Future improvements\nI’d plan out my wiring a little more carefully… I didn’t strictly need to separate the NeoPixels into three chains, but it made sense at the time.\nI’d also improve how I attached the top of the central giant mushroom to the bottom – I didn’t leave myself enough material to comfortably trim at the end, and the back is quite messy!\nIn theory, this lamp has the capacity for bluetooth and wifi connection – it would be cool to set it up with HomeAssistant so it can be controlled remotely. The GPIO pins of the ESP32 are also easily accessed, and it wouldn’t be difficult to add a light sensor or a microphone to make the lamp more responsive to the environment."
   },
   {
-    "objectID": "HobbyEEProjects/index.html",
-    "href": "HobbyEEProjects/index.html",
-    "title": "Hobby Electronics Projects",
+    "objectID": "HobbyEEProjects/LightUpBabyBook.html",
+    "href": "HobbyEEProjects/LightUpBabyBook.html",
+    "title": "Light-up Baby Book",
     "section": "",
-    "text": "Automated Garage Door Remote\n\n\n\n\n\nA device to help me be certain that I closed the garage door on my way out of the house – sync’ed with Home Assistant!\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\ncontrol the flow like a pro!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
+    "text": "This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\nI started working on this about 4 months ago, with long pauses. I recently revisited the code to refactor and reorganize things – a big part of why this project was sitting idle was that the code was so unreadable that I couldn’t get myself to work on it.\nThe story is still a work in progress, so check back soon and hopefully I will have more updates!"
   },
   {
-    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html",
-    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html",
-    "title": "Resistor Flex part 2",
+    "objectID": "HobbyEEProjects/LightUpBabyBook.html#overview",
+    "href": "HobbyEEProjects/LightUpBabyBook.html#overview",
+    "title": "Light-up Baby Book",
+    "section": "",
+    "text": "This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\nI started working on this about 4 months ago, with long pauses. I recently revisited the code to refactor and reorganize things – a big part of why this project was sitting idle was that the code was so unreadable that I couldn’t get myself to work on it.\nThe story is still a work in progress, so check back soon and hopefully I will have more updates!"
+  },
+  {
+    "objectID": "HobbyEEProjects/LightUpBabyBook.html#materials-components-tools",
+    "href": "HobbyEEProjects/LightUpBabyBook.html#materials-components-tools",
+    "title": "Light-up Baby Book",
+    "section": "Materials, Components, & Tools",
+    "text": "Materials, Components, & Tools\n\nCardstock (varying thicknesses)\nAn ESP32c3 supermini microcontroller\nA 74AHCT125 level shifter (to convert the 3.3 V data out to 5 V)\n5x light-dependent resistors (LDR)\nA 10 kΩ pull-up resistor for the LDRs\n2x 470 Ω resistors (for the NeoPixel data lines)\nA 5 mm hole punch\nA crafting knife\nSuper glue"
+  },
+  {
+    "objectID": "HobbyEEProjects/LightUpBabyBook.html#assembly",
+    "href": "HobbyEEProjects/LightUpBabyBook.html#assembly",
+    "title": "Light-up Baby Book",
+    "section": "Assembly",
+    "text": "Assembly\n\nVideo"
+  },
+  {
+    "objectID": "HobbyEEProjects/LightUpBabyBook.html#code",
+    "href": "HobbyEEProjects/LightUpBabyBook.html#code",
+    "title": "Light-up Baby Book",
+    "section": "Code",
+    "text": "Code"
+  },
+  {
+    "objectID": "HobbyEEProjects/LightUpBabyBook.html#future-improvements",
+    "href": "HobbyEEProjects/LightUpBabyBook.html#future-improvements",
+    "title": "Light-up Baby Book",
+    "section": "Future Improvements",
+    "text": "Future Improvements"
+  },
+  {
+    "objectID": "HobbyEEProjects/MushroomLamp_v1.html",
+    "href": "HobbyEEProjects/MushroomLamp_v1.html",
+    "title": "Mushroom Lamp v1",
+    "section": "",
+    "text": "Someday I’ll take a better final photo of this lamp…"
+  },
+  {
+    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#overview",
+    "href": "HobbyEEProjects/MushroomLamp_v1.html#overview",
+    "title": "Mushroom Lamp v1",
+    "section": "Overview",
+    "text": "Overview\nI was inspired by this video by DIY Perks on using silicone caulk to craft mushrooms with embedded LEDs – but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!\nWhile the physical structure of the lamp is complete, I’m still working on incorporating an MQTT connection to HomeAssistant – that way I can cycle through different light patterns from a dashboard!"
+  },
+  {
+    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#materials-components",
+    "href": "HobbyEEProjects/MushroomLamp_v1.html#materials-components",
+    "title": "Mushroom Lamp v1",
+    "section": "Materials & Components",
+    "text": "Materials & Components\n\nA piece of bark (found in my back yard)\nSilicone caulk sealant\nSilicone dye\nStandard LEDs (1x red, 1x green, 1x blue - and a bonus white flickering one taken from an LED candle)\nAn ESP32c3 supermini microcontroller\nNPN2222a transistors (to convert the 3.3 V GPIO output to 5 V)\nA light-dependent resistor (LDR)\nA 10 kΩ pull-up resistor for the LDR\n470 Ω resistors (for the LEDs)"
+  },
+  {
+    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#assembly",
+    "href": "HobbyEEProjects/MushroomLamp_v1.html#assembly",
+    "title": "Mushroom Lamp v1",
+    "section": "Assembly",
+    "text": "Assembly\n\n\n\n\nTesting the concept of the lamp, with really basic control via the ESP32.\n\n\n\n\nNext, I soldered the LEDs to power lines – I decided to directly integrate the current limiting resistor into the stalk of the mushroom so I wouldn’t be tempted to test the mushrooms without a resistor (a stupid mistake that killed my first test mushroom!).\nI then crafted the mushroom stalks using the silicone caulk: I squirted a line of some caulk out onto some plastic film, added a small amount of dye to make nice colors, and squashed the LEDs into the line. By folding the plastic wrap over and kneading carefully, I got the wires embedded in the center of the caulk and a mostly round cross-section.\n\n\n\n\nDrying the newly-formed caulk stalks! It took a few days for them to feel solid enough to peel the plastic wrap off.\n\n\n\n\nFor the mushroom caps, I squeezed out more caulk and dye to match the LED colors and left them to dry between layers of plastic wrap. I used the tops of bottles and curved things to help them set in the right shape. Once everything dried, I used a big glob of caulk to glue the tops to the bottoms.\nI then drilled 10 mm holes into my log in what I thought would appear to be a natural arrangement and fed the trailing LED leads through and then used more caulk to glue them in place. I also drilled and glued in place the light-dependent resistor near the back of the bark and the bare flickering LED right in the center. I left the underside of the amanita off for the time being – my vision was to make it big enough to cover the board underneath, so it needed to be glued in place as a final step.\nNext I started work on soldering the PCB. The main components here are the ESP32-C3 itself, one NPN2222a transistor for each LED (discussed a little more below), a pull-up resistor for the LDR, and trailing wires to power each LED pointing up away from the board so that they’d be long enough to solder to the trailing wires of the glued-in LEDs (This turned out to be a huge pain).\n\n\n\n\nForgive my terrible soldering, I was still learning and didn’t yet have a flux pen to help guide the solder in place! I also apparently never took a picture of the top…\n\n\n\nThe NPN2222a transistors were my rudimentary attempt at performing level shifting. The GPIO data out voltage is 3.3 V – and in my testing, it made the LEDs just not quite as bright as I wanted them, even after messing around with different resistor levels. I decided to bump them up to 5 V by connecting the Vcc lead to the emitter pin of the transistor, and the GPIO data line connected to the base. This allowed the ESP32 to regulate the apparent brightness of the LED via PWM and increased the maximum brightness with the higher Vcc. A few days after I soldered all my transistors in place, I learned about the 74AHCT125 Level Shifter, which performs the same action with four input/output pin pairs and only one Vcc in and ground connection each; I felt a little bit like a fool for having wasted so much space on a big bulky PCB that could have been so much smaller – but that’s learning!\nSoldering the LEDs to their lead wires was a huge pain. In retrospect, I should have set it up with two-pronged plugs to make them just slot into place. Instead, I had to painstakingly squeeze the hot soldering iron between the PCB and the bark, being careful to not melt anything. It was a many-hours-long struggle and resulted in a huge mess of connections which are super prone to shorting out with small jostles… This was definitely the worst way I could have done it! Big notes to my future self with this!\nAnd finally, I assembled a little log cabin using some sticks and more caulk. My vision didn’t really come to reality – this thing doesn’t look all that good and I still haven’t actually glued it in place because I keep telling myself I’ll make a new one… I should probably just glue it down and call it done though.\n\n\n\nThe final product!\n\n\nI glued the board in place, covered it with the bottom portion of the amanita – and just like that, the physical components of the lamp were done! I next got started making a real light pattern."
+  },
+  {
+    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#code",
+    "href": "HobbyEEProjects/MushroomLamp_v1.html#code",
+    "title": "Mushroom Lamp v1",
+    "section": "Code",
+    "text": "Code\nThis was my first coding adventure with C++ – I’ll shamefully admit that I asked ChatGPT a lot of questions in order to get me started here, but after a while I started to realize it wasn’t that much more helpful than Googling my question and finding StackOverflow threads.\nPrior to this little project, I haven’t done basically anything with hardware, and it took a lot of learning to understand how to use non-blocking timing patterns to make sure that the lights don’t interfere with each other – and so that the lamp is constantly probing the surrounding light levels.\nIn short, the loop function starts by checking the ambient light – if it’s too light out, the lamp goes into a light sleep mode and checks again a few times each second. If the ambient light is dim enough, it triggers a step in the pattern light function.\nOn boot, each LED is assigned the minimum brightness value, an empty timer, and a random time interval. Using the random time interval, each LED is then assigned a calculated timespan for updating its brightness level. Each time the pattern loop begins, it goes through each LED and assesses whether an appropriate amount of time has passed to either increase or decrease the brightness ([total interval] / [num steps between min and max brightness]) – and if an appropriate amount of time has passed, the LED steps up until it hits the max brightness and then goes down until the minimum brightness. At the minimum brightness, the LED is assigned a new time interval.\nThe goal was to make the mushrooms look like they’re breathing, and I like to think it’s pretty good!\nThe LED inside the cabin flickers to make it seem like a little inhabitant is sitting by the fire. This isn’t directly controlled by the ESP32 – I just stole the LED from an electric candle, so it has a semi-random flickering pattern built into its PCB. The unfortunate side-effect of this is that I cannot control the brightness myself to adjust its pattern, but that’s ok!"
+  },
+  {
+    "objectID": "HobbyEEProjects/MushroomLamp_v1.html#future-improvements",
+    "href": "HobbyEEProjects/MushroomLamp_v1.html#future-improvements",
+    "title": "Mushroom Lamp v1",
+    "section": "Future Improvements",
+    "text": "Future Improvements\n\nI truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…\nThis is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!\nA slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.\nI’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard."
+  },
+  {
+    "objectID": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html",
+    "href": "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html",
+    "title": "Resistor Flex",
     "section": "",
     "text": "?\nReuseCC BY 4.0"
+  },
+  {
+    "objectID": "HobbyEEProjects/MatrixReducer.html",
+    "href": "HobbyEEProjects/MatrixReducer.html",
+    "title": "Matrix Reducer",
+    "section": "",
+    "text": "Shiny App Embedding\n  \n\n\n  \n\n\n\n\n\nReuseCC BY 4.0"
   },
   {
     "objectID": "HobbyEEProjects/AutomatedGarageDoorRemote.html",

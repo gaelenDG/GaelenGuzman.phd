@@ -1,0 +1,27 @@
+---
+title: Matrix Reducer
+description: "A silly Shiny app to transform input matrices to reduced row echelon form"
+date: "2025-08-15"
+author: Gaelen Guzman
+---
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiny App Embedding</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 75vh;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://gaelen-guzman.shinyapps.io/RREF_app/"></iframe>
+</body>
+</html>
+```
