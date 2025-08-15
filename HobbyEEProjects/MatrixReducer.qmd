@@ -5,6 +5,7 @@ date: "2025-08-15"
 author: Gaelen Guzman
 ---
 
+:::{.border}
 ```{=html}
 <!DOCTYPE html>
 <html lang="en">
@@ -25,3 +26,4 @@ author: Gaelen Guzman
 </body>
 </html>
 ```
+:::
