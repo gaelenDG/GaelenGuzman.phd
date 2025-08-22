@@ -4,13 +4,13 @@ project:
     port: 4321
     browser: true
 execute: 
-  freeze: false
+  freeze: auto
   render:
     - "*.qmd"
     - "ResearchProjects/*.qmd"
     - "HobbyEEProjects/*.qmd"
 resources:
-  - "HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentations/**"
+  - "assets/Presentations/**"
 format-links: true
 prefer-html: true
 license: "CC by"

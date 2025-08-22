@@ -1,0 +1,301 @@
+---
+title: Resistor Flex part 2
+subtitle: How to use computers to build devices!
+description: "My presentation for day 2 of the Sunnyside Middle School community teaching week -- instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!"
+author: Gaelen Guzman
+date: 2025-03-25
+listing: false
+format:
+  revealjs:
+    css: style.css
+    slide-number: true
+    mainfont: Charter
+    theme: sky
+    chalkboard: 
+      buttons: true
+    auto-stretch: false
+    default-image-extension: png
+    fig-align: center
+---
+
+# Today:
+
+* Review what we talked about last time
+* Talk about this mushroom lamp!
+* Use a computer to control a circuit
+* Brainstorm cool projects!
+
+# Quick review
+
+## What makes an electric circuit?
+
+:::::{.columns}
+:::{.v-center-container}
+:::{.column width="50%"}
+:::{.fragment data-fragment-index="3"}
+- Voltage &rarr; **Volts (V)**
+:::
+:::{.fragment data-fragment-index="4"}
+- Current &rarr; **Amps (A)**
+:::
+:::{.fragment data-fragment-index="5"}
+- Resistance &rarr; **Ohms (&ohm;)**
+:::
+:::
+
+:::{.column width="50%"}
+:::r-stack
+
+:::{.fragment fragment-index="1"}
+:::{.fragment .fade-out fragment-index="7"}
+![](  Pictures/SimplestCircuit.png){width=600}
+:::
+:::
+
+:::{.fragment .fade-in fragment-index="2"}
+:::{.fragment .fade-out fragment-index="7"}
+![](Pictures/Duracell_AA__49529.png){.absolute top=410 right=110 width="300"}
+:::
+:::
+
+:::
+:::
+:::
+:::::
+
+## Types of components!
+
+:::::{.columns}
+
+::::{.column width="50%"}
+<!-- :::{.fragment fragment-index="1"} -->
+:::{.incremental}
+* Types we talked about last time:
+  * LEDs
+  * Resistors
+  * Buttons
+  * Light-dependent resistors
+  * Transistors
+:::
+::::
+::::{.column width="50%"}
+<!-- :::{.fragment fragment-index="1"} -->
+:::{.incremental}
+* Types we didn't experiment with last time:
+  * Capacitors
+  * Inductors
+  * Level shifters
+  * Many, many types of sensors
+:::
+::::
+:::::
+
+
+## Breadboards make testing complicated circuits easy!
+
+:::{.v-center-container}
+:::{.r-stack}
+
+:::{.fragment .fade-in-then-out}
+![](Pictures/Breadboard.png)
+:::
+
+:::{.fragment .fade-in}
+![](Pictures/breadboard-right-and-wrong.jpg)
+:::
+:::
+:::
+
+## Transistors: Electrical switches
+
+:::{.fragment}
+![](Pictures/NPN2222a.png){fig-align="center" height=500}
+:::
+
+:::{.fragment}
+**OFF** if no current delivered to the *Base*
+:::
+:::{.fragment}
+**ON** when even a tiny bit of current flows to the *Base*
+:::
+
+# Assemble a night light
+
+## Hands on challenge: Night light
+
+**Components:**
+
+- Breadboard
+- 5 V power supply &rarr; ![](Pictures/symbols_Battery.png){height="50"}
+- LED &rarr; ![](Pictures/symbols_LED.png){height="50"}
+- 220 &ohm; Resistor &rarr; ![](Pictures/symbols_resistor.png){height="25"}
+- 100 k&ohm; Resistor &rarr;  ![](Pictures/symbols_resistor.png){height="25"}
+- LDR &rarr; ![](Pictures/symbols_LDR.png){height=70}
+- Transistor &rarr; ![](Pictures/symbols_NPN.png){height=50}
+- Jumper cables 
+
+![](  Pictures/HandsOn_7.svg){.absolute top=200 right=-20 width="600"}
+
+# Let's talk about inventing!
+
+## My mushroom lamp (& making your own!)
+
+:::{.v-center-container}
+![](/HobbyEEProjects/MushroomLamp_v2/ButtonDebound_testing.mp4){height=500}
+:::
+
+## The main components of the mushroom lamp
+
+::: columns
+::: {.column width="45%"}
+::: {.fragment .fade-right fragment-index="1"}
+1.  A piece of bark
+:::
+
+::: {.fragment .fade-right fragment-index="2"}
+2.  Silicone sealant
+:::
+
+::: {.fragment .fade-right fragment-index="3"}
+3.  Red-Green-Blue LEDs
+:::
+
+::: {.fragment .fade-right fragment-index="4"}
+4.  An ESP-32 microcontroller (a small computer)
+:::
+
+::: {.fragment .fade-right fragment-index="5"}
+5. A level shifter and some resistors to control the LEDs
+:::
+:::
+
+::: {.column width="55%"}
+::: r-stack
+::: {.fragment .fade-in-then-out fragment-index="1"}
+![](Pictures/Bark.png){height=750}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="2"}
+![](Pictures/Silicone_pic.png){height=500}
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="3"}
+![](Pictures/NeoPixel_pic.png)
+:::
+
+::: {.fragment .fade-in-then-out fragment-index="4"}
+![](Pictures/ESP32_pic.png)
+:::
+
+:::{.fragment .fade-in fragment-index="5"}
+![](Pictures/LevelShifter.png)
+:::
+
+:::
+:::
+:::
+
+## 
+
+# You can use a computer to control a circuit
+
+![](/HobbyEEProjects/Sunnyside_Electronics_Presentations/Pictures/icegif-4382.gif){fig-align="center"}
+
+## Example 1: A blinking LED
+
+```{.cpp}
+
+// Tell the computer where the LED is
+#define LED_PIN 4 // The LED is on pin "5"
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_PIN, OUTPUT);
+
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_PIN, HIGH);  // turn the LED on (voltage HIGH)
+  delay(1000);                  // wait for 1 second
+  digitalWrite(LED_PIN, LOW);   // turn the LED off (voltage LOW)
+  delay(1000);                  // wait for 1 second
+}
+```
+
+## Example 2: Use a button to control an LED
+
+```{.cpp}
+
+// Tell the computer where the button and the LED are.
+#define BUTTON_PIN 0  // The button is on pin "0"
+#define LED_PIN 4     // The LED is on pin "5"
+
+// Setup runs when the computer turns on
+void setup() {
+
+  // Tell the computer what to do with the button and LED
+  pinMode(BUTTON_PIN, INPUT);  // Button with pull-up
+  pinMode(LED_PIN, OUTPUT);    // LED for feedback
+
+  digitalWrite(LED_PIN, LOW);  // Start with LED off
+
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  // If the Button is pressed, turn LED on
+  if (digitalRead(BUTTON_PIN) == HIGH) {  
+    digitalWrite(LED_PIN, HIGH);   // Turn LED on
+  }
+  // If the Button is NOT pressed, turn LED off
+  if (digitalRead(BUTTON_PIN) == LOW) {
+    digitalWrite(LED_PIN, LOW);     // Turn LED off
+  }
+
+}
+```
+
+## Example 3: Use a potentiometer to control an LED's brightness
+
+```{.cpp}
+
+#include <Arduino.h>
+
+// Tell the computer where the potentiometer and LED are
+#define Potentiometer_Pin 3 // The potentiometer is on pin "3"
+#define LED_PIN 4 // The LED is on pin "5"
+
+// Some information to help the computer make the LED's brightness adjustable 
+const int LEDC_CHANNEL = 0;     // Use PWM channel 0
+const int LEDC_TIMER_BIT = 8;   // 8-bit resolution (0-255)
+const int LEDC_BASE_FREQ = 5000; // 5 kHz frequency
+
+// Run the startup instructions for the computer
+void setup() {
+
+  // Tell the computer what to do with the LED
+  ledcSetup(LEDC_CHANNEL, LEDC_BASE_FREQ, LEDC_TIMER_BIT);
+  ledcAttachPin(LED_PIN, LEDC_CHANNEL);
+
+  // Apply a brightness of "0" to the LED to start
+  ledcWrite(LEDC_CHANNEL, 0);  // Apply PWM value to LED strand
+
+}
+
+// Instructions to repeat over and over
+void loop() {
+
+  // read the value from the potentiometer:
+  int potValue = analogRead(Potentiometer_Pin); // Read the potentiometer value, save it
+
+  int LEDbrightness = map(abs(potValue), 0, 4095, 0, 255); // Convert the potentiometer value to a brightness
+
+  // Turn on the LED at the calculated brightness level 
+  ledcWrite(LEDC_CHANNEL, LEDbrightness); 
+
+}
+```
+
