@@ -172,7 +172,7 @@
     "href": "assets/Presentations/Electricity1_presentation.html#section",
     "title": "Resistor Flex",
     "section": "",
-    "text": "Series\nOnly one path for the current to go.\n\n\nParallel\nMultiple ways to get back to the negative terminal."
+    "text": "Series\nOnly one path for the current to go.\n\n\n\n\nParallel\nMultiple ways to get back to the negative terminal."
   },
   {
     "objectID": "assets/Presentations/Electricity1_presentation.html#how-does-current-behave-in-a-series-circuit",
@@ -235,14 +235,14 @@
     "href": "assets/Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing",
     "title": "Resistor Flex",
     "section": "Electrons go the opposite way? Confusing!",
-    "text": "Electrons go the opposite way? Confusing!\n\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!"
+    "text": "Electrons go the opposite way? Confusing!\n\n\n\n\n\nBenjamin Franklin didn’t know what electrons were: he took a guess about which direction things were moving, and he happened to guess wrong!"
   },
   {
     "objectID": "assets/Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing-1",
     "href": "assets/Presentations/Electricity1_presentation.html#electrons-go-the-opposite-way-confusing-1",
     "title": "Resistor Flex",
     "section": "Electrons go the opposite way? Confusing!",
-    "text": "Electrons go the opposite way? Confusing!\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
+    "text": "Electrons go the opposite way? Confusing!\n\n\n\n\n\nBy convention, we always pretend that a     charge is going around the circuit – even though it’s just imaginary, it doesn’t change how the circuit works."
   },
   {
     "objectID": "assets/Presentations/Electricity1_presentation.html#what-can-we-invent",
@@ -361,7 +361,7 @@
     "href": "HobbyEEProjects/index.html",
     "title": "Hobby Electronics Projects",
     "section": "",
-    "text": "Matrix Reducer\n\n\n\n\n\nA silly Shiny app to transform input matrices to reduced row echelon form\n\n\n\n\n\nAug 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAutomated Garage Door Remote\n\n\n\n\n\nA device to help me be certain that I closed the garage door on my way out of the house – sync’ed with Home Assistant!\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\ncontrol the flow like a pro!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
+    "text": "Matrix Reducer\n\n\n\n\n\nA silly Shiny app to transform input matrices to reduced row echelon form\n\n\n\n\n\nAug 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nAutomated Garage Door Remote\n\n\n\n\n\nA device to help me be certain that I closed the garage door on my way out of the house – sync’ed with Home Assistant!\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex part 2\n\n\nHow to use computers to build devices!\n\n\nMy presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!\n\n\n\n\n\nMar 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nResistor Flex\n\n\ncontrol the flow like a pro!\n\n\nMy presentation for a Sunnyside Middle School community event – an introduction to designing and making circuits!\n\n\n\n\n\nMar 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMagnetic Stirbar Lamp\n\n\n\n\n\nA lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. Still a work in progress\n\n\n\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v2\n\n\n\n\n\nI wanted to take what I learned from my first little mushroom lamp and build on it using the same Adafruit NeoPixels I used in the baby book. I was inspired when my friend, Becca, told me that her middle school class was very into mushrooms this year.\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nLight-up Baby Book\n\n\n\n\n\nThis baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!\n\n\n\n\n\nNov 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Lamp v1\n\n\n\n\n\nThis little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.\n\n\n\n\n\nOct 10, 2024\n\n\n\n\n\n\nNo matching items\n\nReuseCC BY 4.0"
   },
   {
     "objectID": "HobbyEEProjects/MushroomLamp_v2.html",
