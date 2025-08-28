@@ -156,8 +156,18 @@ cookieconsent.run({
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-the-heck-is-this" id="toc-what-the-heck-is-this" class="nav-link active" data-scroll-target="#what-the-heck-is-this">What the heck is this?</a>
+  <ul class="collapse">
+  <li><a href="#studying-linear-algebra-for-fun" id="toc-studying-linear-algebra-for-fun" class="nav-link" data-scroll-target="#studying-linear-algebra-for-fun">Studying linear algebra for fun?</a></li>
+  <li><a href="#but-really-why" id="toc-but-really-why" class="nav-link" data-scroll-target="#but-really-why">But really, why?</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MatrixReducer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -208,7 +218,7 @@ cookieconsent.run({
   <style>
     iframe {
       width: 100%;
-      height: 75vh;
+      height: 100%;
       border: none;
     }
   </style>
@@ -218,8 +228,24 @@ cookieconsent.run({
 
 
 </div>
+<section id="what-the-heck-is-this" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-heck-is-this">What the heck is this?</h2>
+<p>This page appears to be a departure from all the other little projects I have in this site, and on the off chance someone stumbles into this page, I thought I’d add some context. I plopped my little shiny app above so I could actually use it occasionally without scrolling through 1000 lines of text, like on every recipe site I’ve ever seen.</p>
+<section id="studying-linear-algebra-for-fun" class="level3">
+<h3 class="anchored" data-anchor-id="studying-linear-algebra-for-fun">Studying linear algebra for fun?</h3>
+<p>To the mild amusement of Madeleine, I’ve been working through the <em>A First Course in Linear Algebra</em> textbook by Robert Beezer (<a href="http://linear.ups.edu/html/fcla.html">the online version can be found here</a>). It sort of started because I was hoping to learn more about the principles underlying machine learning techniques like PCA and multiple linear regression – and then I discovered that I really like Beezer’s writing and was deeply craving some fun math puzzles to play with.</p>
+<p>After the first few chapters, the systems of linear equations in the book were getting too complicated to perform row-reduction on by hand and I didn’t want to keep relying on the embedded Sage executables that are in the web version of the book (mostly because I found Sage kind of annoying, even if it’s clearly a powerful language). To make it easier to progress through the more challenging practice problems, I decided to try to build a function that takes in a user-specified matrix and performs the classic linear algebra operations to derive the row-reduced echelon form of the matrix. Then I decided that it would be fun and helpful to host my tool in a Shiny app so I could easily access and use it.</p>
+<p>It’s been fun to dig into a math subject I knew nothing about. It’s very cool that this row-reduced echelon form (RREF) gives extremely apparent insights into a system of linear equations: you can immediately recognize if the system is consistent, whether there’s a unique solution or whether there are infinite solutions, which (if any) variables are dependent or independent, and what the structure to the solution set is – and the RREF can be produced with extremely straightforward computational steps.</p>
+</section>
+<section id="but-really-why" class="level3">
+<h3 class="anchored" data-anchor-id="but-really-why">But really, why?</h3>
+<p>Reading through this book has been the first time a text has held my hand through the concept of building mathemetical proofs – there’s a whole section in the back describing proof techniques! I’m really enjoying seeing how one actually thinks through proving a claim, because I’ve always thought of math as being the tools you use to solve a specific problem. Instead, this book is showing that math is a language you can use to describe whole sets of problems and what their solutions look like.</p>
+<p>For example, using a self-consistent definition of systems of linear equations, you can confidently say that every system of linear equations has one of three classes of solution sets: 1. The system is inconsistent and there is no solution that satisfies every equation. 2. The system is constrained such that there is exactly one solution set that satisfies every equation. 3. The system is unconstrained, and thus there are an infinite number of solutions – and there is a vector form which can describe the form of every one of these solutions.</p>
+<p>I think that’s so cool! I’m less than a quarter of the way through the book and I have no idea if I’ll lose interest at some point soon, but for now this has been fun! At some point I may go back into my Shiny app and expand it so that it produces the vector form of the solution set; it sort of depends on whether I’m having fun writing this out by hand.</p>
 
 
+</section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -651,7 +677,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2025 Gaelen Guzman | Built with Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MatrixReducer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/MatrixReducer.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
