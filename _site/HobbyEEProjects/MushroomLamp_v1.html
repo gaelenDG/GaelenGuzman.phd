@@ -141,7 +141,7 @@ cookieconsent.run({
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../assets/cv/GG_CV_20250424.pdf" target="_blank"> <i class="bi bi-person-lines-fill" role="img">
+    <a class="nav-link" href="../assets/cv/GG_CV_20250702.pdf" target="_blank"> <i class="bi bi-person-lines-fill" role="img">
 </i> 
 <span class="menu-text">Curriculum Vitae</span></a>
   </li>  
@@ -151,9 +151,6 @@ cookieconsent.run({
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <div id="quarto-announcement" data-announcement-id="82d7d54750f38963123eec1a631d3234" class="alert alert-primary hidden"><div class="quarto-announcement-content">
-<p><i class="bi bi-cone-striped"></i> <strong>Hardhat Zone</strong> - Site is still under construction. Please excuse the mess.</p>
-</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -166,7 +163,10 @@ cookieconsent.run({
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#materials-components" id="toc-materials-components" class="nav-link" data-scroll-target="#materials-components">Materials &amp; Components</a></li>
-  <li><a href="#assembly" id="toc-assembly" class="nav-link" data-scroll-target="#assembly">Assembly</a></li>
+  <li><a href="#assembly" id="toc-assembly" class="nav-link" data-scroll-target="#assembly">Assembly</a>
+  <ul class="collapse">
+  <li><a href="#new-board" id="toc-new-board" class="nav-link" data-scroll-target="#new-board">New board!</a></li>
+  </ul></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
   <li><a href="#future-improvements" id="toc-future-improvements" class="nav-link" data-scroll-target="#future-improvements">Future Improvements</a></li>
   </ul>
@@ -214,7 +214,7 @@ cookieconsent.run({
 <div class="border">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="MushroomLamp_v1/Final.png" class="lightbox" data-gallery="MushroomLamp_v1" title="Someday I’ll take a better final photo of this lamp…"><img src="MushroomLamp_v1/Final.png" class="img-fluid figure-img" alt="Someday I’ll take a better final photo of this lamp…"></a></p>
+<p><a href="../HobbyEEProjects/MushroomLamp_v1/SlightlyNicerFinal.jpg" class="lightbox" data-gallery="MushroomLamp_v1" title="Someday I’ll take a better final photo of this lamp…"><img src="../HobbyEEProjects/MushroomLamp_v1/SlightlyNicerFinal.jpg" class="img-fluid figure-img" alt="Someday I’ll take a better final photo of this lamp…"></a></p>
 <figcaption>Someday I’ll take a better final photo of this lamp…</figcaption>
 </figure>
 </div>
@@ -224,6 +224,8 @@ cookieconsent.run({
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>I was inspired by this <a href="https://www.youtube.com/watch?v=D5LjGFkpApw" target="_blank">video by DIY Perks</a> on using silicone caulk to craft mushrooms with embedded LEDs – but I recently got myself an ESP32-C3 super mini dev board, and I wanted to see if I could get it to control the lights to display some kind of pattern!</p>
 <p>While the physical structure of the lamp is complete, I’m still working on incorporating an MQTT connection to HomeAssistant – that way I can cycle through different light patterns from a dashboard!</p>
+<p><strong>March 2025 Update:</strong> I started noticing that some of my connections seemed to be shorting out – this was after all my introduction to soldering. I decided to rip the control board out and start from scratch with some better design planning and some nicer connectors to plug each mushroom into the board. See below for a little side-by-side of my first board and this new board!</p>
+<p><strong>August 2025 Update:</strong> I recently learned a lot more about ESPhome and was able to totally rework the script so that the lamp is controllable in Home Assistant, with a slider bar to regulate the output brightness! The mushrooms are also now “breathing” in a sine pattern, better fitting how real breathing patterns look.</p>
 </section>
 <section id="materials-components" class="level2">
 <h2 class="anchored" data-anchor-id="materials-components">Materials &amp; Components</h2>
@@ -232,8 +234,12 @@ cookieconsent.run({
 <li>Silicone caulk sealant</li>
 <li>Silicone dye</li>
 <li>Standard LEDs (1x red, 1x green, 1x blue - and a bonus white flickering one taken from an LED candle)</li>
+<li>A flexible strand LED</li>
 <li>An ESP32c3 supermini microcontroller</li>
-<li>NPN2222a transistors (to convert the 3.3 V GPIO output to 5 V)</li>
+<li>NPN2222a transistors (to convert the 3.3 V GPIO output to 5 V)
+<ul>
+<li>In my re-done board, I used a <em>74AHCT125 - Quad Level-Shifter</em> instead of 2222s</li>
+</ul></li>
 <li>A light-dependent resistor (LDR)</li>
 <li>A 10 kΩ pull-up resistor for the LDR</li>
 <li>470 Ω resistors (for the LEDs)</li>
@@ -275,31 +281,59 @@ cookieconsent.run({
 <p>The NPN2222a transistors were my rudimentary attempt at performing level shifting. The GPIO data out voltage is 3.3 V – and in my testing, it made the LEDs just not quite as bright as I wanted them, even after messing around with different resistor levels. I decided to bump them up to 5 V by connecting the Vcc lead to the emitter pin of the transistor, and the GPIO data line connected to the base. This allowed the ESP32 to regulate the apparent brightness of the LED via PWM and increased the maximum brightness with the higher Vcc. A few days after I soldered all my transistors in place, I learned about the 74AHCT125 Level Shifter, which performs the same action with four input/output pin pairs and only one Vcc in and ground connection each; I felt a little bit like a fool for having wasted so much space on a big bulky PCB that could have been so much smaller – but that’s learning!</p>
 <p>Soldering the LEDs to their lead wires was a huge pain. In retrospect, I should have set it up with two-pronged plugs to make them just slot into place. Instead, I had to painstakingly squeeze the hot soldering iron between the PCB and the bark, being careful to not melt anything. It was a many-hours-long struggle and resulted in a huge mess of connections which are super prone to shorting out with small jostles… This was definitely the worst way I could have done it! Big notes to my future self with this!</p>
 <p>And finally, I assembled a little log cabin using some sticks and more caulk. My vision didn’t really come to reality – this thing doesn’t look all that good and I still haven’t actually glued it in place because I keep telling myself I’ll make a new one… I should probably just glue it down and call it done though.</p>
+<section id="new-board" class="level3">
+<h3 class="anchored" data-anchor-id="new-board">New board!</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="MushroomLamp_v1/BoardComparison.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Kind of fun to see how much my circuit planning and soldering skills have improved! I whipped the new board together in a few hours and got it almost totally right in a single go – just had to clean up a poor joint of my ground bus once everything was hooked up."><img src="MushroomLamp_v1/BoardComparison.jpg" class="img-fluid figure-img" alt="Kind of fun to see how much my circuit planning and soldering skills have improved! I whipped the new board together in a few hours and got it almost totally right in a single go – just had to clean up a poor joint of my ground bus once everything was hooked up."></a></p>
+<figcaption>Kind of fun to see how much my circuit planning and soldering skills have improved! I whipped the new board together in a few hours and got it almost totally right in a single go – just had to clean up a poor joint of my ground bus once everything was hooked up.</figcaption>
+</figure>
+</div>
+<p>I glued the board in place, covered it with the bottom portion of the amanita – and just like that, the physical components of the lamp were done! I next got started making a real light pattern.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="MushroomLamp_v1/Final.png" class="lightbox" data-gallery="MushroomLamp_v1" title="The final product!"><img src="MushroomLamp_v1/Final.png" class="img-fluid figure-img" alt="The final product!"></a></p>
 <figcaption>The final product!</figcaption>
 </figure>
 </div>
-<p>I glued the board in place, covered it with the bottom portion of the amanita – and just like that, the physical components of the lamp were done! I next got started making a real light pattern.</p>
+</section>
 </section>
 <section id="code" class="level2">
 <h2 class="anchored" data-anchor-id="code">Code</h2>
+<p><strong><em>Update:</em></strong> <em>The below is outdated now, but is a fun look back at how I wrote my original script. The new controlling script is written in ESPhome via yaml, and performs all the same fundamental functions, except it’s no longer just a nightlight but is a dimmable light in HomeAssistant.</em></p>
 <p>This was my first coding adventure with C++ – I’ll shamefully admit that I asked ChatGPT a lot of questions in order to get me started here, but after a while I started to realize it wasn’t that much more helpful than Googling my question and finding StackOverflow threads.</p>
 <p>Prior to this little project, I haven’t done basically anything with hardware, and it took a lot of learning to understand how to use non-blocking timing patterns to make sure that the lights don’t interfere with each other – and so that the lamp is constantly probing the surrounding light levels.</p>
 <p>In short, the loop function starts by checking the ambient light – if it’s too light out, the lamp goes into a light sleep mode and checks again a few times each second. If the ambient light is dim enough, it triggers a step in the pattern light function.</p>
 <p>On boot, each LED is assigned the minimum brightness value, an empty timer, and a random time interval. Using the random time interval, each LED is then assigned a calculated timespan for updating its brightness level. Each time the pattern loop begins, it goes through each LED and assesses whether an appropriate amount of time has passed to either increase or decrease the brightness ([total interval] / [num steps between min and max brightness]) – and if an appropriate amount of time has passed, the LED steps up until it hits the max brightness and then goes down until the minimum brightness. At the minimum brightness, the LED is assigned a new time interval.</p>
 <p>The goal was to make the mushrooms look like they’re breathing, and I like to think it’s pretty good!</p>
-<p>The LED inside the cabin flickers to make it seem like a little inhabitant is sitting by the fire. This isn’t directly controlled by the ESP32 – I just stole the LED from an electric candle, so it has a semi-random flickering pattern built into its PCB. The unfortunate side-effect of this is that I cannot control the brightness myself to adjust its pattern, but that’s ok!</p>
+<p>The LED inside the cabin flickers to make it seem like a little dweller is sitting by the fire. This isn’t directly controlled by the ESP32 – I just stole the LED from an electric candle, so it has a semi-random flickering pattern built into its PCB. The unfortunate side-effect of this is that I cannot control the brightness myself to adjust its pattern, but that’s ok.</p>
 </section>
 <section id="future-improvements" class="level2">
 <h2 class="anchored" data-anchor-id="future-improvements">Future Improvements</h2>
 <ol type="1">
-<li><p>I truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…</p></li>
-<li><p>This is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!</p></li>
-<li><p>A slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.</p></li>
-<li><p>I’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard.</p></li>
+<li>I truly did not plan for how difficult it would be to solder the lights to the board. In the future, I would vastly prefer to make the wires coming out of the LEDs much longer and tipped with 2-pin connectors so that they can just plug into the PCB! This would also help protect the lights from shorting to ground so easily…</li>
 </ol>
+<ul>
+<li><strong>I got this done! It required ripping out the original board and making an entirely new one, but the final product is much more robust!</strong></li>
+</ul>
+<ol start="2" type="1">
+<li>This is an easy fix I just haven’t done yet, but this nightlight has a silly flickering behavior when the ambient light is just barely dark enough to trigger the lamp because the lamp itself provides enough light to turn itself off! This would be fixed by just having two brightness thresholds, the “off” threshold being brightness than the “on” threshold – that way it turns on in relatively dim light and turns off only when it’s substantially brighter. I’ll go back and fix this sometime!</li>
+</ol>
+<ul>
+<li><strong>Also fixed, mostly by removing the nightlight behavior. I decided it would be fun to keep the LDR as a sensor entity in HomeAssistant, so I can “see” the day/night cycle of our living room – but it’s no longer toggling the lamp on and off.</strong></li>
+</ul>
+<ol start="3" type="1">
+<li>A slightly more complicated coding fix is to alter the brightness stepping function so that it better matches the perception of the human eye: right now it linearly adjusts the PWM value from min (25) to max (255) – but the eye perceives differences in brightness non-linearly. Someday I’ll go back and rewrite this so it’s more like the sine curve that we use to sense brightness.</li>
+</ol>
+<ul>
+<li><strong>Fixed this too!</strong></li>
+</ul>
+<ol start="4" type="1">
+<li>I’m still working on the MQTT/HomeAssistant connection for this lamp – it’s kind of a shame to use the blazing fast ESP32 at about 1% of its capacity, and just wasting the wifi/bluetooth connections! I’ll update here when I’ve successfully incorporated different patterns that can be controlled within an HA dashboard.</li>
+</ol>
+<ul>
+<li><strong>Done! I decided that different patterns aren’t interesting to me because I really like the breathing effect. The lamp is now controlled purely in HomeAssistant.</strong></li>
+</ul>
 
 
 </section>

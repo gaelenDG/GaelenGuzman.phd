@@ -18,12 +18,12 @@ copyright:
   holder: Gaelen Guzman
   year: 2025
 website:
-  announcement: 
-    content: "<i class='bi bi-cone-striped'></i> **Hardhat Zone** - Site is still under construction. Please excuse the mess."
-    color: "#ffa500"
-    background: "#ffa500" 
-    position: below-navbar 
-    dismissable: true
+  # announcement: 
+  #   content: "<i class='bi bi-cone-striped'></i> **Hardhat Zone** - Site is still under construction. Please excuse the mess."
+  #   color: "#ffa500"
+  #   background: "#ffa500" 
+  #   position: below-navbar 
+  #   dismissable: true
   title: "Gaelen Guzman"
   repo-url: https://github.com/gaelenDG/GaelenGuzman.github.io
   repo-actions: [source, issue]
@@ -34,7 +34,7 @@ website:
     right:
       - text: "Curriculum Vitae"
         icon: person-lines-fill
-        href: assets/cv/GG_CV_20250424.pdf
+        href: assets/cv/GG_CV_20250702.pdf
         target: "_blank"
     left: 
       - text: "Research Projects"

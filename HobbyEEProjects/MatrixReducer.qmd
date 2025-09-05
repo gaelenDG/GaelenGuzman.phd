@@ -2,6 +2,7 @@
 title: Matrix Reducer
 description: "A silly Shiny app to transform input matrices to reduced row echelon form"
 date: "2025-08-15"
+image: MatrixReducerAssets/highlightImage.png
 author: Gaelen Guzman
 ---
 
