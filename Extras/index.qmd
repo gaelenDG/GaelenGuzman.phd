@@ -1,6 +1,6 @@
 ---
 title: "Windy Moo Babysitting Instructions"
-description-meta: "Broken up by age! Assuming he'll need different instructions at 10 months vs 10 years..."
+description-meta: "Broken up by age! They'll be updated periodically with relevant info for his current age."
 listing:
   contents: .
   type: default

@@ -1,0 +1,101 @@
+---
+title: Windy Moo @ ~13 months old
+description: "Instructions for taking care of WMF at around 13 months!"
+about:
+  template: broadside
+  image: assets/WindyMoo_13mo.png
+  id: hero-heading
+image: assets/WindyMoo_13mo.png
+date: 2025-06-16 
+engine: knitr 
+freeze: true
+toc: false
+website:
+  announcement: 
+    content: "<i class='bi bi-cone-striped'></i> **Hardhat Zone** - Site is still under construction. Please excuse the mess."
+    color: "#ffa500"
+    background: "#ffa500" 
+    position: below-navbar 
+    dismissable: true
+---
+
+:::{#hero-heading}
+## Howdy! Seems like you're baby sitting Wendell Moon -- thank you! Please check out these instructions and resources, they're excessive. 
+
+## Important phone numbers
+| | | 
+|:---|:---:|
+|**Pediatrician (Sellwood Medical)** | 503-595-9300 |
+|**Oregon Poison Control** | 800-222-1222 |
+|**Maddog** | 208-891-5431 |
+|**Gman** | 208-651-1748 |
+
+:::
+
+
+## Getting in our house
+
+Welcome to our home! 
+
+The code to the kitchen door and garage are the same: **0824**.
+
+
+## Leaving the house
+
+Here's my handy-dandy checklist, tick things off as you go (a lot of these things just live in the big embarrassing ironman bag):
+
+- [ ] Big embarrassing ironman bag
+- [ ] Fanny pack diaper bag -- filled with diapers & wipes
+- [ ] 2-3 Small toys (rattle or stuffed animal)
+- [ ] Solid foods (yogurt & berries, banana, applesauce pouch, etc.)
+- [ ] Change of clothes
+- [ ] Baby sunscreen
+- [ ] Sun hat
+- [ ] Rain jacket / rain pants
+
+## Daily schedule
+
+Wendell at 13 months still defies the shackles of temporal constraints. This tiny guy likes to fall into patterns just to lull you into a false sense of security. Rely this schedule at your own peril.
+
+- **6:30 am** -- Up and at em! Usually wakes up hungry, see below for mealtime tips.
+
+- **10:00 am** -- Probably ready for his first nap. We've still been doing some formula before sleeping, and it's a judgement call about bottle vs sippy cup.
+
+- **11:30 am** -- Up again! Ready to party and will wanna get out of the house. Make sure to bring some snacks with you!
+
+- **2:00 pm** -- Nap #2! 
+
+- **3:45 pm** -- 
+
+- **5:00 pm** -- It's insane, but this is the time to make a judgement call: does he seem like he's gonna make it to bedtime? If he's already grumpy and scream-y, it may be good to chuck him in his bed for a mini nap. Think 15-30 mins, not past 6:00 pm!
+
+- **6:00 pm** -- Dinner time! He's usually hungry for something more savory here; he likes real dinner food like pasta or rice or veggies :)
+
+- **7:30 pm** -- Time to start winding down and getting ready for bed -- see below for bedtime routine.
+
+- **8:00 pm** -- Bedtime!
+
+## Nap and bedtime routine
+
+## Solid foods
+
+## Formula
+
+
+## Car & Car Seat Instructions
+
+You are extremely welcome to use our car for some adventures with the little guy! We'll probably go over this with you in person, but here are some reminders & resources about how the car seat works.
+
+**I highly recommend turning the car on for a few minutes before putting W in his seat -- the car just gets too hot!** We'll also make sure there's a small fan in the back too, to help get the AC to him.
+
+### The Car Seat -- Graco Extend2Fit
+
+**The instructions manual is stored in the little slot underneath the seat! Check here if anything feels off.**
+
+:::{.border}
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/jvaOuE-8lmI?si=qBjBdaTLzTINiwDW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I thought about writing a thing about how to use the car seat and then I realized it would be so much easier to just link to a video. So here it is -- check this out if we forgot to show you how to use the car seat or if you want a reminder!
+:::
+
