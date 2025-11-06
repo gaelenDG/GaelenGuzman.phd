@@ -75,44 +75,6 @@ I then did some drilling and gluing to make spaces for each of the peripherals -
 
 ## Code
 
-## Instructions on adding new music {#sec-AddingNewMusic}
-
-Hi Ian and Megan! I hope this present isn't a huge pain in the butt! 
-
-Adding new records to the collection isn't too too much of a hassle, but requires a little work. Here's a step-by-step guide:
-
-1. Download whatever music you'd like to add as .mp3 files.
-
-2. Pull out the felt cover on the bottom of the box (I've been using a spoon to catch an edge to pull it up).
-
-3. Remove the microSD card from the bottom right corner of the circuit board (just push in a bit and it'll click out).
-
-4. Load the songs onto the microSD card. This is unfortunately a little annoying:
-    - Make a new folder, naming it "07" or whatever next number is there
-    - This is the super annoying part: *you need to add the songs one at a time to the folder -- then name the files 001, 002, 003, ... etc.* For some reason the mini MP3 player gets confused and plays the songs in the wrong order otherwise...
-
-5. Put the microSD card back in its slot (again just push in until it clicks and it should stay).
-
-6. Get a blank vinyl disk, stick a new NFC sticker onto it.
-
-7. Use an NFC app on your phone to write the name of the new folder to it
-
-    - I have the [NFC Tools app](https://apps.apple.com/us/app/nfc-tools/id1252962749), which seems to work well on iPhones.
-    - Delete any existing text records.
-    - Tap "Add a record", and select "Add a text record", then enter the name of the folder in the format `07/001` -- press "OK".
-    - Tap "Write / 26 bytes" -- a window will pop up directing you to scan the new NFC tag.
-    - Tap the new NFC tag to your phone -- it'll be clear if it works, just try different spots until you get it to recognize the new tag.
-
-8. Test it! 
-    - If it plays the wrong record, you may have directed it to the wrong folder.
-    - If it plays the songs in the wrong order, you may have to re-do the song adding, making sure to do it one-by-one (sorry it's so fiddly)
-
-9. Add some kind of sticker to the record to help Ansel recognize it.
-    - I'll give you some sticky labels that can be printed on!
-
-10. Put the cover back on, hopefully it just slots into place as it was. It should stay in pretty well with the snug fit.
-
-That should be it! Wendell seems to get the idea of putting the disks on top of the box, so I'm sure Ansel will figure it out!
 
 ## Home Assistant Integration
 
