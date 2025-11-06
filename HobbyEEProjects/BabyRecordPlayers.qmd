@@ -1,0 +1,120 @@
+---
+title: Record Players for Wendell and Ansel
+description: "Little boxes that play music from miniature records -- Xmas presents for Wendell and Ansel!"
+date: "2025-11-06"
+# image: BabyRecordPlayers/FinalProducts.png
+author: Gaelen Guzman
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+---
+
+## Overview
+
+I was pondering the kinds of toys that I want Wendell to be able to play with when I realized that he's currently in love with a set of books that play songs when he pushes buttons on each page.
+
+I thought to myself, wouldn't it be cool if he had something like a miniature record player where he could choose the songs he wants to listen to?
+
+And then it occured to me that I can make one! And more, that it would be awesome to make one for Wendell's cousin, Ansel, too! 
+
+### Features
+
+* Small box with clasped lid, with minimal external alterations
+* RFID/NFC reader to recognize music disks placed on top
+* Internal MP3 player to play the music from
+* Stylized buttons for interactivity (volume/track skipping, etc)
+* A status light for feedback
+* A turntable platform to place the records on
+
+I ended up paring down some of the original feature goals I had -- it turns out it was too complicated to take RFID/NFC readings on a spinning disk, and I didn't have enough pins to control a motor driver... I also couldn't get my capacitive touch buttons to reliably recognize long presses vs short presses, so the buttons only have a single operation (volume control)
+
+## Materials & Components
+
+* Two small boxes -- a wooden cigar box for Ansel and some kind of cd case for Wendell
+* Xiao ESP32C6 
+* 4000 mAh LiPo battery
+* PN532 RFID/NFC reader
+* NFC stickers
+* Mini vinyl record coasters
+* DFPlayer Mini MP3 player
+* 32 gb microSD card
+* 3 W 8 &ohm; mini speakers
+* RGB LED, common cathode
+* Capacitive touch buttons & cool bolts
+* A ton of silicone caulk (a requirement for any of my projects)
+
+## Assembly
+
+I started by assembling a breadboard version of the electronics for this project, slowly building up from the mini MP3 player & speaker, adding the NFC reader, adding the RGB status light, and then finally the buttons. 
+
+:::{.border}
+![An iteration of the breadboard with all the components! Also, the wooden cigar box I'm aiming to fit everything into.](/HobbyEEProjects/BabyRecordPlayers/BreadboardSetup.jpg){group="BabyRecordPlayer"}
+:::
+
+The wiring for the NFC reader is slightly annoying, and I noticed that there were a lot of weird connectivity issues with it... That sort of persists into the final product, but took a ton of fiddling to get to work mostly-reliably.
+
+:::{.border}
+![Testing the NFC reader.](/HobbyEEProjects/BabyRecordPlayers/BreadboardTesting.mp4){group="BabyRecordPlayer"}
+:::
+
+After I felt confident that the wiring was all correct and that I had the basic electronic features I wanted to include (somewhat limited by the pinout space on the Xiao C6 board), I decided to get started with a more permanent perf-board version of the electronics.
+
+I felt that it was crucial that each of the peripherals could be disconnected via plug to help with assembly and any future repairs. I ended up using almost all of my little plugs, and was forced to cobble together a combination of diffent types of plugs... Sort of annoying that I couldn't just use all the same types of plugs throughout, but at least it's a little more challenging to plug things into the wrong place?
+
+:::{.border}
+![The first perf board version of the circuit. After making this one, I realized that the plug placement for the NFC reader didn't make any sense and I moved it, but otherwise this is identical to the second board.](/HobbyEEProjects/BabyRecordPlayers/PerfBoardSetup.png){group="BabyRecordPlayer"}
+:::
+
+I then did some drilling and gluing to make spaces for each of the peripherals -- the status light sticks through the top of the box and is held in place with silicone, the NFC reader and speakers are screwed in, the capacitive touch buttons are held on with some cool brass bolts I found (externally the buttons are just the heads of the bolts, which I think is a very cool look!).
+
+:::{.border}
+![Finding the final places for each peripheral, final look is starting to solidify!](/HobbyEEProjects/BabyRecordPlayers/IMG_6365.png){group="BabyRecordPlayer"}
+:::
+
+## Code
+
+## Instructions on adding new music {#sec-AddingNewMusic}
+
+Hi Ian and Megan! I hope this present isn't a huge pain in the butt! 
+
+Adding new records to the collection isn't too too much of a hassle, but requires a little work. Here's a step-by-step guide:
+
+1. Download whatever music you'd like to add as .mp3 files.
+
+2. Pull out the felt cover on the bottom of the box (I've been using a spoon to catch an edge to pull it up).
+
+3. Remove the microSD card from the bottom right corner of the circuit board (just push in a bit and it'll click out).
+
+4. Load the songs onto the microSD card. This is unfortunately a little annoying:
+    - Make a new folder, naming it "07" or whatever next number is there
+    - This is the super annoying part: *you need to add the songs one at a time to the folder -- then name the files 001, 002, 003, ... etc.* For some reason the mini MP3 player gets confused and plays the songs in the wrong order otherwise...
+
+5. Put the microSD card back in its slot (again just push in until it clicks and it should stay).
+
+6. Get a blank vinyl disk, stick a new NFC sticker onto it.
+
+7. Use an NFC app on your phone to write the name of the new folder to it
+
+    - I have the [NFC Tools app](https://apps.apple.com/us/app/nfc-tools/id1252962749), which seems to work well on iPhones.
+    - Delete any existing text records.
+    - Tap "Add a record", and select "Add a text record", then enter the name of the folder in the format `07/001` -- press "OK".
+    - Tap "Write / 26 bytes" -- a window will pop up directing you to scan the new NFC tag.
+    - Tap the new NFC tag to your phone -- it'll be clear if it works, just try different spots until you get it to recognize the new tag.
+
+8. Test it! 
+    - If it plays the wrong record, you may have directed it to the wrong folder.
+    - If it plays the songs in the wrong order, you may have to re-do the song adding, making sure to do it one-by-one (sorry it's so fiddly)
+
+9. Add some kind of sticker to the record to help Ansel recognize it.
+    - I'll give you some sticky labels that can be printed on!
+
+10. Put the cover back on, hopefully it just slots into place as it was. It should stay in pretty well with the snug fit.
+
+That should be it! Wendell seems to get the idea of putting the disks on top of the box, so I'm sure Ansel will figure it out!
+
+## Home Assistant Integration
+
+I know Ansel's house does not have Home Assistant, but I thought it would be fun to integrate Wendell's into my HA instance -- that way I can control the volume and skip tracks from my phone, if things are getting a little crazy.
+

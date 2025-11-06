@@ -13,7 +13,7 @@ format:
 
 ## Overview
 
-My wife and I just moved into a new apartment and we now have a surprising new responsibility: a garage. I imagine that this isn't a problem for most people, but I've *struggled* to close the door a few times as I drive away... and now I have a new-found anxiety that I've left the door open a lot of the time. 
+My wife and I just moved into a new apartment and we now have a surprising new responsibility: a garage, with a door that should be kept closed. I imagine that this isn't a problem for most people, but I've *struggled* to close the door a few times as I drive away... and now I have a new-found anxiety that I've left the door open a lot of the time. 
 
 I thought that maybe I could use one of my ESP32s as a sensor to report the closed/open state of the door so I can check in the middle of the night without getting up. I figured that while I was at it, I may as well automate it such that the door can close itself if left open for too long (**Update: after a few months of the door closing itself chaotically on Madeleine, I've decided this was a bad move -- it now just sends a push notification to let me know if the door has been open too long!**). 
 

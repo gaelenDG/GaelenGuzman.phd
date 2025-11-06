@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Projects, tinkering, and microcontroller fiddling">
+<meta name="author" content="Gaelen Guzman">
+<meta name="dcterms.date" content="2025-11-06">
+<meta name="description" content="Little boxes that play music from miniature records – Xmas presents for Wendell and Ansel!">
 
-<title>Hobby Electronics Projects – Gaelen Guzman</title>
+<title>Record Players for Wendell and Ansel – Gaelen Guzman</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/images/glasses-solid.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -41,7 +41,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-71f39fedcf786ec9aa96198624702b71.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-6697265c2874b1e5485e5870552e23c9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,65 +72,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-date','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
@@ -158,7 +103,7 @@ window.Quarto = {
 <span class="menu-text">Research Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../HobbyEEProjects/index.html" aria-current="page"> <i class="bi bi-cpu" role="img">
+    <a class="nav-link" href="../HobbyEEProjects/index.html"> <i class="bi bi-cpu" role="img">
 </i> 
 <span class="menu-text">Hobby Electronics Projects</span></a>
   </li>  
@@ -177,25 +122,56 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
+  </ul></li>
+  <li><a href="#materials-components" id="toc-materials-components" class="nav-link" data-scroll-target="#materials-components">Materials &amp; Components</a></li>
+  <li><a href="#assembly" id="toc-assembly" class="nav-link" data-scroll-target="#assembly">Assembly</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#sec-AddingNewMusic" id="toc-sec-AddingNewMusic" class="nav-link" data-scroll-target="#sec-AddingNewMusic">Instructions on adding new music</a></li>
+  <li><a href="#home-assistant-integration" id="toc-home-assistant-integration" class="nav-link" data-scroll-target="#home-assistant-integration">Home Assistant Integration</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/BabyRecordPlayers.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hobby Electronics Projects</h1>
+<h1 class="title">Record Players for Wendell and Ansel</h1>
+</div>
+
+<div>
+  <div class="description">
+    Little boxes that play music from miniature records – Xmas presents for Wendell and Ansel!
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
 
-<div class="quarto-title-meta column-page">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gaelen Guzman </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 6, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -205,242 +181,128 @@ window.Quarto = {
 </header>
 
 
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>I was pondering the kinds of toys that I want Wendell to be able to play with when I realized that he’s currently in love with a set of books that play songs when he pushes buttons on each page.</p>
+<p>I thought to myself, wouldn’t it be cool if he had something like a miniature record player where he could choose the songs he wants to listen to?</p>
+<p>And then it occured to me that I can make one! And more, that it would be awesome to make one for Wendell’s cousin, Ansel, too!</p>
+<section id="features" class="level3">
+<h3 class="anchored" data-anchor-id="features">Features</h3>
+<ul>
+<li>Small box with clasped lid, with minimal external alterations</li>
+<li>RFID/NFC reader to recognize music disks placed on top</li>
+<li>Internal MP3 player to play the music from</li>
+<li>Stylized buttons for interactivity (volume/track skipping, etc)</li>
+<li>A status light for feedback</li>
+<li>A turntable platform to place the records on</li>
+</ul>
+<p>I ended up paring down some of the original feature goals I had – it turns out it was too complicated to take RFID/NFC readings on a spinning disk, and I didn’t have enough pins to control a motor driver… I also couldn’t get my capacitive touch buttons to reliably recognize long presses vs short presses, so the buttons only have a single operation (volume control)</p>
+</section>
+</section>
+<section id="materials-components" class="level2">
+<h2 class="anchored" data-anchor-id="materials-components">Materials &amp; Components</h2>
+<ul>
+<li>Two small boxes – a wooden cigar box for Ansel and some kind of cd case for Wendell</li>
+<li>Xiao ESP32C6</li>
+<li>4000 mAh LiPo battery</li>
+<li>PN532 RFID/NFC reader</li>
+<li>NFC stickers</li>
+<li>Mini vinyl record coasters</li>
+<li>DFPlayer Mini MP3 player</li>
+<li>32 gb microSD card</li>
+<li>3 W 8 Ω mini speakers</li>
+<li>RGB LED, common cathode</li>
+<li>Capacitive touch buttons &amp; cool bolts</li>
+<li>A ton of silicone caulk (a requirement for any of my projects)</li>
+</ul>
+</section>
+<section id="assembly" class="level2">
+<h2 class="anchored" data-anchor-id="assembly">Assembly</h2>
+<p>I started by assembling a breadboard version of the electronics for this project, slowly building up from the mini MP3 player &amp; speaker, adding the NFC reader, adding the RGB status light, and then finally the buttons.</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../HobbyEEProjects/BabyRecordPlayers/BreadboardSetup.jpg" class="lightbox" data-gallery="BabyRecordPlayer" title="An iteration of the breadboard with all the components! Also, the wooden cigar box I’m aiming to fit everything into."><img src="../HobbyEEProjects/BabyRecordPlayers/BreadboardSetup.jpg" class="img-fluid figure-img" alt="An iteration of the breadboard with all the components! Also, the wooden cigar box I’m aiming to fit everything into."></a></p>
+<figcaption>An iteration of the breadboard with all the components! Also, the wooden cigar box I’m aiming to fit everything into.</figcaption>
+</figure>
+</div>
+</div>
+<p>The wiring for the NFC reader is slightly annoying, and I noticed that there were a lot of weird connectivity issues with it… That sort of persists into the final product, but took a ton of fiddling to get to work mostly-reliably.</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../HobbyEEProjects/BabyRecordPlayers/BreadboardTesting.mp4" class="lightbox" data-gallery="BabyRecordPlayer" title="Testing the NFC reader."><video src="../HobbyEEProjects/BabyRecordPlayers/BreadboardTesting.mp4" class="img-fluid" controls=""></video></a><a href="../HobbyEEProjects/BabyRecordPlayers/BreadboardTesting.mp4">Testing the NFC reader.</a></p>
+<figcaption>Testing the NFC reader.</figcaption>
+</figure>
+</div>
+</div>
+<p>After I felt confident that the wiring was all correct and that I had the basic electronic features I wanted to include (somewhat limited by the pinout space on the Xiao C6 board), I decided to get started with a more permanent perf-board version of the electronics.</p>
+<p>I felt that it was crucial that each of the peripherals could be disconnected via plug to help with assembly and any future repairs. I ended up using almost all of my little plugs, and was forced to cobble together a combination of diffent types of plugs… Sort of annoying that I couldn’t just use all the same types of plugs throughout, but at least it’s a little more challenging to plug things into the wrong place?</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../HobbyEEProjects/BabyRecordPlayers/PerfBoardSetup.png" class="lightbox" data-gallery="BabyRecordPlayer" title="The first perf board version of the circuit. After making this one, I realized that the plug placement for the NFC reader didn’t make any sense and I moved it, but otherwise this is identical to the second board."><img src="../HobbyEEProjects/BabyRecordPlayers/PerfBoardSetup.png" class="img-fluid figure-img" alt="The first perf board version of the circuit. After making this one, I realized that the plug placement for the NFC reader didn’t make any sense and I moved it, but otherwise this is identical to the second board."></a></p>
+<figcaption>The first perf board version of the circuit. After making this one, I realized that the plug placement for the NFC reader didn’t make any sense and I moved it, but otherwise this is identical to the second board.</figcaption>
+</figure>
+</div>
+</div>
+<p>I then did some drilling and gluing to make spaces for each of the peripherals – the status light sticks through the top of the box and is held in place with silicone, the NFC reader and speakers are screwed in, the capacitive touch buttons are held on with some cool brass bolts I found (externally the buttons are just the heads of the bolts, which I think is a very cool look!).</p>
+<div class="border">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../HobbyEEProjects/BabyRecordPlayers/IMG_6365.png" class="lightbox" data-gallery="BabyRecordPlayer" title="Finding the final places for each peripheral, final look is starting to solidify!"><img src="../HobbyEEProjects/BabyRecordPlayers/IMG_6365.png" class="img-fluid figure-img" alt="Finding the final places for each peripheral, final look is starting to solidify!"></a></p>
+<figcaption>Finding the final places for each peripheral, final look is starting to solidify!</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+</section>
+<section id="sec-AddingNewMusic" class="level2">
+<h2 class="anchored" data-anchor-id="sec-AddingNewMusic">Instructions on adding new music</h2>
+<p>Hi Ian and Megan! I hope this present isn’t a huge pain in the butt!</p>
+<p>Adding new records to the collection isn’t too too much of a hassle, but requires a little work. Here’s a step-by-step guide:</p>
+<ol type="1">
+<li><p>Download whatever music you’d like to add as .mp3 files.</p></li>
+<li><p>Pull out the felt cover on the bottom of the box (I’ve been using a spoon to catch an edge to pull it up).</p></li>
+<li><p>Remove the microSD card from the bottom right corner of the circuit board (just push in a bit and it’ll click out).</p></li>
+<li><p>Load the songs onto the microSD card. This is unfortunately a little annoying:</p>
+<ul>
+<li>Make a new folder, naming it “07” or whatever next number is there</li>
+<li>This is the super annoying part: <em>you need to add the songs one at a time to the folder – then name the files 001, 002, 003, … etc.</em> For some reason the mini MP3 player gets confused and plays the songs in the wrong order otherwise…</li>
+</ul></li>
+<li><p>Put the microSD card back in its slot (again just push in until it clicks and it should stay).</p></li>
+<li><p>Get a blank vinyl disk, stick a new NFC sticker onto it.</p></li>
+<li><p>Use an NFC app on your phone to write the name of the new folder to it</p>
+<ul>
+<li>I have the <a href="https://apps.apple.com/us/app/nfc-tools/id1252962749">NFC Tools app</a>, which seems to work well on iPhones.</li>
+<li>Delete any existing text records.</li>
+<li>Tap “Add a record”, and select “Add a text record”, then enter the name of the folder in the format <code>07/001</code> – press “OK”.</li>
+<li>Tap “Write / 26 bytes” – a window will pop up directing you to scan the new NFC tag.</li>
+<li>Tap the new NFC tag to your phone – it’ll be clear if it works, just try different spots until you get it to recognize the new tag.</li>
+</ul></li>
+<li><p>Test it!</p>
+<ul>
+<li>If it plays the wrong record, you may have directed it to the wrong folder.</li>
+<li>If it plays the songs in the wrong order, you may have to re-do the song adding, making sure to do it one-by-one (sorry it’s so fiddly)</li>
+</ul></li>
+<li><p>Add some kind of sticker to the record to help Ansel recognize it.</p>
+<ul>
+<li>I’ll give you some sticky labels that can be printed on!</li>
+</ul></li>
+<li><p>Put the cover back on, hopefully it just slots into place as it was. It should stay in pretty well with the snug fit.</p></li>
+</ol>
+<p>That should be it! Wendell seems to get the idea of putting the disks on top of the box, so I’m sure Ansel will figure it out!</p>
+</section>
+<section id="home-assistant-integration" class="level2">
+<h2 class="anchored" data-anchor-id="home-assistant-integration">Home Assistant Integration</h2>
+<p>I know Ansel’s house does not have Home Assistant, but I thought it would be fun to integrate Wendell’s into my HA instance – that way I can control the volume and skip tracks from my phone, if things are getting a little crazy.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-left" data-index="0" data-listing-date-sort="1762416000000" data-listing-file-modified-sort="1762468855313" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1137">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external"></a></p><a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external">
-<p class="card-img-top"><img src="BabyRecordPlayers/BreadboardSetup.jpg" alt="An iteration of the breadboard with all the components! Also, the wooden cigar box I’m aiming to fit everything into."  class="thumbnail-image card-img"/></p>
-</a><p><a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external">Record Players for Wendell and Ansel</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external">Little boxes that play music from miniature records – Xmas presents for Wendell and Ansel!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/BabyRecordPlayers.html" class="no-external">
-<div class="listing-date">
-Nov 6, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="1" data-listing-date-sort="1755241200000" data-listing-file-modified-sort="1757098416242" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="651">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MatrixReducer.html" class="no-external"></a></p><a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MatrixReducerAssets/highlightImage.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MatrixReducer.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">Matrix Reducer</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">A silly Shiny app to transform input matrices to reduced row echelon form</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MatrixReducer.html" class="no-external">
-<div class="listing-date">
-Aug 15, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="2" data-listing-date-sort="1746082800000" data-listing-file-modified-sort="1762456179746" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2110">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external"></a></p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/AutomatedGarageDoorRemote/CraftingMount.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">Automated Garage Door Remote</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">A device to help me be certain that I closed the garage door on my way out of the house – sync’ed with Home Assistant!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/AutomatedGarageDoorRemote.html" class="no-external">
-<div class="listing-date">
-May 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="3" data-listing-date-sort="1742886000000" data-listing-file-modified-sort="1755881149455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external"></a></p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_featured.gif" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">Resistor Flex part 2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">How to use computers to build devices!</a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">My presentation for day 2 of the Sunnyside Middle School community teaching week – instructions for building a night light and demonstrations of using an ESP32 to control peripheral devices!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation2_page.html" class="no-external">
-<div class="listing-date">
-Mar 25, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="4" data-listing-date-sort="1742281200000" data-listing-file-modified-sort="1755921906410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external"></a></p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_featured.gif" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">Resistor Flex</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">control the flow like a pro!</a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">My presentation for a Sunnyside Middle School community event – an introduction to designing and making circuits!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/Sunnyside_Electronics_Presentations/Presentation1_page.html" class="no-external">
-<div class="listing-date">
-Mar 18, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="5" data-listing-date-sort="1738310400000" data-listing-file-modified-sort="1741816233563" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="190">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external"></a></p><a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MagneticStirbarLamp/MagneticStirbarFeatured.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">Magnetic Stirbar Lamp</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">A lamp that uses a spinning magnetic stir bar to swirl an illuminated flask of liquid. <strong>Still a work in progress</strong></a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MagneticStirbarLamp.html" class="no-external">
-<div class="listing-date">
-Jan 31, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="6" data-listing-date-sort="1736928000000" data-listing-file-modified-sort="1742227093035" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="619">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external"></a></p><a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MushroomLamp_v2/MushroomLamp_v2_featured.png" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">Mushroom Lamp v2</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">I wanted to take what I learned from my first little <span>mushroom lamp</span> and build on it using the same Adafruit NeoPixels I used in the <span>baby book</span>. I was inspired when my friend, Becca, told me that her middle school class was <em>very</em> into mushrooms this year.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MushroomLamp_v2.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="7" data-listing-date-sort="1732089600000" data-listing-file-modified-sort="1741816178107" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="150">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external"></a></p><a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/LightUpBabyBook/LightUpBabyBookFeatured.gif" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">Light-up Baby Book</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">This baby book houses an ESP32, 24 NeoPixels, and some light-dependent resistors to make for a fun light-up addition to a children’s story!</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/LightUpBabyBook.html" class="no-external">
-<div class="listing-date">
-Nov 20, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-left" data-index="8" data-listing-date-sort="1728543600000" data-listing-file-modified-sort="1757100828573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1879">
-<div class="thumbnail">
-<p><a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external"></a></p><a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">
-<p><img loading="lazy" src="../HobbyEEProjects/MushroomLamp_v1/SlightlyNicerFinal.jpg" class="thumbnail-image"></p>
-</a><p><a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">Mushroom Lamp v1</a>
-</h3>
-<div class="listing-subtitle">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">This little nightlight looks like a small grove of mushrooms growing out of a log – during the day, it looks like an unassuming little craft project, but at night, the mushrooms glow and breathe and the hearth of a tiny cabin flickers.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="../HobbyEEProjects/MushroomLamp_v1.html" class="no-external">
-<div class="listing-date">
-Oct 10, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -870,12 +732,44 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
  © 2025 Gaelen Guzman | Built with Quarto
   </li>  
 </ul>
-    <div class="toc-actions"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/blob/main/HobbyEEProjects/BabyRecordPlayers.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li><li><a href="https://github.com/gaelenDG/GaelenGuzman.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"fade","descPosition":"bottom","loop":true,"openEffect":"fade","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
