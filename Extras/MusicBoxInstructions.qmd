@@ -11,83 +11,81 @@ freeze: true
 toc: false
 ---
 
-Hi Ian and Megan! I hope this present isn't a huge pain in the butt! 
+Hi Ian and Megan! I hope this present isn't a huge pain in the butt!
 
 ## Basic use
 
 Wendell has mostly figured out how these boxes work, so I have zero doubts that Ansel will know how to get music to start playing once the box is on. I do sort of think he shouldn't be in charge of flipping the switch though?
 
-### Turning it on
+-   **Turning it on:** Flip the switch! Or plug it in, it turns on automatically if plugged in. The light will start yellow as it boots up, then turns green when it's ready to play songs.
 
-Flip the switch! Or plug it in, it turns on automatically if plugged in.
+-   **Playing songs:** Put a disk on top (if the light is green, see troubleshooting tips if it turns a different color)
 
-### Playing songs
+-   **Controlling volume:** Tap the metal bolt heads on the side of the box -- one is up and the other is down. To hopefully help with random baby touches, I made it so that the down button turns the volume down twice as fast as the up button turns the volume up.
 
-Put a disk on top! (If the light is green)
+-   **Battery vs plugged in:** This is super annoying, but the switch just disconnects the battery to keep it from dying over time. When the box is plugged in, it automatically turns on. *The battery only gets charged if the switch is in the **on** position when the box is plugged in!* Sorry this is super annoying, it's the best I could do.
 
-### Controlling volume
+-   **Be a little careful when closing the lid** - I did a bad job routing the wires and they really don't behave well when closing the box...
 
+## Adding new music
 
+Adding new records to the collection isn't too too much of a hassle, but requires a little work. Here's a step-by-step guide:
 
-### Battery vs plugged in
+1.  Download whatever music you'd like to add as .mp3 files.
 
+2.  Pull out the felt cover on the bottom of the box (I've been using a spoon to catch an edge to pull it up).
+
+3.  Remove the microSD card from the bottom right corner of the circuit board (just push in a bit and it'll click out).
+
+4.  Load the songs onto the microSD card. This is unfortunately a little annoying:
+
+    -   Make a new folder, naming it "07" or whatever next number is there
+    -   This is the super annoying part: *you need to add the songs one at a time to the folder -- then name the files 001, 002, 003, ... etc.* For some reason the mini MP3 player gets confused and plays the songs in the wrong order otherwise...
+
+5.  Put the microSD card back in its slot (again just push in until it clicks and it should stay).
+
+6.  Get a blank vinyl disk, stick a new NFC sticker onto it.
+
+7.  Use an NFC app on your phone to write the name of the new folder to it
+
+    -   I have the [NFC Tools app](https://apps.apple.com/us/app/nfc-tools/id1252962749), which seems to work well on iPhones.
+    -   Delete any existing text records.
+    -   Tap "Add a record", and select "Add a text record", then enter the name of the folder in the format `07/001` -- press "OK".
+    -   Tap "Write / 26 bytes" -- a window will pop up directing you to scan the new NFC tag.
+    -   Tap the new NFC tag to your phone -- it'll be clear if it works, just try different spots until you get it to recognize the new tag.
+
+8.  Test it!
+
+    -   If it plays the wrong record, you may have directed it to the wrong folder.
+    -   If it plays the songs in the wrong order, you may have to re-do the song adding, making sure to do it one-by-one (sorry it's so fiddly)
+
+9.  Add some kind of sticker to the record to help Ansel recognize it.
+
+    -   I'll give you some sticky labels that can be printed on!
+
+10. Put the cover back on, hopefully it just slots into place as it was. It should stay in pretty well with the snug fit.
 
 ## Troubleshooting
 
 Ok here's a secret: I don't really know how to do any of this, and this is extremely held together with silicone caulk and a prayer. It's inevitable that this will stop working for some reason and I thought I'd put a few directions to look if it's not behaving.
 
+I did design this thing so that most of the electronics can be yoinked out and replaced if they break though -- so get it back to me and I can probably fix pretty much any part of it.
+
 ### The status light might tell you what's broken
 
 The little computer on the box checks whether the NFC reader and the mini MP3 player are properly connected every few seconds. The status light has a few states:
 
-* **Yellow:** The computer is booting up, it should change as it establishes connections with the MP3 player and NFC reader.
-* **Green:** Everything is connected properly! Ready to read a disk! 
-* **Blue:** Currently playing a disk!
-* **Teal:** The mini MP3 player isn't connected properly.
-  - Check the microSD card, it may have come loose or the folders might be messed up.
-  - After a few seconds, the light should turn green again if it's working properly.
-* **Magenta:** The NFC reader isn't connected properly.
-  - *This is by far the most likely thing wrong.... The connection to the power lines is super sensitive and I can't figure out how to make it more robust.*
-  - If you feel like fiddling with it, take out the cover and poke at the red wire where it connects into the plug -- for some reason this is just not a reliable connection...
-  -- If the status light turns green, the connection is fixed!
-* **Red:** Both the MP3 player and the NFC reader aren't connected properly. Tackle them each and the light should change as you fix.
-* **No light:** The plug to the status light may have come loose. 
-  - As with the NFC reader, poke at the connections in the plug, it should turn back on.
-
-
-
-
-## Adding new music 
-
-Adding new records to the collection isn't too too much of a hassle, but requires a little work. Here's a step-by-step guide:
-
-1. Download whatever music you'd like to add as .mp3 files.
-
-2. Pull out the felt cover on the bottom of the box (I've been using a spoon to catch an edge to pull it up).
-
-3. Remove the microSD card from the bottom right corner of the circuit board (just push in a bit and it'll click out).
-
-4. Load the songs onto the microSD card. This is unfortunately a little annoying:
-    - Make a new folder, naming it "07" or whatever next number is there
-    - This is the super annoying part: *you need to add the songs one at a time to the folder -- then name the files 001, 002, 003, ... etc.* For some reason the mini MP3 player gets confused and plays the songs in the wrong order otherwise...
-
-5. Put the microSD card back in its slot (again just push in until it clicks and it should stay).
-
-6. Get a blank vinyl disk, stick a new NFC sticker onto it.
-
-7. Use an NFC app on your phone to write the name of the new folder to it
-
-    - I have the [NFC Tools app](https://apps.apple.com/us/app/nfc-tools/id1252962749), which seems to work well on iPhones.
-    - Delete any existing text records.
-    - Tap "Add a record", and select "Add a text record", then enter the name of the folder in the format `07/001` -- press "OK".
-    - Tap "Write / 26 bytes" -- a window will pop up directing you to scan the new NFC tag.
-    - Tap the new NFC tag to your phone -- it'll be clear if it works, just try different spots until you get it to recognize the new tag.
-
-8. Test it! 
-    - If it plays the wrong record, you may have directed it to the wrong folder.
-    - If it plays the songs in the wrong order, you may have to re-do the song adding, making sure to do it one-by-one (sorry it's so fiddly)
-
-9. Add some kind of sticker to the record to help Ansel recognize it.
-    - I'll give you some sticky labels that can be printed on!
-
-10. Put the cover back on, hopefully it just slots into place as it was. It should stay in pretty well with the snug fit.
+-   **Yellow:** The computer is booting up, it should change as it establishes connections with the MP3 player and NFC reader.
+-   **Green:** Everything is connected properly! Ready to read a disk!
+-   **Blue:** Currently playing a disk!
+-   **Teal:** The mini MP3 player isn't connected properly.
+    -   Check the microSD card, it may have come loose or the folders might be messed up.
+    -   After a few seconds, the light should turn green again if it's working properly.
+-   **Magenta:** The NFC reader isn't connected properly.
+    -   *This is by far the most likely thing wrong.... The connection to the power lines is super sensitive and I can't figure out how to make it more robust.*
+    -   If you feel like fiddling with it, take out the cover and poke at the red wire where it connects into the plug -- for some reason this is just not a reliable connection...
+    -   If the status light turns green, the connection is fixed!
+-   **Red:** Both the MP3 player and the NFC reader aren't connected properly. Tackle them each and the light should change as you fix.
+-   **No light:** The plug to the status light may have come loose.
+    -   As with the NFC reader, poke at the connections in the plug, it should turn back on.
+    -   I'm a little worried that the wires that lead to the light will get messed up over time... In retrospect I should have had a better plan for this light before I started... If nothing seems to get the light to work, it may be truly dead :(
