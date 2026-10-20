@@ -3,9 +3,9 @@ title: Windy Moo @ ~2 years old
 description: "Instructions for taking care of WMF at around 10 months!"
 about:
   template: broadside
-  image: assets/WindyMoo.png
+  image: assets/WimbdyMoo.png
   id: hero-heading
-image: assets/WindyMoo.png
+image: assets/WimbdyMoo.png
 date: 2026-10-19 
 engine: knitr 
 freeze: true
@@ -30,7 +30,7 @@ toc: false
 
 Welcome to our home! 
 
-The code to the front door and garage are the same: **0824**. If nothing else works, the back door is rarely locked.
+The code to the front door and garage are the same: **0824**.
 
 ## Daily Schedule
 
@@ -40,7 +40,7 @@ Big W is a freeform child and defies predictability. This is, at best, an estima
 - **7:30 am** -- Breakfast. Usually, he's content with a toaster waffle or peanut butter toast.
 - **7:45 am** -- Head to school / leave the house
 - **9:15 am** -- Morning snack
-- **12:15 pm** -- Nap time! Outside of school, naps have been a little hit or miss... Sometimes he'll sleep for almost 2 hours, other times you'll work very hard to convince him to sleep for even 15 minutes... See below for tips.
+- **12:15 pm** -- Nap time! Outside of school, naps have been a little hit or miss... Sometimes he'll sleep for almost 2 hours, other times you'll work very hard to convince him to sleep for even 15 minutes... See [Sleep Routines Section @sec-sleeproutine] below for tips.
 - **2:00 pm** -- If you're lucky, he may have slept this long!
 - **3:00 pm** -- Afternoon snack
 - **4:30 - 5:30pm** -- Somehow his most ravenous window, can eat a shocking amount here. Always bring food to school pickup!
@@ -52,7 +52,7 @@ Big W is a freeform child and defies predictability. This is, at best, an estima
 
 ## Leaving the House (School Day)
 
-**See below for school food requirements!** We typically pack his lunch the night before to help get out the door.
+**See [School Food Section @sec-schoolfood] below for school food requirements!** We typically pack his lunch the night before to help get out the door.
 
 - [ ] Lunch
 - [ ] Lunch cooler & cold pack
@@ -75,30 +75,6 @@ Wendell, much like his mother, requires extensive physical exercise for his own 
 
 Fun destinations include: [Woostock Park](https://maps.app.goo.gl/WtRxSKf8MpZ4k6kq7), [Creston Park](https://maps.app.goo.gl/qXiksNdsTUFWwPuG9), [OMSI](https://maps.app.goo.gl/33CAnNRuFRukaPk97), [the zoo](https://maps.app.goo.gl/SSTrr1pgQevzFXNZ8), or honestly anywhere he can run around.
 
-## Sleep Routine
-
-### Naptime
-
-These have been somewhat tough for us recently... It might take some cajoling to get him in his sleep sack and to settle enough to read a book. Then you'll have to put him in bed against his wishes.
-
-If the stars have aligned, he may go to straight to sleep when you put him in -- other times he needs to cry for a few minutes (notably while lying down in his sleeping position). If he seems really mad and/or is standing up and crying, it can take a while to peter out... 
-
-If it's been a truly long time (> 30 minutes) or if he seems truly, truly sad, we've resorted to putting him in the car or the bike trailer for a 30-60 minute power nap.
-
-### Nighttime
-
-- Brush teeth at 7:45 pm
-- Change diaper and wrestle him into a clean shirt
-- Again wrestle him into his sleep sack (he'll almost certainly escape after the shirt like a giggling buffoon)
-- Read a book. Nighttime favorites cycle, but big hits are *I Spy Wendell*, *Just Me and My Mom*, *Just Camping Out*, and *I Love Wendell This Much*
-- At 7:59 pm, you should declare it's time for night night, and he'll almost certainly slump over and assume his sleeping position.
-- You'll then be able to lug him into his bed.
-- Before you zip his tent up, he'll pop back up and demand some water. Hence the water bottle there by his bed.
-
-If he starts crying in the night, you should check the video monitor before going to check on him -- he seems to have intense dreams sometimes and will have a half-hearted cry in his sleep before settling back down. 
-
-If he sounds actually sad or stands up, he'll probably want to talk about the dream he had. He has a bizarrely coherent memory from like 6 months ago when a very loud choo choo train surprised him while we were berry picking. If he starts talking about it, it seems to help him settle back down by running through the whole story and reminding him that everyone was ok after the choo choo train left and telling him that it's time for bed. Maybe offer him some water and sing a song if you can't break him out of his story telling cycle.
-
 ## Food
 
 ### Non-School Day
@@ -107,7 +83,7 @@ He's really not picky, he'll truly almost anything you put in front of him. Exce
 
 We recommend packing some Baby Bell cheeses or string cheese as snack supplements and/or backups if he eats way more than you expect.
 
-### School Day
+### School Day {#sec-schoolfood}
 
 School has some requirements for meals:
 
@@ -120,8 +96,32 @@ For lunch, I typically pack some dinner leftovers in the large compartment, some
 
 And as a backup, I always throw in one or two Baby Bells or cheese sticks. Most of the time, these will come back home with him; other times, he'll refuse something you were certain he'd love...
 
+## Sleep Routine {#sec-sleeproutine}
+
+### Naptime
+
+These have been somewhat tough for us recently... It might take some cajoling to get him in his sleep sack and to settle enough to read a book. Then you'll have to put him in bed against his wishes.
+
+If the stars have aligned, he may go to straight to sleep when you put him in -- other times he needs to cry for a few minutes (notably while lying down in his sleeping position). If he seems really mad and/or is standing up and crying, it can take a while to peter out... 
+
+If it's been a truly long time (> 30 minutes) or if he seems truly, truly sad, we've resorted to putting him in the car or the bike trailer for a 30-60 minute power nap.
+
+### Nighttime 
+
+- Brush teeth at 7:45 pm
+- Change diaper and wrestle him into a clean shirt
+- Again wrestle him into his sleep sack (he'll almost certainly escape after the shirt like a giggling buffoon)
+- Read a book. Nighttime favorites cycle, but big hits are *I Spy Wendell*, *Just Me and My Mom*, *Just Camping Out*, and *I Love Wendell This Much*
+- At 7:59 pm, you should declare it's time for night night, and he'll almost certainly slump over and assume his sleeping position.
+- You'll then be able to lug him into his bed.
+- Before you zip his tent up, he'll pop back up and demand some water. Hence the water bottle there by his bed.
+
+Most nights these days, he sleeps straight through to the morning! But, if he does start crying in the night, you should check the video monitor before going to check on him -- he seems to sometimes have intense dreams  and will have a half-hearted cry in his sleep before settling back down. 
+
+If he sounds actually sad or stands up, he'll probably want to talk about the dream he had. He has a bizarrely coherent memory from like 6 months ago when a very loud choo choo train surprised him while we were berry picking. If he starts talking about it, it seems to help him settle back down by running through the whole story and reminding him that everyone was ok after the choo choo train left and telling him that it's time for bed. Maybe offer him some water and sing a song if you can't break him out of his story telling cycle.
+
 ## Non-Wendell Notes
 
 - Trash day is Monday, so we typically put the cans out on Sunday night. 
-- The WiFi password is on the fridge
-- 
+- The WiFi password is on the fridge.
+- The door code to get into school is also on the fridge.
