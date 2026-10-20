@@ -53,7 +53,7 @@ I started by assembling a breadboard version of the electronics for this project
 ![An iteration of the breadboard with all the components! Also, the wooden cigar box I'm aiming to fit everything into.](/HobbyEEProjects/BabyRecordPlayers/BreadboardSetup.jpg){group="BabyRecordPlayer"}
 :::
 
-The wiring for the NFC reader is slightly annoying, and I noticed that there were a lot of weird connectivity issues with it... That sort of persists into the final product, but took a ton of fiddling to get to work mostly-reliably.
+The wiring for the NFC reader is slightly annoying, and I noticed that there were a lot of weird connectivity issues with it... That sort of persists into the final product(s), but after a ton of fiddling it is now work mostly-reliably.
 
 :::{.border}
 ![Testing the NFC reader.](/HobbyEEProjects/BabyRecordPlayers/BreadboardTesting.mp4){group="BabyRecordPlayer"}
@@ -61,7 +61,7 @@ The wiring for the NFC reader is slightly annoying, and I noticed that there wer
 
 After I felt confident that the wiring was all correct and that I had the basic electronic features I wanted to include (somewhat limited by the pinout space on the Xiao C6 board), I decided to get started with a more permanent perf-board version of the electronics.
 
-I felt that it was crucial that each of the peripherals could be disconnected via plug to help with assembly and any future repairs. I ended up using almost all of my little plugs, and was forced to cobble together a combination of diffent types of plugs... Sort of annoying that I couldn't just use all the same types of plugs throughout, but at least it's a little more challenging to plug things into the wrong place?
+I felt that it was crucial that each of the peripherals could be disconnected via plug to help with assembly and any future repairs. I ended up using almost all of my little plugs, and was forced to cobble together a combination of different types of plugs... Sort of annoying that I couldn't just use all the same types of plugs throughout, but at least it's a little more challenging to plug things into the wrong place?
 
 :::{.border}
 ![The first perf board version of the circuit. After making this one, I realized that the plug placement for the NFC reader didn't make any sense and I moved it, but otherwise this is identical to the second board.](/HobbyEEProjects/BabyRecordPlayers/PerfBoardSetup.png){group="BabyRecordPlayer"}
@@ -73,7 +73,31 @@ I then did some drilling and gluing to make spaces for each of the peripherals -
 ![Finding the final places for each peripheral, final look is starting to solidify!](/HobbyEEProjects/BabyRecordPlayers/IMG_6365.png){group="BabyRecordPlayer"}
 :::
 
+I crafted a little felted cardboard cutout that snugly fits over the electronics and makes for a kind of inner lining for the box. My hope is that the disks can be stored in here. However, this is probably going to kill the box in the end... I did a terrible job planning the routing for the wires to the upper part of the box -- the bundles status light and the NFC reader just kind of dangle down, and they get folded in the same spots over and over every time the box opens and closes... They're going to inevitably break, and it'll be a sad day when that happens.
+
+This was part of why I wanted everything to be unpluggable -- when stuff breaks, I figure I can just yoink it out and replace it!
+
+:::{.border}
+![An inner lining for the wooden box, and a preview of why I suspect the wires are not gonna last long](){group="BabyRecordPlayer"}
+:::
+
+### The second box
+
+The next task was to just re-do everything entirely -- a new perf board PCB, wiring up all the peripherals, misusing a drill -- for the second box! I found this second one and am just so much more pleased with how this one works for this project. 
+
+The biggest boon with this box is that the split is directly in the middle -- which makes for a very deep space that fits all the electronics on one half of the box, with no wires crossing the hinge. This makes for a much, much cleaner appearance and honestly will likely last a lot longer!
+
+:::{.border}
+![The second box!](){group="BabyRecordPlayer"}
+:::
+
 ## Code
+
+This was by far the most complicated little embedded project I've worked on. There's a long list of peripherals that need to be initialized and managed; the loop has to assess battery levels, check for new disks and extract the NFC payload, handle button presses, check peripheral health; the MQTT topics are publishing state information and receiving/handling commands... I guess that's pretty much everything, but it felt a lot more complicated while I was cobbling it all together. 
+
+Some code was borrowed from GitHub repos and product wikis -- like for the [DFPlayer Mini wiki](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299), which has a ton of info on the possible input functions, such as `Player.play(xx)`, or `Player.stop()`, or `Player.readState()`. I'm chagrinned to admit that once again I needed to lean on ChatGPT to help write some of the functions to extract the NFC payload to get the folder/song to play on the disk; someday I'll know enough C++ to figure these things out on my own, but for now it was immensely useful to get working prototypes that I could modify.
+
+A piece of what made this feel so complicated is that I tried to use header files to keep things organized -- the config.h, helpers.h, peripherals.h, secrets.h, all got somehow more unwieldy in the end...  
 
 
 ## Home Assistant Integration

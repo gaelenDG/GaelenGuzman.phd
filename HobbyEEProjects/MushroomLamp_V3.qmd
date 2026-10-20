@@ -1,0 +1,14 @@
+---
+title: Mushroom Lamp V3
+subtitle: Outdoor Fairy Garden
+description: ""
+date: "2026-04-07"
+# image: BabyRecordPlayers/FinalProducts.png
+author: Gaelen Guzman
+format:
+  html:
+    code-fold: true
+    code-summary: "Show the code"
+    code-overflow: wrap
+---
+
