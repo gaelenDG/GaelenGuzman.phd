@@ -152,7 +152,15 @@ If he sounds actually sad or stands up, he'll probably want to talk about the dr
 
 :::{.border}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jvaOuE-8lmI?si=CLltRk5fg-hirc_4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe
+  src="https://www.youtube.com/embed/jvaOuE-8lmI?si=CLltRk5fg-hirc_4"
+  title="YouTube video player"
+  style="width: 100%; aspect-ratio: 16 / 9; height: auto;"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
 
 I thought about writing a thing about how to use the car seat and then I realized it would be so much easier to just link to a video. So here it is -- hopefully it works... Check this out if we forgot to show you how to use the car seat or if you want a reminder!
 :::
